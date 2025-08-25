@@ -24,7 +24,7 @@ export default function HomePage() {
               <div className="order-2 lg:order-1">
                 <span className="badge-primary mb-4">About Maximax</span>
                 <h2 className="mb-6">
-                  South Florida's Premier <span className="gradient-text">Mobile Billboard</span> & LED Truck Company
+                  South Florida&apos;s Premier <span className="gradient-text">Mobile Billboard</span> & LED Truck Company
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
                   Maximax Advertising operates the largest fleet of mobile billboards, billboard trucks, and LED trucks 

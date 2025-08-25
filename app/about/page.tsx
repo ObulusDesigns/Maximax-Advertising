@@ -105,7 +105,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">Community</h3>
                 <p className="text-gray-600">
-                  We're proud to serve local businesses and contribute to the economic growth 
+                  We&apos;re proud to serve local businesses and contribute to the economic growth 
                   of Boca Raton and surrounding communities.
                 </p>
               </div>
@@ -166,7 +166,7 @@ export default function AboutPage() {
             <div className="text-center text-white max-w-3xl mx-auto mb-12">
               <h2 className="text-white mb-6">Why Businesses Choose Maximax</h2>
               <p className="text-xl text-white/90">
-                We don't just display ads – we create impactful campaigns that drive real results.
+                We don&apos;t just display ads – we create impactful campaigns that drive real results.
               </p>
             </div>
 
@@ -204,7 +204,7 @@ export default function AboutPage() {
               </h2>
               <p className="text-lg text-gray-600 mb-8">
                 Join 200+ successful businesses that have elevated their brand visibility 
-                with Maximax Advertising's mobile billboard solutions.
+                with Maximax Advertising&apos;s mobile billboard solutions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact" className="btn-primary btn-lg">
