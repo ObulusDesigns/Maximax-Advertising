@@ -62,7 +62,7 @@ export default function CampaignManagementPage() {
     tagline: "End-to-End Billboard Campaign Management for Maximum Impact",
     description: "Let our expert team handle every aspect of your mobile billboard campaign. From strategy development and content creation to route optimization and performance analytics, we ensure your advertising delivers exceptional results.",
     heroImage: "/images/Graphics  /image4.png",
-    serviceType: 'strategy' as const,
+    serviceType: 'marketing' as const,
     
     // Service Features
     features: [
@@ -237,12 +237,6 @@ export default function CampaignManagementPage() {
         description: "High-impact mobile advertising with our professional fleet of billboard trucks",
         href: "/services/mobile-billboard-trucks",
         icon: MapPin
-      },
-      {
-        title: "Route Planning",
-        description: "Strategic route optimization for maximum campaign effectiveness",
-        href: "/services/route-planning",
-        icon: Target
       },
       {
         title: "GPS Tracking & Analytics",

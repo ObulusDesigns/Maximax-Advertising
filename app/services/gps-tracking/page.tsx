@@ -53,6 +53,7 @@ export default function GPSTrackingPage() {
     tagline: "Complete Transparency with Real-Time Billboard Tracking",
     description: "Monitor your mobile billboard campaigns in real-time with our advanced GPS tracking system. Get live location data, route optimization, performance analytics, and complete campaign transparency that maximizes your advertising ROI.",
     heroImage: "/images/Graphics  /image2.png",
+    serviceType: 'digital' as const,
     
     features: [
       {
@@ -220,12 +221,6 @@ export default function GPSTrackingPage() {
         href: "/services/led-digital-displays",
         icon: Activity
       },
-      {
-        title: "Route Planning",
-        description: "Strategic route planning and optimization services for targeted mobile advertising campaigns",
-        href: "/services/route-planning",
-        icon: Route
-      }
     ],
 
     stats: {

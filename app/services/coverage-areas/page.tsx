@@ -62,7 +62,7 @@ export default function CoverageAreasPage() {
     tagline: "Comprehensive Billboard Coverage Across South Florida's Prime Markets",
     description: "Strategic mobile billboard advertising coverage throughout Miami-Dade, Broward, and Palm Beach counties. Reach millions of potential customers in South Florida's most affluent and high-traffic areas with targeted campaigns.",
     heroImage: "/images/Graphics  /image5.png",
-    serviceType: 'coverage' as const,
+    serviceType: 'mobile' as const,
     
     // Service Features
     features: [
@@ -232,12 +232,6 @@ export default function CoverageAreasPage() {
 
     // Related Services
     relatedServices: [
-      {
-        title: "Route Planning",
-        description: "Strategic route optimization for maximum impact in your coverage areas",
-        href: "/services/route-planning",
-        icon: Route
-      },
       {
         title: "GPS Tracking",
         description: "Real-time verification of coverage areas with detailed tracking reports",
