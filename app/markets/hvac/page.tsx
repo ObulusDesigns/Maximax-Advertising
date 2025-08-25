@@ -44,7 +44,7 @@ const marketData = {
     'Advertise maintenance agreements and tune-ups',
     'Display financing and special offers',
     'Build local brand recognition',
-    'Capture competitor's dissatisfied customers'
+    "Capture competitor's dissatisfied customers"
   ],
   stats: {
     roi: '7.8x',
