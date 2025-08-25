@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://maximaxadvertising.com/sitemap.xml
+
+# Crawl-delay (optional, in seconds)
+Crawl-delay: 0
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Important pages to prioritize
+Allow: /locations/
+Allow: /services/
+Allow: /blog/
+Allow: /contact
