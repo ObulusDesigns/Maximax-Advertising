@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['maximaxadvertising.com'],
+    unoptimized: true,
+    domains: ['maximaxmobileadvertising.com', 'maximaxadvertising.com'],
   },
-  trailingSlash: false,
+  trailingSlash: true,
   async redirects() {
     return [
       // Redirect www to non-www
@@ -14,10 +16,10 @@ const nextConfig = {
         has: [
           {
             type: 'host',
-            value: 'www.maximaxadvertising.com',
+            value: 'www.maximaxmobileadvertising.com',
           },
         ],
-        destination: 'https://maximaxadvertising.com/:path*',
+        destination: 'https://maximaxmobileadvertising.com/:path*',
         permanent: true,
       },
       // Redirect any old blog post URLs to main blog page

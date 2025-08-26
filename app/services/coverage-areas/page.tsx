@@ -252,7 +252,7 @@ export default function CoverageAreasPage() {
       description: "Comprehensive mobile billboard advertising coverage throughout Miami-Dade, Broward, and Palm Beach counties with targeted campaigns in major cities and high-traffic areas.",
       provider: {
         name: "Maximax Advertising",
-        url: "https://maximaxadvertising.com"
+        url: "https://maximaxmobileadvertising.com"
       },
       areaServed: [
         "Miami-Dade County",

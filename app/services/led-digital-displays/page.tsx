@@ -259,7 +259,7 @@ export default function LEDDigitalDisplaysPage() {
       description: "Professional LED digital display trucks with 4K resolution, day/night visibility, real-time content management, and energy-efficient operation for mobile advertising in South Florida.",
       provider: {
         name: "Maximax Advertising",
-        url: "https://maximaxadvertising.com"
+        url: "https://maximaxmobileadvertising.com"
       },
       areaServed: [
         "Miami-Dade County",

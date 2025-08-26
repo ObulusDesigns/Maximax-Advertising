@@ -235,7 +235,7 @@ export default function GPSTrackingPage() {
       description: "Professional GPS tracking services for mobile billboard campaigns with real-time monitoring, route optimization, and comprehensive analytics reporting.",
       provider: {
         name: "Maximax Advertising",
-        url: "https://maximaxadvertising.com"
+        url: "https://maximaxmobileadvertising.com"
       },
       areaServed: [
         "South Florida",

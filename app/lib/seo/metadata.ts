@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 export const siteConfig = {
   name: 'Maximax Advertising',
-  url: 'https://maximaxadvertising.com',
+  url: 'https://maximaxmobileadvertising.com',
   description: 'Premier mobile billboard advertising in Miami-Dade and Palm Beach Counties. LED digital billboard trucks with GPS tracking and 4K displays.',
   keywords: [
     'mobile billboard advertising Florida',

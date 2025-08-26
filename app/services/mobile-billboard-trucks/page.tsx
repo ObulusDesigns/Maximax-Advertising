@@ -253,7 +253,7 @@ export default function MobileBillboardTrucksPage() {
       description: "Professional mobile billboard trucks with GPS tracking, 4K LED displays, and comprehensive reporting for businesses in South Florida. Targeted mobile advertising campaigns in Miami-Dade, Broward, and Palm Beach counties.",
       provider: {
         name: "Maximax Advertising",
-        url: "https://maximaxadvertising.com"
+        url: "https://maximaxmobileadvertising.com"
       },
       areaServed: [
         "Miami-Dade County",

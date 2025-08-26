@@ -261,7 +261,7 @@ export default function FourKScreensPage() {
       description: "Premium 4K Ultra HD screen mobile advertising with 3840x2160 resolution, 10-bit color processing, superior brightness levels, wide viewing angles, and professional content optimization for luxury brand positioning in South Florida.",
       provider: {
         name: "Maximax Advertising",
-        url: "https://maximaxadvertising.com"
+        url: "https://maximaxmobileadvertising.com"
       },
       areaServed: [
         "Miami-Dade County",

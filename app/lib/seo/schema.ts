@@ -1,12 +1,12 @@
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://maximaxadvertising.com/#organization",
+  "@id": "https://maximaxmobileadvertising.com/#organization",
   "name": "Maximax Advertising",
   "alternateName": "Maximax Digital Marketing",
-  "url": "https://maximaxadvertising.com",
-  "logo": "https://maximaxadvertising.com/images/maximax-logo.png",
-  "image": "https://maximaxadvertising.com/images/1-1.png",
+  "url": "https://maximaxmobileadvertising.com",
+  "logo": "https://maximaxmobileadvertising.com/images/maximax-logo.png",
+  "image": "https://maximaxmobileadvertising.com/images/1-1.png",
   "description": "Premier mobile billboard advertising company serving Miami-Dade and Palm Beach Counties with GPS-tracked LED billboard trucks featuring 4K displays.",
   "telephone": "+1-561-720-0521",
   "email": "naser@maximaxadvertising.com",
@@ -250,7 +250,7 @@ export const eventSchema = (event: {
   "organizer": {
     "@type": "Organization",
     "name": "Maximax Advertising",
-    "url": "https://maximaxadvertising.com"
+    "url": "https://maximaxmobileadvertising.com"
   }
 })
 

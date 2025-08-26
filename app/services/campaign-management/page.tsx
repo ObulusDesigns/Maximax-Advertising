@@ -252,7 +252,7 @@ export default function CampaignManagementPage() {
       description: "Professional mobile billboard campaign management with strategy development, content creation, route optimization, real-time monitoring, and performance analytics in South Florida.",
       provider: {
         name: "Maximax Advertising",
-        url: "https://maximaxadvertising.com"
+        url: "https://maximaxmobileadvertising.com"
       },
       areaServed: [
         "Miami-Dade County",
