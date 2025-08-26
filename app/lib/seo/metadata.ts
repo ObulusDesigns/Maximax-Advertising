@@ -73,7 +73,7 @@ export const defaultMetadata: Metadata = {
   },
   metadataBase: new URL(siteConfig.url),
   alternates: {
-    canonical: '/',
+    canonical: siteConfig.url,
   },
   openGraph: {
     title: 'Mobile Billboard Advertising Florida | LED Trucks | Maximax Advertising',

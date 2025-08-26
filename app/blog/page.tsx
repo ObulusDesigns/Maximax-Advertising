@@ -115,10 +115,8 @@ export default function BlogPage() {
                         <span className="badge-primary">Featured Post</span>
                         <span className="text-sm text-gray-500">{post.category}</span>
                       </div>
-                      <h2 className="mb-4">
-                        <Link href={`/blog/${post.id}`} className="hover:text-maximax-pink transition-colors">
-                          {post.title}
-                        </Link>
+                      <h2 className="mb-4 text-2xl font-bold hover:text-maximax-pink transition-colors">
+                        {post.title}
                       </h2>
                       <p className="text-lg text-gray-600 mb-6">
                         {post.excerpt}
@@ -133,13 +131,9 @@ export default function BlogPage() {
                           {post.readTime}
                         </div>
                       </div>
-                      <Link
-                        href={`/blog/${post.id}`}
-                        className="inline-flex items-center gap-2 text-maximax-pink font-semibold hover:gap-3 transition-all"
-                      >
-                        Read Full Article
-                        <ArrowRight className="w-4 h-4" />
-                      </Link>
+                      <div className="inline-flex items-center gap-2 text-maximax-pink font-semibold">
+                        Featured Article
+                      </div>
                     </div>
                     <div className="relative h-64 lg:h-80 rounded-xl overflow-hidden">
                       <Image
@@ -229,10 +223,8 @@ export default function BlogPage() {
                       </div>
                       
                       <div className="p-6">
-                        <h3 className="font-bold mb-2">
-                          <Link href={`/blog/${post.id}`} className="hover:text-maximax-pink transition-colors">
-                            {post.title}
-                          </Link>
+                        <h3 className="font-bold mb-2 hover:text-maximax-pink transition-colors">
+                          {post.title}
                         </h3>
                         <p className="text-gray-600 mb-4 text-sm line-clamp-2">
                           {post.excerpt}
@@ -249,36 +241,15 @@ export default function BlogPage() {
                               {post.readTime}
                             </div>
                           </div>
-                          <Link
-                            href={`/blog/${post.id}`}
-                            className="text-maximax-pink hover:text-pink-700 transition-colors"
-                          >
+                          <span className="text-maximax-pink">
                             <ArrowRight className="w-5 h-5" />
-                          </Link>
+                          </span>
                         </div>
                       </div>
                     </article>
                   ))}
                 </div>
 
-                {/* Pagination */}
-                <div className="flex items-center justify-center gap-2 mt-8">
-                  <button className="px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors">
-                    Previous
-                  </button>
-                  <button className="px-4 py-2 rounded-lg bg-maximax-pink text-white">
-                    1
-                  </button>
-                  <button className="px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors">
-                    2
-                  </button>
-                  <button className="px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors">
-                    3
-                  </button>
-                  <button className="px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors">
-                    Next
-                  </button>
-                </div>
               </div>
             </div>
           </div>
