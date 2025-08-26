@@ -169,10 +169,11 @@ export function Header() {
             {/* CTA Buttons - Desktop */}
             <div className="hidden lg:flex items-center gap-4">
               <a
-                href="tel:5617200521"
+                href="https://ocyrus.app.n8n.cloud/form/9a151470-e398-4144-9b7d-20941bc9b436"
                 className="btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Phone className="w-4 h-4" />
                 Get Quote
               </a>
             </div>

@@ -74,8 +74,12 @@ export function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 animate-slide-up animation-delay-600">
-            <a href="tel:5617200521" className="btn-primary btn-lg">
-              <Phone className="w-5 h-5" />
+            <a 
+              href="https://ocyrus.app.n8n.cloud/form/9a151470-e398-4144-9b7d-20941bc9b436" 
+              className="btn-primary btn-lg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Get Free Quote
             </a>
             <Link href="/services" className="btn-accent btn-lg">

@@ -65,8 +65,12 @@ export function MarketPageTemplate({
               {description}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="tel:5617200521" className="btn-primary btn-lg">
-                <Phone className="w-5 h-5" />
+              <a 
+                href="https://ocyrus.app.n8n.cloud/form/9a151470-e398-4144-9b7d-20941bc9b436" 
+                className="btn-primary btn-lg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Get Custom Quote
               </a>
               <Link href="/contact" className="btn-accent btn-lg">

@@ -240,8 +240,13 @@ export function ServicePageTemplate({
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 animate-slide-up animation-delay-800">
-                <a href={`tel:${phone}`} className="btn-primary btn-lg">
-                  <Phone className="w-5 h-5" />
+                <a 
+                  href={primaryCTA === 'Get Free Quote' ? 'https://ocyrus.app.n8n.cloud/form/9a151470-e398-4144-9b7d-20941bc9b436' : `tel:${phone}`}
+                  className="btn-primary btn-lg"
+                  target={primaryCTA === 'Get Free Quote' ? '_blank' : undefined}
+                  rel={primaryCTA === 'Get Free Quote' ? 'noopener noreferrer' : undefined}
+                >
+                  {primaryCTA !== 'Get Free Quote' && <Phone className="w-5 h-5" />}
                   {primaryCTA}
                 </a>
                 <Link href="/contact" className="btn-accent btn-lg">
