@@ -22,7 +22,8 @@ Professional mobile billboard advertising services in South Florida, featuring G
 - React 18
 
 ## Deployment
-Deployed on Vercel
+Deployed on GitHub Pages
+<!-- Deployment trigger: 2025-08-28 -->
 
 ---
 © 2025 Maximax Advertising. All rights reserved.
