@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
+// Note: Middleware doesn't run on static exports (output: 'export')
+// These redirects only work in development or server-rendered deployments
 export function middleware(request: NextRequest) {
   const url = request.nextUrl
   const hostname = request.headers.get('host') || ''
@@ -12,12 +14,13 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(newUrl, 301)
   }
   
-  // Remove trailing slashes (except for root)
-  if (url.pathname !== '/' && url.pathname.endsWith('/')) {
-    const newUrl = new URL(url)
-    newUrl.pathname = url.pathname.slice(0, -1)
-    return NextResponse.redirect(newUrl, 301)
-  }
+  // Note: Commented out as next.config.js has trailingSlash: true
+  // Keeping trailing slashes for consistency with static export
+  // if (url.pathname !== '/' && url.pathname.endsWith('/')) {
+  //   const newUrl = new URL(url)
+  //   newUrl.pathname = url.pathname.slice(0, -1)
+  //   return NextResponse.redirect(newUrl, 301)
+  // }
   
   // Block URLs with query parameters from being indexed as separate pages
   // This helps prevent Google from discovering duplicate content

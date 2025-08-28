@@ -14,7 +14,7 @@ Disallow: /404
 Disallow: /500
 
 # Sitemap location
-Sitemap: https://maximaxadvertising.com/sitemap.xml
+Sitemap: https://maximaxmobileadvertising.com/sitemap.xml
 
 # Crawl-delay (optional, in seconds)
 Crawl-delay: 1

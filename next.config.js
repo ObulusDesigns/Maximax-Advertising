@@ -11,9 +11,11 @@ const nextConfig = {
     domains: ['maximaxmobileadvertising.com', 'maximaxadvertising.com'],
   },
   trailingSlash: true,
+  // Note: These redirects don't work on static exports (GitHub Pages)
+  // They only function in server-rendered deployments
   async redirects() {
     return [
-      // Redirect www to non-www
+      // Redirect www to non-www (only works in server environments)
       {
         source: '/:path*',
         has: [
