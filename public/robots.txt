@@ -1,5 +1,25 @@
+# Googlebot (Google's web crawler)
+User-agent: Googlebot
+Allow: /
+Allow: /sitemap.xml
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Crawl-delay: 0
+
+# Bingbot (Microsoft's web crawler)
+User-agent: Bingbot
+Allow: /
+Allow: /sitemap.xml
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Crawl-delay: 1
+
+# All other crawlers
 User-agent: *
 Allow: /
+Allow: /sitemap.xml
 Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
@@ -12,27 +32,7 @@ Disallow: /*_ssgManifest.js$
 Disallow: /*.js.map$
 Disallow: /404
 Disallow: /500
+Crawl-delay: 1
 
 # Sitemap location
 Sitemap: https://maximaxmobileadvertising.com/sitemap.xml
-
-# Crawl-delay (optional, in seconds)
-Crawl-delay: 1
-
-# Google
-User-agent: Googlebot
-Allow: /
-Disallow: /api/
-Disallow: /_next/
-Disallow: /admin/
-Disallow: /*?*
-Disallow: /*#*
-Crawl-delay: 0
-
-# Bing
-User-agent: Bingbot
-Allow: /
-Disallow: /api/
-Disallow: /_next/
-Disallow: /*?*
-Crawl-delay: 1
