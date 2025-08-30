@@ -3,32 +3,9 @@
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { FloatingContact } from '../components/FloatingContact'
-import { Phone, Mail, MapPin, Clock, Send, Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react'
-import { useState } from 'react'
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react'
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    company: '',
-    message: '',
-    service: '',
-  })
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission
-    console.log('Form submitted:', formData)
-    // You would typically send this to your backend
-  }
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    })
-  }
 
   return (
     <>
@@ -53,130 +30,7 @@ export default function ContactPage() {
         {/* Contact Section */}
         <section className="section section-padding bg-white">
           <div className="container">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Contact Form */}
-              <div>
-                <div className="mb-8">
-                  <span className="badge-primary mb-4">Get Started</span>
-                  <h2 className="mb-4">Request a <span className="gradient-text">Free Quote</span></h2>
-                  <p className="text-gray-600">
-                    Fill out the form below and our team will get back to you within 24 hours 
-                    with a custom proposal for your mobile billboard campaign.
-                  </p>
-                </div>
-
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
-                        Full Name *
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        value={formData.name}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-maximax-pink focus:border-transparent transition-all"
-                        placeholder="John Doe"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
-                        Email Address *
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        value={formData.email}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-maximax-pink focus:border-transparent transition-all"
-                        placeholder="john@example.com"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
-                        Phone Number *
-                      </label>
-                      <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        required
-                        value={formData.phone}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-maximax-pink focus:border-transparent transition-all"
-                        placeholder="(561) 555-0123"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="company" className="block text-sm font-semibold text-gray-700 mb-2">
-                        Company Name
-                      </label>
-                      <input
-                        type="text"
-                        id="company"
-                        name="company"
-                        value={formData.company}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-maximax-pink focus:border-transparent transition-all"
-                        placeholder="Your Company"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label htmlFor="service" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Service Interested In *
-                    </label>
-                    <select
-                      id="service"
-                      name="service"
-                      required
-                      value={formData.service}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-maximax-pink focus:border-transparent transition-all"
-                    >
-                      <option value="">Select a service</option>
-                      <option value="mobile-billboard">Mobile Billboard Trucks</option>
-                      <option value="led-display">LED Digital Displays</option>
-                      <option value="campaign-management">Full Campaign Management</option>
-                      <option value="custom">Custom Package</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Message *
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      required
-                      value={formData.message}
-                      onChange={handleChange}
-                      rows={5}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-maximax-pink focus:border-transparent transition-all resize-none"
-                      placeholder="Tell us about your advertising goals and target audience..."
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="btn-primary btn-lg w-full"
-                  >
-                    <Send className="w-5 h-5" />
-                    Send Message
-                  </button>
-                </form>
-              </div>
-
+            <div className="max-w-4xl mx-auto">
               {/* Contact Information */}
               <div>
                 <div className="mb-8">
