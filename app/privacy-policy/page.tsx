@@ -98,7 +98,7 @@ export default function PrivacyPolicy() {
             </p>
             <div className="bg-gray-50 p-4 rounded-lg">
               <p className="font-semibold">Maximax Advertising</p>
-              <p>Email: privacy@maximaxadvertising.com</p>
+              <p>Email: privacy@maximaxmobileadvertising.com</p>
               <p>Phone: 1-800-MAXIMAX</p>
               <p>Address: Miami, Florida</p>
             </div>

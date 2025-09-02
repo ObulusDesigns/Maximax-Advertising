@@ -164,10 +164,10 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:naser@maximaxadvertising.com" className="flex items-start gap-3 text-sm text-gray-300 hover:text-maximax-cyan transition-colors">
+                <a href="mailto:naser@maximaxmobileadvertising.com" className="flex items-start gap-3 text-sm text-gray-300 hover:text-maximax-cyan transition-colors">
                   <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
                   <div>
-                    <div>naser@maximaxadvertising.com</div>
+                    <div>naser@maximaxmobileadvertising.com</div>
                   </div>
                 </a>
               </li>

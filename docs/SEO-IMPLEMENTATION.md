@@ -294,7 +294,7 @@ Example: Premier mobile billboard trucks in Miami with GPS tracking and 4K displ
 ## 📞 Contact for SEO Updates
 
 **SEO Lead:** [Your Name]  
-**Email:** seo@maximaxadvertising.com  
+**Email:** seo@maximaxmobileadvertising.com  
 **Review Schedule:** Weekly on Mondays  
 **Reporting:** Monthly on 1st of month
 

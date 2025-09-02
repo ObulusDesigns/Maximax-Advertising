@@ -120,7 +120,7 @@ export default function TermsOfService() {
             </p>
             <div className="bg-gray-50 p-4 rounded-lg">
               <p className="font-semibold">Maximax Advertising</p>
-              <p>Email: legal@maximaxadvertising.com</p>
+              <p>Email: legal@maximaxmobileadvertising.com</p>
               <p>Phone: 1-800-MAXIMAX</p>
               <p>Address: Miami, Florida</p>
             </div>

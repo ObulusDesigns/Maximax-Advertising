@@ -66,8 +66,8 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h4 className="font-semibold mb-1">Email</h4>
-                        <a href="mailto:naser@maximaxadvertising.com" className="text-lg font-bold text-maximax-cyan hover:text-cyan-700 transition-colors">
-                          naser@maximaxadvertising.com
+                        <a href="mailto:naser@maximaxmobileadvertising.com" className="text-lg font-bold text-maximax-cyan hover:text-cyan-700 transition-colors">
+                          naser@maximaxmobileadvertising.com
                         </a>
                         <p className="text-sm text-gray-600 mt-1">We respond within 24 hours</p>
                       </div>

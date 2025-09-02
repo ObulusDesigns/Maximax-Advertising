@@ -9,7 +9,7 @@ export const organizationSchema = {
   "image": "https://maximaxmobileadvertising.com/images/1-1.png",
   "description": "Premier mobile billboard advertising company serving Miami-Dade and Palm Beach Counties with GPS-tracked LED billboard trucks featuring 4K displays.",
   "telephone": "+1-561-720-0521",
-  "email": "naser@maximaxadvertising.com",
+  "email": "naser@maximaxmobileadvertising.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "601 N Congress Ave #410",
