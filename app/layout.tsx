@@ -4,6 +4,8 @@ import './globals.css'
 import { defaultMetadata } from './lib/seo/metadata'
 import { organizationSchema, serviceSchema, faqSchema } from './lib/seo/schema'
 import Script from 'next/script'
+import { ClientLayout } from './components/ClientLayout'
+import { SkipLinks } from './components/SkipLinks'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -30,6 +32,11 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
+        {/* Preconnect to external domains */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
         <Script
           id="schema-org"
           type="application/ld+json"
@@ -43,7 +50,10 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        {children}
+        <SkipLinks />
+        <ClientLayout>
+          {children}
+        </ClientLayout>
       </body>
     </html>
   )

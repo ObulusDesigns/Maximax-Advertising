@@ -12,8 +12,13 @@ export default function Error({
   reset: () => void
 }) {
   useEffect(() => {
-    // Log the error to an error reporting service
-    console.error(error)
+    // Only log errors in development
+    if (process.env.NODE_ENV === 'development') {
+      console.error('Application Error:', error)
+    }
+    
+    // In production, you could send to an error reporting service
+    // Example: sendErrorToService(error)
   }, [error])
 
   return (
@@ -59,9 +64,13 @@ export default function Error({
         
         <div className="mt-12 pt-8 border-t border-gray-200">
           <p className="text-gray-600 mb-2">Need immediate assistance?</p>
-          <p className="text-maximax-pink font-semibold">
-            Contact us at 1-800-MAXIMAX
-          </p>
+          <a 
+            href="tel:+15617200521" 
+            className="inline-block text-maximax-pink font-semibold hover:underline"
+            aria-label="Call us for support"
+          >
+            Call (561) 720-0521
+          </a>
         </div>
       </div>
     </main>

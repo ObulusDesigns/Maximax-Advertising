@@ -7,10 +7,13 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && npm run optimize",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build && touch out/.nojekyll"
+    "export": "next build && touch out/.nojekyll",
+    "optimize": "npm run analyze:bundle",
+    "analyze:bundle": "ANALYZE=true next build || true",
+    "lighthouse": "npx lighthouse https://maximaxmobileadvertising.com --output html --output-path ./lighthouse-report.html"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -20,7 +23,8 @@
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "tailwind-merge": "^2.2.1"
+    "tailwind-merge": "^2.2.1",
+    "web-vitals": "^3.5.2"
   },
   "devDependencies": {
     "@types/node": "^20",

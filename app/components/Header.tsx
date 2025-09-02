@@ -101,13 +101,13 @@ export function Header() {
         </div>
 
         {/* Main Navigation */}
-        <nav className="container">
+        <nav id="main-navigation" className="container" aria-label="Main navigation">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">
+            <Link href="/" className="flex items-center hover:opacity-90 transition-opacity" aria-label="Maximax Advertising - Home">
               <Image
                 src="/images/maximax-dark-logo.png"
-                alt="Maximax Advertising"
+                alt="Maximax Advertising - Mobile Billboard and LED Truck Advertising"
                 width={180}
                 height={60}
                 className="h-12 w-auto"
@@ -133,6 +133,9 @@ export function Header() {
               >
                 <button
                   className="flex items-center gap-1 font-semibold text-gray-900 hover:text-maximax-pink transition-colors py-2"
+                  aria-expanded={servicesOpen}
+                  aria-haspopup="true"
+                  aria-label="Services menu"
                 >
                   What We Do
                   <ChevronDown className={`w-4 h-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
@@ -182,6 +185,9 @@ export function Header() {
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="lg:hidden p-2 text-gray-600 hover:text-gray-900"
+              aria-label={mobileMenuOpen ? "Close mobile menu" : "Open mobile menu"}
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -190,7 +196,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-white border-t border-gray-200">
+          <div id="mobile-menu" className="lg:hidden bg-white border-t border-gray-200" role="navigation" aria-label="Mobile navigation">
             <div className="container py-4 space-y-4">
               <Link
                 href="/"
@@ -212,6 +218,9 @@ export function Header() {
                 <button
                   onClick={() => setServicesOpen(!servicesOpen)}
                   className="flex items-center justify-between w-full py-2 text-base font-semibold text-gray-900 hover:text-maximax-pink"
+                  aria-expanded={servicesOpen}
+                  aria-haspopup="true"
+                  aria-label="Services menu"
                 >
                   What We Do
                   <ChevronDown className={`w-4 h-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />

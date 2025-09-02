@@ -6,7 +6,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-maximax-black text-white">
+    <footer id="footer" className="bg-maximax-black text-white" role="contentinfo" aria-label="Site footer">
       {/* Main Footer */}
       <div className="container section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
@@ -15,7 +15,7 @@ export function Footer() {
             <div>
               <Image
                 src="/images/maximax-logo.png"
-                alt="Maximax Advertising"
+                alt="Maximax Advertising - Mobile Billboard Services"
                 width={160}
                 height={50}
                 className="h-10 w-auto"

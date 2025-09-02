@@ -1,46 +1,27 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Phone, TrendingUp, Users, Target, DollarSign, CheckCircle, ArrowRight, BarChart3, Award, Clock } from 'lucide-react'
+import { MarketData } from '@/app/types'
 
-interface MarketPageProps {
-  industry: string
-  slug: string
-  tagline: string
-  description: string
-  painPoints: string[]
-  solutions: Array<{
-    title: string
-    description: string
-  }>
-  benefits: string[]
-  stats: {
-    roi: string
-    reach: string
-    engagement: string
-  }
-  caseStudy?: {
-    title: string
-    result: string
-    metric: string
-  }
-  faqs: Array<{
-    question: string
-    answer: string
-  }>
+// Support both old and new prop structures for backward compatibility
+interface MarketPageProps extends Partial<MarketData> {
+  market?: MarketData
 }
 
-export function MarketPageTemplate({
-  industry,
-  slug,
-  tagline,
-  description,
-  painPoints,
-  solutions,
-  benefits,
-  stats,
-  caseStudy,
-  faqs
-}: MarketPageProps) {
+export function MarketPageTemplate(props: MarketPageProps) {
+  // Support both new structure (market prop) and old structure (direct props)
+  const {
+    industry,
+    slug,
+    tagline,
+    description,
+    painPoints,
+    solutions,
+    benefits,
+    stats,
+    caseStudy,
+    faqs
+  } = props.market || props as MarketData
   return (
     <>
       {/* Hero Section */}

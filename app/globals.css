@@ -47,13 +47,84 @@
     box-sizing: border-box;
   }
 
-  /* Focus States */
+  /* Enhanced Focus States for Accessibility */
   *:focus {
     outline: none;
   }
 
   *:focus-visible {
-    @apply ring-2 ring-maximax-pink ring-offset-2;
+    @apply ring-2 ring-maximax-pink ring-offset-2 rounded;
+    transition: box-shadow 0.2s ease;
+  }
+
+  button:focus-visible,
+  a:focus-visible {
+    @apply ring-2 ring-maximax-cyan ring-offset-2;
+  }
+
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    @apply ring-2 ring-maximax-pink ring-offset-1;
+  }
+
+  /* Skip Links - Screen Reader Only Styles */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .not-sr-only {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+
+  .focus-within\:not-sr-only:focus-within {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+
+  /* High Contrast Mode Support */
+  @media (prefers-contrast: high) {
+    * {
+      outline-width: 2px;
+    }
+    
+    *:focus-visible {
+      outline: 3px solid currentColor;
+      outline-offset: 2px;
+    }
+  }
+
+  /* Reduced Motion Support */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 
   /* Typography System - Mobile First */

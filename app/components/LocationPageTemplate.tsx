@@ -1,38 +1,27 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { MapPin, Phone, TrendingUp, Users, Clock, CheckCircle, ArrowRight } from 'lucide-react'
+import { LocationData } from '@/app/types'
 
-interface LocationPageProps {
-  city: string
-  county: string
-  state: string
-  population: string
-  description: string
-  landmarks: string[]
-  popularRoutes: string[]
-  events: Array<{
-    name: string
-    date: string
-    location: string
-  }>
-  stats: {
-    dailyImpressions: string
-    coverage: string
-    businessesServed: string
-  }
+// Support both old and new prop structures for backward compatibility
+interface LocationPageProps extends Partial<LocationData> {
+  location?: LocationData
+  nearbyLocations?: LocationData[]
 }
 
-export function LocationPageTemplate({
-  city,
-  county,
-  state,
-  population,
-  description,
-  landmarks,
-  popularRoutes,
-  events,
-  stats
-}: LocationPageProps) {
+export function LocationPageTemplate(props: LocationPageProps) {
+  // Support both new structure (location prop) and old structure (direct props)
+  const {
+    city,
+    county,
+    state,
+    population,
+    description,
+    landmarks,
+    popularRoutes,
+    events,
+    stats
+  } = props.location || props as LocationData
   return (
     <>
       {/* Hero Section */}

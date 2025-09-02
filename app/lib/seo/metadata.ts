@@ -120,22 +120,43 @@ export function generatePageMetadata(page: {
   description: string
   keywords?: string[]
   path: string
+  noindex?: boolean
 }): Metadata {
+  const canonicalUrl = `${siteConfig.url}${page.path}`
+  
   return {
     title: page.title,
     description: page.description,
     keywords: page.keywords || siteConfig.keywords,
     alternates: {
-      canonical: page.path,
+      canonical: canonicalUrl,
     },
     openGraph: {
       title: `${page.title} | Maximax Advertising`,
       description: page.description,
-      url: `${siteConfig.url}${page.path}`,
+      url: canonicalUrl,
+      siteName: siteConfig.name,
+      locale: 'en_US',
+      type: 'website',
     },
     twitter: {
+      card: 'summary_large_image',
       title: `${page.title} | Maximax`,
       description: page.description,
+    },
+    robots: page.noindex ? {
+      index: false,
+      follow: true,
+    } : {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
     },
   }
 }
@@ -145,9 +166,12 @@ export function generateLocationMetadata(location: {
   city: string
   county: string
   state: string
+  slug?: string
 }): Metadata {
   const title = `Mobile Billboard Advertising ${location.city}, ${location.state}`
   const description = `Premier mobile billboard trucks and LED advertising in ${location.city}, ${location.county}. GPS-tracked campaigns with 4K displays. Call (561) 720-0521 for quotes.`
+  const slug = location.slug || location.city.toLowerCase().replace(/\s+/g, '-')
+  const canonicalUrl = `${siteConfig.url}/locations/florida/${slug}/`
   
   return {
     title,
@@ -162,17 +186,30 @@ export function generateLocationMetadata(location: {
       `outdoor advertising ${location.city}`,
       `mobile marketing ${location.city}`
     ],
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: `${title} | Maximax Advertising`,
       description,
+      url: canonicalUrl,
+      siteName: siteConfig.name,
+      locale: 'en_US',
+      type: 'website',
       images: [
         {
-          url: '/images/1-1.png',
+          url: `${siteConfig.url}/images/1-1.png`,
           width: 1200,
           height: 630,
           alt: `Mobile Billboard Truck in ${location.city}`,
         },
       ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${title} | Maximax`,
+      description,
+      images: [`${siteConfig.url}/images/1-1.png`],
     },
   }
 }
@@ -182,15 +219,38 @@ export function generateServiceMetadata(service: {
   name: string
   description: string
   keywords: string[]
+  slug?: string
 }): Metadata {
   const title = `${service.name} | Mobile Billboard Services`
+  const slug = service.slug || service.name.toLowerCase().replace(/\s+/g, '-')
+  const canonicalUrl = `${siteConfig.url}/services/${slug}/`
   
   return {
     title,
     description: service.description,
     keywords: service.keywords,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: `${title} | Maximax Advertising`,
+      description: service.description,
+      url: canonicalUrl,
+      siteName: siteConfig.name,
+      locale: 'en_US',
+      type: 'website',
+      images: [
+        {
+          url: `${siteConfig.url}/images/services-${slug}.jpg`,
+          width: 1200,
+          height: 630,
+          alt: service.name,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${title} | Maximax`,
       description: service.description,
     },
   }
@@ -231,19 +291,29 @@ export function generateMarketMetadata(market: {
   industry: string
   description: string
   keywords: string[]
+  slug?: string
 }): Metadata {
   const title = `Mobile Billboard Advertising for ${market.industry}`
+  const slug = market.slug || market.industry.toLowerCase().replace(/\s+/g, '-')
+  const canonicalUrl = `${siteConfig.url}/markets/${slug}/`
   
   return {
     title,
     description: market.description,
     keywords: market.keywords,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: `${title} | Maximax Advertising`,
       description: market.description,
+      url: canonicalUrl,
+      siteName: siteConfig.name,
+      locale: 'en_US',
+      type: 'website',
       images: [
         {
-          url: '/images/1-1.png',
+          url: `${siteConfig.url}/images/1-1.png`,
           width: 1200,
           height: 630,
           alt: `Mobile Billboard Advertising for ${market.industry}`,
@@ -251,8 +321,10 @@ export function generateMarketMetadata(market: {
       ],
     },
     twitter: {
+      card: 'summary_large_image',
       title: `${title} | Maximax`,
       description: market.description,
+      images: [`${siteConfig.url}/images/1-1.png`],
     },
   }
 }
@@ -281,6 +353,44 @@ export const locationStructuredData = (location: {
     "latitude": location.coordinates.lat,
     "longitude": location.coordinates.lng
   }
+})
+
+// Structured data for service pages
+export const serviceStructuredData = (service: {
+  name: string
+  description: string
+  features?: string[]
+  serviceType?: string
+}) => ({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": service.name,
+  "description": service.description,
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Maximax Advertising",
+    "telephone": "(561) 720-0521",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Miami-Dade County"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Broward County"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Palm Beach County"
+    }
+  ],
+  "serviceType": service.serviceType || "Mobile Billboard Advertising"
 })
 
 // Structured data for market/industry pages

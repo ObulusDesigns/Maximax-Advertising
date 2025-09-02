@@ -9,8 +9,15 @@ const nextConfig = {
   images: {
     unoptimized: true,
     domains: ['maximaxmobileadvertising.com', 'maximaxadvertising.com'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    formats: ['image/webp'],
   },
   trailingSlash: true,
+  // Optimize production builds
+  productionBrowserSourceMaps: false,
+  compress: true,
+  poweredByHeader: false,
   // Note: These redirects don't work on static exports (GitHub Pages)
   // They only function in server-rendered deployments
   async redirects() {
@@ -27,12 +34,8 @@ const nextConfig = {
         destination: 'https://maximaxmobileadvertising.com/:path*',
         permanent: true,
       },
-      // Redirect any old blog post URLs to main blog page
-      {
-        source: '/blog/:id',
-        destination: '/blog',
-        permanent: true,
-      },
+      // Note: Removed the catch-all redirect that was blocking actual blog posts
+      // Individual redirects for old blog URLs can be added here if needed
     ]
   },
   async headers() {
@@ -59,6 +62,15 @@ const nextConfig = {
           {
             key: 'Referrer-Policy',
             value: 'origin-when-cross-origin'
+          },
+          // Performance headers
+          {
+            key: 'Cache-Control',
+            value: isProd ? 'public, max-age=31536000, immutable' : 'no-store'
+          },
+          {
+            key: 'Link',
+            value: '<https://fonts.googleapis.com>; rel=preconnect, <https://fonts.gstatic.com>; rel=preconnect'
           }
         ],
       },
