@@ -11,17 +11,17 @@ interface LocationPageProps extends Partial<LocationData> {
 
 export function LocationPageTemplate(props: LocationPageProps) {
   // Support both new structure (location prop) and old structure (direct props)
-  const {
-    city,
-    county,
-    state,
-    population,
-    description,
-    landmarks,
-    popularRoutes,
-    events,
-    stats
-  } = props.location || props as LocationData
+  const locationData = props.location || props;
+  const city = locationData.city || '';
+  const county = locationData.county || '';
+  const state = locationData.state || '';
+  const population = locationData.population || '';
+  const description = locationData.description || '';
+  const landmarks = locationData.landmarks || [];
+  const popularRoutes = locationData.popularRoutes || [];
+  const events = locationData.events || [];
+  const stats = locationData.stats || { dailyImpressions: '50,000+', coverage: '25 sq mi', businessesServed: '200+' };
+  
   return (
     <>
       {/* Hero Section */}
@@ -58,7 +58,7 @@ export function LocationPageTemplate(props: LocationPageProps) {
                 rel="noopener noreferrer"
               >
                 Schedule Campaign
-              </Link>
+              </a>
             </div>
           </div>
         </div>
