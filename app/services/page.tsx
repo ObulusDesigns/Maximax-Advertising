@@ -340,9 +340,14 @@ export default function ServicesPage() {
                 <a href="tel:5617200521" className="btn-primary btn-lg">
                   Get Custom Quote
                 </a>
-                <Link href="/contact" className="btn-accent btn-lg">
+                <a 
+                  href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5" 
+                  className="btn-accent btn-lg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Schedule Consultation
-                </Link>
+                </a>
               </div>
             </div>
           </div>

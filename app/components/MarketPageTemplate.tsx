@@ -47,7 +47,7 @@ export function MarketPageTemplate(props: MarketPageProps) {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href="https://ocyrus.app.n8n.cloud/form/9a151470-e398-4144-9b7d-20941bc9b436" 
+                href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5" 
                 className="btn-primary btn-lg"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -227,13 +227,15 @@ export function MarketPageTemplate(props: MarketPageProps) {
                 <div className="text-sm text-white/80">Campaign Control</div>
               </div>
             </div>
-            <Link
-              href="/contact"
+            <a
+              href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-white text-maximax-pink px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transform hover:scale-105 transition-all shadow-xl"
             >
               Get Your Custom Quote
               <ArrowRight className="w-5 h-5" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>

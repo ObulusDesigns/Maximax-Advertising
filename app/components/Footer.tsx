@@ -16,9 +16,9 @@ export function Footer() {
               <Image
                 src="/images/maximax-logo.png"
                 alt="Maximax Advertising - Mobile Billboard Services"
-                width={160}
-                height={50}
-                className="h-10 w-auto"
+                width={200}
+                height={63}
+                className="h-14 w-auto"
               />
               <p className="mt-4 text-sm text-gray-300">
                 Premier mobile billboard advertising in Boca Raton & Palm Beach County. 

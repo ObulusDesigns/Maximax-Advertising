@@ -241,7 +241,7 @@ export function ServicePageTemplate({
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 animate-slide-up animation-delay-800">
                 <a 
-                  href={primaryCTA === 'Get Free Quote' ? 'https://ocyrus.app.n8n.cloud/form/9a151470-e398-4144-9b7d-20941bc9b436' : `tel:${phone}`}
+                  href={primaryCTA === 'Get Free Quote' ? 'https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5' : `tel:${phone}`}
                   className="btn-primary btn-lg"
                   target={primaryCTA === 'Get Free Quote' ? '_blank' : undefined}
                   rel={primaryCTA === 'Get Free Quote' ? 'noopener noreferrer' : undefined}
@@ -249,10 +249,15 @@ export function ServicePageTemplate({
                   {primaryCTA !== 'Get Free Quote' && <Phone className="w-5 h-5" />}
                   {primaryCTA}
                 </a>
-                <Link href="/contact" className="btn-accent btn-lg">
+                <a 
+                  href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5" 
+                  className="btn-accent btn-lg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Calendar className="w-5 h-5" />
                   {secondaryCTA}
-                </Link>
+                </a>
               </div>
 
               {/* Trust Badges */}
@@ -519,7 +524,9 @@ export function ServicePageTemplate({
 
                     <div className="text-center">
                       <a 
-                        href={plan.customQuote ? "/contact" : `tel:${phone}`} 
+                        href={plan.customQuote ? "https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5" : `tel:${phone}`}
+                        target={plan.customQuote ? "_blank" : undefined}
+                        rel={plan.customQuote ? "noopener noreferrer" : undefined} 
                         className={`btn btn-lg w-full ${
                           plan.popular ? 'btn-primary' : 'btn-accent'
                         }`}
@@ -547,9 +554,14 @@ export function ServicePageTemplate({
                       <Phone className="w-5 h-5" />
                       Call for Quote
                     </a>
-                    <Link href="/contact" className="btn bg-white/20 text-white border-white/30 btn-lg hover:bg-white/30">
+                    <a 
+                      href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5" 
+                      className="btn bg-white/20 text-white border-white/30 btn-lg hover:bg-white/30"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Get Free Consultation
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

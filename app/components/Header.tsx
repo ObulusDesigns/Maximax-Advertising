@@ -108,9 +108,9 @@ export function Header() {
               <Image
                 src="/images/maximax-dark-logo.png"
                 alt="Maximax Advertising - Mobile Billboard and LED Truck Advertising"
-                width={180}
-                height={60}
-                className="h-12 w-auto"
+                width={220}
+                height={73}
+                className="h-16 w-auto"
                 priority
               />
             </Link>
@@ -172,7 +172,7 @@ export function Header() {
             {/* CTA Buttons - Desktop */}
             <div className="hidden lg:flex items-center gap-4">
               <a
-                href="https://ocyrus.app.n8n.cloud/form/9a151470-e398-4144-9b7d-20941bc9b436"
+                href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
                 className="btn-primary"
                 target="_blank"
                 rel="noopener noreferrer"
