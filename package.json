@@ -1,0 +1,40 @@
+{
+  "name": "maximax-advertising",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && npm run optimize",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build && touch out/.nojekyll",
+    "optimize": "npm run analyze:bundle",
+    "analyze:bundle": "ANALYZE=true next build || true",
+    "lighthouse": "npx lighthouse https://maximaxmobileadvertising.com --output html --output-path ./lighthouse-report.html"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "clsx": "^2.1.0",
+    "framer-motion": "^11.18.2",
+    "lucide-react": "^0.344.0",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwind-merge": "^2.2.1",
+    "web-vitals": "^3.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5"
+  }
+}
