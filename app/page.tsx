@@ -280,12 +280,12 @@ export default function HomePage() {
               <div className="order-2 lg:order-1">
                 <span className="badge-primary mb-4">About Maximax</span>
                 <h2 className="mb-6">
-                  South Florida&apos;s Most <span className="gradient-text">Cost-Effective</span> Mobile Billboard Company
+                  South Florida&apos;s Premier <span className="gradient-text">Vehicle Advertising</span> & Mobile Billboard Company
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  Maximax Advertising offers the best mobile billboard advertising cost in South Florida. 
-                  Our competitive billboard truck rates and transparent pricing make professional outdoor advertising 
-                  accessible for businesses of all sizes. No hidden billboard expenses or long-term contracts.
+                  Maximax Advertising provides cheap ads and cost-effective vehicle advertising solutions with the best mobile billboard advertising cost in South Florida. 
+                  Our fleet of car billboard advertising trucks offers competitive billboard truck rates and transparent pricing for out-of-home advertising 
+                  throughout Miami-Dade, Broward, and Palm Beach Counties. No hidden billboard expenses or long-term contracts.
                 </p>
                 
                 <div className="space-y-4 mb-8">
@@ -351,7 +351,7 @@ export default function HomePage() {
             <div className="text-center max-w-3xl mx-auto mb-12">
               <span className="badge-accent mb-4">Why Choose Us</span>
               <h2 className="mb-6">
-                The <span className="gradient-text-cyan">Smart Choice</span> for Mobile Advertising
+                The <span className="gradient-text-cyan">Smart Choice</span> for Cheap Ads & Vehicle Advertising
               </h2>
             </div>
 
@@ -397,8 +397,8 @@ export default function HomePage() {
                 Mobile Billboard <span className="gradient-text">Cost & Pricing</span> Questions
               </h2>
               <p className="text-lg text-gray-600">
-                Everything you need to know about billboard advertising prices, mobile billboard costs, 
-                and how much billboard trucks cost for your campaign.
+                Everything you need to know about billboard cost, billboard price, billboard advertising costs, 
+                and vehicle advertising rates. Get affordable cheap ads for your out-of-home advertising campaign.
               </p>
             </div>
 
@@ -410,6 +410,7 @@ export default function HomePage() {
                 </h3>
                 <p className="text-gray-700 mb-4">
                   Mobile billboard advertising costs in Florida start at <strong>$500 per day</strong> for standard billboard trucks. 
+                  Our car billboard advertising and vehicle advertising rates are the most competitive in South Florida.
                   LED digital billboard truck pricing ranges from <strong>$800 to $2,000 per day</strong> depending on:
                 </p>
                 <ul className="space-y-2 mb-4">
@@ -543,11 +544,11 @@ export default function HomePage() {
             <div className="text-center max-w-3xl mx-auto mb-12">
               <span className="badge-accent mb-4">Our Services</span>
               <h2 className="mb-6">
-                Complete <span className="gradient-text-cyan">Mobile Billboard Advertising</span> Solutions
+                Complete <span className="gradient-text-cyan">Vehicle Advertising</span> & OOH Solutions
               </h2>
               <p className="text-lg text-gray-600">
-                From billboard trucks to LED advertising trucks, we offer comprehensive mobile outdoor advertising 
-                throughout South Florida.
+                From car billboard advertising to mobile outdoor advertising, we're your advertisement company for comprehensive out-of-home advertising. 
+                What is OOH in marketing? It's advertising that reaches consumers outside their homes - and we're South Florida's leaders.
               </p>
             </div>
 
@@ -593,10 +594,10 @@ export default function HomePage() {
               </div>
               
               <div className="bg-white p-6 rounded-xl shadow-sm">
-                <h3 className="font-bold mb-3">OOH Advertising</h3>
+                <h3 className="font-bold mb-3">Local Advertisements & OOH</h3>
                 <p className="text-gray-600">
-                  What is OOH in marketing? Out-of-home advertising including mobile outdoor advertising 
-                  and outdoor mobile advertising throughout Miami-Dade and Palm Beach.
+                  Local advertisements and out-of-home advertising solutions. What is OOH in marketing? It's the most effective way to 
+                  advertise on car platforms and reach customers through vehicle advertising and mobile outdoor advertising.
                 </p>
               </div>
             </div>

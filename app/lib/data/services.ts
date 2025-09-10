@@ -2,10 +2,10 @@ import { ServiceData, ServiceType } from '@/app/types'
 
 export const servicesData: ServiceData[] = [
   {
-    serviceName: 'Mobile Billboard Trucks',
+    serviceName: 'Mobile Billboard Trucks & Vehicle Advertising',
     slug: 'mobile-billboard-trucks',
-    tagline: 'High-Impact Advertising That Moves With Your Audience',
-    description: 'Our fleet of mobile billboard trucks delivers your message directly to your target audience. With 4K LED displays and GPS tracking, we ensure maximum visibility and ROI for your advertising campaign throughout South Florida.',
+    tagline: 'Car Billboard Advertising & Vehicle Advertising Solutions',
+    description: 'Our fleet provides car billboard advertising and vehicle advertising that delivers your message directly to your target audience. Advertise on car platforms with our mobile outdoor advertising trucks featuring 4K LED displays and GPS tracking for maximum ROI throughout South Florida.',
     features: [
       {
         icon: 'Truck',
@@ -204,13 +204,13 @@ export const servicesData: ServiceData[] = [
       impressions: '50,000+ Daily',
       availability: '7 Days/Week'
     },
-    keywords: ['mobile billboard trucks', 'advertising trucks', 'LED billboard trucks', 'mobile advertising']
+    keywords: ['mobile billboard trucks', 'vehicle advertising', 'car billboard advertising', 'advertise on car', 'advertise on vehicle', 'mobile outdoor advertising', 'cheap ads']
   },
   {
     serviceName: 'LED Digital Displays',
     slug: 'led-digital-displays',
-    tagline: 'Brilliant 4K Displays That Demand Attention',
-    description: 'Our state-of-the-art LED digital displays deliver crystal-clear messaging with stunning visual impact. Perfect for video content, animations, and dynamic advertising that captures attention day and night.',
+    tagline: 'Digital Billboards Price & LED Display Solutions',
+    description: 'Our state-of-the-art LED digital displays offer competitive digital billboards price with crystal-clear messaging. As your advertisement company, we provide stunning visual impact for out-of-home advertising that captures attention day and night.',
     features: [
       {
         icon: 'Monitor',
@@ -383,13 +383,13 @@ export const servicesData: ServiceData[] = [
       impressions: '60,000+ Daily',
       availability: 'All Weather'
     },
-    keywords: ['LED digital displays', '4K billboard', 'digital mobile advertising', 'video billboard']
+    keywords: ['LED digital displays', 'digital billboards price', 'advertisement company', 'out-of-home advertising', 'what is ooh in marketing', 'cheap ads', 'billboard cost']
   },
   {
-    serviceName: 'GPS Tracking',
+    serviceName: 'GPS Tracking & Analytics',
     slug: 'gps-tracking',
-    tagline: 'Real-Time Visibility and Performance Analytics',
-    description: 'Know exactly where your advertising dollars are working. Our GPS tracking system provides real-time location data, route verification, and detailed analytics to measure campaign effectiveness.',
+    tagline: 'Billboard Advertising Metrics & Real-Time Tracking',
+    description: 'Know exactly where your vehicle advertising dollars are working. Our GPS tracking system provides billboard advertising metrics, real-time location data, and detailed analytics to measure your mobile outdoor advertising campaign effectiveness.',
     features: [
       {
         icon: 'MapPin',
@@ -562,7 +562,7 @@ export const servicesData: ServiceData[] = [
       impressions: 'Real-time data',
       availability: '24/7 Access'
     },
-    keywords: ['GPS tracking', 'billboard tracking', 'advertising analytics', 'campaign monitoring']
+    keywords: ['GPS tracking', 'billboard advertising metrics', 'vehicle advertising tracking', 'mobile outdoor advertising analytics', 'campaign monitoring', 'advertise on car tracking']
   },
   {
     serviceName: '4K Screens',
@@ -736,8 +736,8 @@ export const servicesData: ServiceData[] = [
   {
     serviceName: 'Campaign Management',
     slug: 'campaign-management',
-    tagline: 'Full-Service Campaign Planning and Execution',
-    description: 'Let our experts handle every aspect of your mobile billboard campaign. From strategy and creative to execution and reporting, we ensure maximum impact and ROI for your advertising investment.',
+    tagline: 'Marketing Advertising Companies & Full-Service Solutions',
+    description: 'As one of the leading marketing advertising companies and advertisement company options in South Florida, we handle every aspect of your vehicle advertising campaign. From cheap ads strategy to execution, we ensure maximum impact for your mobile outdoor advertising investment.',
     features: [
       {
         icon: 'Target',
@@ -904,13 +904,13 @@ export const servicesData: ServiceData[] = [
       impressions: 'Optimized Daily',
       availability: 'Dedicated Support'
     },
-    keywords: ['campaign management', 'advertising management', 'billboard campaign', 'marketing services']
+    keywords: ['campaign management', 'marketing advertising companies', 'advertisement company', 'cheap ads management', 'vehicle advertising services', 'local advertisements']
   },
   {
     serviceName: 'Coverage Areas',
     slug: 'coverage-areas',
-    tagline: 'Comprehensive Coverage Across South Florida',
-    description: 'From Miami Beach to Palm Beach, our mobile billboards cover all major markets in South Florida. Target specific neighborhoods, business districts, or entire counties with our flexible coverage options.',
+    tagline: 'Local Advertisements & Out-of-Home Advertising Coverage',
+    description: 'From Miami Beach to Palm Beach, our vehicle advertising and mobile outdoor advertising covers all major markets. Target local advertisements in specific neighborhoods or entire counties with our flexible out-of-home advertising coverage options.',
     features: [
       {
         icon: 'Map',
@@ -1078,7 +1078,7 @@ export const servicesData: ServiceData[] = [
       impressions: '150,000+ Daily',
       availability: 'All Markets'
     },
-    keywords: ['coverage areas', 'service areas', 'South Florida advertising', 'mobile billboard coverage']
+    keywords: ['coverage areas', 'local advertisements', 'out-of-home advertising', 'vehicle advertising coverage', 'mobile outdoor advertising areas', 'cheap ads locations']
   }
 ]
 

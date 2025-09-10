@@ -1,7 +1,7 @@
 import { MarketData, MarketCategory } from '@/app/types'
 
 export const marketsData: MarketData[] = [
-  // Healthcare Markets
+  // Healthcare Markets - healthcare advertising agency, healthcare marketing firms
   {
     industry: 'Plastic Surgeons',
     slug: 'plastic-surgeons',
@@ -59,7 +59,7 @@ export const marketsData: MarketData[] = [
       }
     ],
     relatedMarkets: ['chiropractors', 'med-spas', 'dermatologists'],
-    keywords: ['plastic surgery advertising', 'cosmetic surgery marketing', 'medical billboard advertising']
+    keywords: ['plastic surgery advertising', 'cosmetic surgery marketing', 'healthcare advertising agency', 'healthcare marketing firms', 'healthcare ad agency', 'medical billboard advertising']
   },
   {
     industry: 'Chiropractors',
@@ -118,10 +118,10 @@ export const marketsData: MarketData[] = [
       }
     ],
     relatedMarkets: ['plastic-surgeons', 'physical-therapists', 'pain-management'],
-    keywords: ['chiropractor advertising', 'chiropractic marketing', 'healthcare billboard advertising']
+    keywords: ['chiropractor advertising', 'chiropractic marketing', 'healthcare marketing campaigns', 'health care advertisement', 'healthcare billboard advertising']
   },
 
-  // Legal Markets
+  // Legal Markets - personal injury lawyer advertising, law firm ads
   {
     industry: 'Personal Injury Lawyers',
     slug: 'personal-injury-lawyers',
@@ -179,7 +179,7 @@ export const marketsData: MarketData[] = [
       }
     ],
     relatedMarkets: ['immigration-lawyers', 'criminal-defense', 'family-law'],
-    keywords: ['personal injury advertising', 'lawyer billboard advertising', 'legal marketing']
+    keywords: ['personal injury lawyer advertising', 'personal injury attorney ads', 'law firm ads', 'marketing for personal injury lawyers', 'personal injury attorney advertising', 'lawyer billboard advertising', 'legal marketing']
   },
   {
     industry: 'Immigration Lawyers',
@@ -238,10 +238,10 @@ export const marketsData: MarketData[] = [
       }
     ],
     relatedMarkets: ['personal-injury-lawyers', 'tax-attorneys', 'family-law'],
-    keywords: ['immigration lawyer advertising', 'bilingual legal marketing', 'Hispanic attorney advertising']
+    keywords: ['immigration lawyer advertising', 'bilingual legal marketing', 'Hispanic attorney advertising', 'law firm ads', 'legal services advertising', 'attorney marketing']
   },
 
-  // Construction & Home Services Markets
+  // Construction & Home Services Markets - local advertisements, cheap ads
   {
     industry: 'Home Builders',
     slug: 'home-builders',
@@ -477,6 +477,128 @@ export const marketsData: MarketData[] = [
     ],
     relatedMarkets: ['plumbing', 'electrical', 'appliance-repair'],
     keywords: ['HVAC advertising', 'air conditioning marketing', 'heating and cooling billboard']
+  },
+  
+  // Fitness & Gym Markets - gym ads, gym advertisement
+  {
+    industry: 'Gyms & Fitness Centers',
+    slug: 'gyms-fitness-centers',
+    tagline: 'Drive Memberships with High-Energy Mobile Advertising',
+    description: 'Reach health-conscious consumers with gym ads and gym advertisement through our vehicle advertising. Our mobile outdoor advertising targets fitness enthusiasts where they live, work, and play throughout South Florida.',
+    painPoints: [
+      'High competition for new members',
+      'Seasonal membership fluctuations',
+      'Difficulty reaching target demographics',
+      'Limited marketing budgets'
+    ],
+    solutions: [
+      {
+        title: 'New Year Campaign Strategy',
+        description: 'Capitalize on resolution season with targeted gym advertisement'
+      },
+      {
+        title: 'Community Route Targeting',
+        description: 'Focus gym ads on residential areas and business districts'
+      },
+      {
+        title: 'Competitive Positioning',
+        description: 'Stand out from other fitness centers with mobile advertising'
+      }
+    ],
+    benefits: [
+      'Drive new membership sign-ups',
+      'Build brand awareness locally',
+      'Promote special offers and classes',
+      'Target health-conscious demographics',
+      'Maximize January enrollment rush'
+    ],
+    stats: {
+      roi: '450% ROI',
+      reach: '45,000+ Daily',
+      engagement: '3.8% CTR'
+    },
+    caseStudy: {
+      title: 'Miami Beach Fitness Center',
+      result: '200+ new members in 30 days',
+      metric: '$150,000 in membership revenue'
+    },
+    faqs: [
+      {
+        question: 'When should gyms advertise with mobile billboards?',
+        answer: 'Peak seasons for gym ads are January (New Year resolutions), spring (summer body prep), and September (back to routine). Our gym advertisement campaigns drive maximum results during these periods.'
+      },
+      {
+        question: 'What gym advertisement messages work best?',
+        answer: 'Promotional offers, transformation promises, and community-focused messaging. Gym ads featuring limited-time discounts and free trials generate the highest response rates.'
+      },
+      {
+        question: 'How do mobile billboards help fitness centers?',
+        answer: 'Mobile billboards put your gym advertisement directly in front of potential members in their neighborhoods, creating top-of-mind awareness when they\'re ready to join.'
+      }
+    ],
+    relatedMarkets: ['healthcare', 'personal-trainers', 'nutrition-stores'],
+    keywords: ['gym ads', 'gym advertisement', 'fitness center marketing', 'health club advertising', 'gym membership marketing']
+  },
+  
+  // Financial Services Markets - marketing for banking
+  {
+    industry: 'Banks & Credit Unions',
+    slug: 'banks-credit-unions',
+    tagline: 'Build Trust and Drive Account Growth with Mobile Advertising',
+    description: 'Effective marketing for banking and marketing of banking services through our vehicle advertising solutions. Reach potential customers with cheap ads that build trust and drive account openings throughout your service area.',
+    painPoints: [
+      'Building trust in competitive markets',
+      'Reaching younger demographics',
+      'Promoting new services and products',
+      'Differentiating from online banks'
+    ],
+    solutions: [
+      {
+        title: 'Community Banking Focus',
+        description: 'Emphasize local presence in marketing for banking campaigns'
+      },
+      {
+        title: 'Product Launch Campaigns',
+        description: 'Promote new accounts and services effectively'
+      },
+      {
+        title: 'Trust Building Messages',
+        description: 'Marketing of banking services that emphasizes security and stability'
+      }
+    ],
+    benefits: [
+      'Increase account openings',
+      'Build local brand recognition',
+      'Promote mortgage and loan products',
+      'Reach underbanked communities',
+      'Drive branch traffic'
+    ],
+    stats: {
+      roi: '380% ROI',
+      reach: '50,000+ Daily',
+      engagement: '2.9% CTR'
+    },
+    caseStudy: {
+      title: 'Palm Beach Community Bank',
+      result: '150 new accounts monthly',
+      metric: '$5M in new deposits'
+    },
+    faqs: [
+      {
+        question: 'How effective is mobile advertising for banks?',
+        answer: 'Marketing for banking through mobile billboards builds essential local presence and trust. Our campaigns typically generate 50-100 new account inquiries per month.'
+      },
+      {
+        question: 'What banking messages resonate most?',
+        answer: 'Marketing of banking services should focus on local roots, competitive rates, and personal service. Messages about free checking and loan specials drive immediate response.'
+      },
+      {
+        question: 'Can you target specific demographics for banks?',
+        answer: 'Yes, our marketing for banking can target young professionals, retirees, or small business owners by selecting appropriate routes and timing.'
+      }
+    ],
+    relatedMarkets: ['mortgage-brokers', 'financial-advisors', 'insurance-companies'],
+    keywords: ['marketing for banking', 'marketing of banking services', 'bank advertising', 'credit union marketing', 'financial services advertising']
   }
 ]
 
@@ -495,7 +617,9 @@ export function getMarketsByCategory(category: string): MarketData[] {
   const categoryMap: Record<string, string[]> = {
     healthcare: ['Plastic Surgeons', 'Chiropractors'],
     legal: ['Personal Injury Lawyers', 'Immigration Lawyers'],
-    construction: ['Home Builders', 'Impact Windows & Doors', 'Roofing', 'HVAC']
+    construction: ['Home Builders', 'Impact Windows & Doors', 'Roofing', 'HVAC'],
+    fitness: ['Gyms & Fitness Centers'],
+    financial: ['Banks & Credit Unions']
   }
   
   const industries = categoryMap[category.toLowerCase()] || []

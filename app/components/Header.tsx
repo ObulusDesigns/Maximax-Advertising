@@ -12,6 +12,7 @@ const services = [
   { name: '4K Ultra HD Screens', href: '/services/4k-screens' },
   { name: 'Campaign Management', href: '/services/campaign-management' },
   { name: 'Coverage Areas', href: '/services/coverage-areas' },
+  { name: 'Pricing & Costs', href: '/pricing' },
 ]
 
 export function Header() {

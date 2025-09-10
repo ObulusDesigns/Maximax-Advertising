@@ -7,7 +7,7 @@ export const organizationSchema = {
   "url": "https://maximaxmobileadvertising.com",
   "logo": "https://maximaxmobileadvertising.com/images/maximax-logo.png",
   "image": "https://maximaxmobileadvertising.com/images/1-1.png",
-  "description": "Premier mobile billboard advertising company serving Miami-Dade and Palm Beach Counties with GPS-tracked LED billboard trucks featuring 4K displays.",
+  "description": "Premier vehicle advertising and cheap ads company providing car billboard advertising and mobile outdoor advertising. Leading advertisement company for out-of-home advertising with GPS-tracked LED billboard trucks featuring 4K displays in South Florida.",
   "telephone": "+1-561-720-0521",
   "email": "naser@maximaxmobileadvertising.com",
   "address": {
@@ -99,7 +99,7 @@ export const organizationSchema = {
 export const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "serviceType": "Mobile Billboard Advertising",
+  "serviceType": "Vehicle Advertising and Mobile Outdoor Advertising",
   "provider": {
     "@type": "LocalBusiness",
     "name": "Maximax Advertising",
@@ -121,23 +121,23 @@ export const serviceSchema = {
     "itemListElement": [
       {
         "@type": "Service",
-        "name": "Mobile Billboard Truck Rental",
-        "description": "Daily, weekly, and monthly mobile billboard truck rentals"
+        "name": "Vehicle Advertising and Car Billboard Advertising",
+        "description": "Cheap ads through vehicle advertising, car billboard advertising, and mobile outdoor advertising. Advertise on car platforms with our fleet."
       },
       {
         "@type": "Service",
-        "name": "LED Digital Display Advertising",
-        "description": "4K LED digital billboard displays on mobile trucks"
+        "name": "Digital Billboards Price and LED Display Advertising",
+        "description": "Competitive digital billboards price with 4K LED displays. Out-of-home advertising solutions from a leading advertisement company."
       },
       {
         "@type": "Service",
-        "name": "GPS Campaign Tracking",
-        "description": "Real-time GPS tracking and route optimization"
+        "name": "Billboard Advertising Metrics and GPS Tracking",
+        "description": "Real-time billboard advertising metrics with GPS tracking for vehicle advertising and mobile outdoor advertising campaigns."
       },
       {
         "@type": "Service",
-        "name": "Campaign Management",
-        "description": "Full-service campaign planning and execution"
+        "name": "Marketing Advertising Companies Services",
+        "description": "Full-service campaign management from leading marketing advertising companies. Local advertisements and cheap ads management."
       }
     ]
   }
@@ -209,6 +209,38 @@ export const faqSchema = {
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We offer same-day booking for available trucks and can launch most campaigns within 48 hours. This includes design assistance, route planning, and campaign setup. For complex campaigns, we recommend 3-5 days lead time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is OOH in marketing and how does it work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "OOH advertising (Out-of-Home) includes all advertising that reaches consumers outside their homes. This includes vehicle advertising, mobile outdoor advertising, billboards, and transit ads. Our car billboard advertising is a modern form of OOH that combines mobility with high visibility."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you provide cheap ads compared to traditional advertising?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our vehicle advertising offers cheap ads by eliminating the high costs of static billboard installation and maintenance. With mobile outdoor advertising, you get better targeting and flexibility at a fraction of traditional billboard cost, making it ideal for businesses seeking affordable out-of-home advertising."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are billboard advertising costs and digital billboards price?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Billboard cost varies by type: traditional static billboards cost $3,000-$25,000/month, while our mobile billboard advertising costs just $500-$2,000/day. Digital billboards price for our LED trucks ranges from $800-$1,500/day, offering better value than fixed digital displays."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I advertise on car platforms in specific neighborhoods?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Our car billboard advertising allows precise neighborhood targeting. Whether you want local advertisements in Miami Beach or vehicle advertising in Boca Raton, our GPS-tracked mobile outdoor advertising ensures your message reaches the exact areas you specify."
       }
     }
   ]

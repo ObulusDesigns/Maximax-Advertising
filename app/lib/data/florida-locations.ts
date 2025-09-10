@@ -728,7 +728,7 @@ export const floridaLocations: LocationData[] = [
     county: 'Palm Beach County',
     state: 'Florida',
     population: '65K',
-    description: 'Mobile billboard advertising in Jupiter reaches Northern Palm Beach County\'s coastal communities and golf enthusiasts. Our LED trucks target Harbourside Place, Abacoa Town Center, and Roger Dean Stadium with campaigns perfect for this upscale beach town.',
+    description: 'Vehicle advertising and mobile outdoor advertising in Jupiter reaches Northern Palm Beach County\'s coastal communities. Our car billboard advertising provides cheap ads targeting Harbourside Place, Abacoa Town Center, and Roger Dean Stadium. Advertise on car platforms with out-of-home advertising perfect for local advertisements in this upscale beach town.',
     landmarks: [
       'Jupiter Inlet Lighthouse',
       'Harbourside Place',
@@ -1210,7 +1210,7 @@ export const floridaLocations: LocationData[] = [
     county: 'Orange County',
     state: 'Florida',
     population: '309K',
-    description: 'Premier mobile billboard advertising in Orlando, the Theme Park Capital of the World. Our LED billboard trucks provide unmatched visibility throughout Orange County, reaching tourists, convention attendees, and locals along I-4, International Drive, and downtown Orlando. With GPS-tracked precision, we target high-traffic areas near Universal Studios, Disney Springs, and the Orange County Convention Center.',
+    description: 'Premier vehicle advertising and mobile outdoor advertising in Orlando, the Theme Park Capital. Our car billboard advertising provides cheap ads and unmatched visibility throughout Orange County. Advertise on car platforms reaching tourists and locals with out-of-home advertising along I-4, International Drive, and downtown. Local advertisements target high-traffic areas near Universal Studios, Disney Springs, and the Convention Center.',
     landmarks: [
       'Universal Studios Orlando',
       'Disney Springs',
@@ -1561,7 +1561,7 @@ export const floridaLocations: LocationData[] = [
     county: 'Broward County',
     state: 'Florida',
     population: '96K',
-    description: 'Mobile billboard trucks in Sunrise reach millions at Sawgrass Mills Mall and BB&T Center event attendees. Our LED displays dominate high-traffic areas near Florida\'s largest outlet mall and premier entertainment venues.',
+    description: 'Vehicle advertising and car billboard advertising in Sunrise reach millions at Sawgrass Mills Mall and BB&T Center. Our mobile outdoor advertising provides cheap ads dominating high-traffic areas near Florida\'s largest outlet mall. Advertise on car platforms with out-of-home advertising and local advertisements at premier entertainment venues.',
     landmarks: [
       'Sawgrass Mills Mall',
       'BB&T Center (FLA Live Arena)',
@@ -1731,6 +1731,94 @@ export const floridaLocations: LocationData[] = [
       businessesServed: '150+',
     },
     coordinates: { lat: 26.1605, lng: -80.1389 },
+  },
+  {
+    city: 'Chicago',
+    slug: 'chicago',
+    county: 'Cook County',
+    state: 'Illinois',
+    population: '2.7M',
+    description: 'Billboard advertising chicago with mobile outdoor advertising solutions. Our car wrap chicago and vehicle advertising services provide cheap ads throughout the Windy City. Target chicago city window sticker audiences with our car billboard advertising reaching downtown Loop, Magnificent Mile, and neighborhoods.',
+    landmarks: [
+      'Millennium Park',
+      'Navy Pier',
+      'Magnificent Mile',
+      'Willis Tower',
+      'Grant Park',
+      'Chicago Theatre',
+      'Art Institute of Chicago',
+      'Wrigley Field',
+      'United Center',
+      'McCormick Place',
+      'Chicago Riverwalk',
+      'Lincoln Park Zoo'
+    ],
+    popularRoutes: [
+      'Michigan Avenue',
+      'Lake Shore Drive',
+      'State Street',
+      'Wacker Drive',
+      'North Avenue',
+      'Division Street',
+      'Chicago Avenue',
+      'Roosevelt Road'
+    ],
+    events: [
+      { name: 'Chicago Auto Show', date: 'February', location: 'McCormick Place' },
+      { name: 'Lollapalooza', date: 'August', location: 'Grant Park' },
+      { name: 'Chicago Marathon', date: 'October', location: 'Downtown' },
+      { name: 'Taste of Chicago', date: 'July', location: 'Grant Park' }
+    ],
+    stats: {
+      dailyImpressions: '150,000+',
+      coverage: '234 sq mi',
+      businessesServed: '1000+',
+    },
+    coordinates: { lat: 41.8781, lng: -87.6298 },
+  },
+  {
+    city: 'Los Angeles',
+    slug: 'los-angeles',
+    county: 'Los Angeles County',
+    state: 'California',
+    population: '4M',
+    description: 'Los angeles billboards and vehicle advertising throughout LA County. Our mobile outdoor advertising and car billboard advertising provide cheap ads from Hollywood to Beverly Hills. Advertise on car platforms with out-of-home advertising reaching millions of Angelenos daily.',
+    landmarks: [
+      'Hollywood Sign',
+      'Griffith Observatory',
+      'Santa Monica Pier',
+      'Beverly Hills',
+      'Sunset Strip',
+      'Hollywood Boulevard',
+      'Venice Beach',
+      'Staples Center',
+      'LA Live',
+      'Rodeo Drive',
+      'Universal Studios',
+      'Getty Center'
+    ],
+    popularRoutes: [
+      'Sunset Boulevard',
+      'Hollywood Boulevard',
+      'Wilshire Boulevard',
+      'Santa Monica Boulevard',
+      'Ventura Boulevard',
+      'La Cienega Boulevard',
+      'Melrose Avenue',
+      'Pacific Coast Highway'
+    ],
+    events: [
+      { name: 'Academy Awards', date: 'March', location: 'Dolby Theatre' },
+      { name: 'LA Auto Show', date: 'November', location: 'Convention Center' },
+      { name: 'Rose Parade', date: 'January', location: 'Pasadena' },
+      { name: 'LA Marathon', date: 'March', location: 'Downtown to Santa Monica' }
+    ],
+    stats: {
+      dailyImpressions: '200,000+',
+      coverage: '503 sq mi',
+      businessesServed: '1500+',
+    },
+    coordinates: { lat: 34.0522, lng: -118.2437 },
   },
   {
     city: 'Winter Park',

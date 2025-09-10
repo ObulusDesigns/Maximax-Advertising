@@ -21,8 +21,8 @@ export function Footer() {
                 className="h-14 w-auto"
               />
               <p className="mt-4 text-sm text-gray-300">
-                Premier mobile billboard advertising in Boca Raton & Palm Beach County. 
-                LED digital billboard trucks with GPS tracking and 4K displays.
+                Premier vehicle advertising and cheap ads in South Florida. Car billboard advertising 
+                and mobile outdoor advertising with GPS tracking. Your trusted advertisement company for out-of-home advertising.
               </p>
             </div>
             

@@ -3,8 +3,23 @@ import { Metadata } from 'next'
 export const siteConfig = {
   name: 'Maximax Advertising',
   url: 'https://maximaxmobileadvertising.com',
-  description: 'Premier mobile billboard advertising in Miami-Dade and Palm Beach Counties. LED digital billboard trucks with GPS tracking and 4K displays.',
+  description: 'Premier vehicle advertising and mobile outdoor advertising in South Florida. Cheap ads with LED billboard trucks, car billboard advertising, and GPS tracking. Out-of-home advertising solutions.',
   keywords: [
+    'vehicle advertising',
+    'cheap ads',
+    'mobile outdoor advertising',
+    'car billboard advertising',
+    'advertise on car',
+    'advertise on vehicle',
+    'advertisement company',
+    'out-of-home advertising',
+    'what is ooh in marketing',
+    'local advertisements',
+    'billboard cost',
+    'billboard price',
+    'cost for billboard',
+    'billboard advertising costs',
+    'digital billboards price',
     'mobile billboard advertising Florida',
     'LED truck advertising',
     'mobile advertising trucks',
@@ -27,7 +42,6 @@ export const siteConfig = {
     'mobile billboard trucks',
     'advertising truck',
     'led advertising truck',
-    'mobile outdoor advertising',
     'billboard for sale',
     'digital billboard ad cost',
     'mobile advertising truck',
@@ -42,7 +56,6 @@ export const siteConfig = {
     'coral springs billboards',
     'billboard company',
     'ooh advertising',
-    'what is ooh in marketing',
     'outdoor advertising miami',
     'outdoor advertising fort lauderdale',
     'mobile led truck',
@@ -52,13 +65,19 @@ export const siteConfig = {
     'moving billboards',
     'billboard advertising cost',
     'mobile billboard near me',
-    'billboard advertising services'
+    'billboard advertising services',
+    'car wrap ad',
+    'car wrapping advertising',
+    'bus advertisement',
+    'bus advertising cost',
+    'bench advertising',
+    'storefront advertising'
   ]
 }
 
 export const defaultMetadata: Metadata = {
   title: {
-    default: 'Mobile Billboard Advertising Florida | LED Trucks | Maximax Advertising',
+    default: 'Vehicle Advertising & Cheap Ads | Mobile Billboard Trucks Florida | Maximax',
     template: '%s | Maximax Advertising'
   },
   description: siteConfig.description,
@@ -76,7 +95,7 @@ export const defaultMetadata: Metadata = {
     canonical: siteConfig.url,
   },
   openGraph: {
-    title: 'Mobile Billboard Advertising Florida | LED Trucks | Maximax Advertising',
+    title: 'Vehicle Advertising & Mobile Outdoor Advertising | Maximax Florida',
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,

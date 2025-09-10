@@ -1,442 +1,380 @@
-import { Metadata } from 'next';
-import dynamic from 'next/dynamic';
-import { CheckCircleIcon, CurrencyDollarIcon, ChartBarIcon } from '@heroicons/react/24/outline';
-import Link from 'next/link';
-
-const BillboardCostCalculator = dynamic(() => import('../components/BillboardCostCalculator'), {
-  ssr: false,
-});
+import { Metadata } from 'next'
+import { Header } from '../components/Header'
+import { Footer } from '../components/Footer'
+import { CTASection } from '../components/CTASection'
+import { FloatingContact } from '../components/FloatingContact'
+import { CheckCircle, TrendingUp, DollarSign, BarChart3 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Billboard Advertising Cost & Pricing | Mobile Billboard Rates Florida | Maximax',
-  description: 'How much does a billboard cost in Florida? Get instant pricing for mobile billboard advertising in Miami, Fort Lauderdale, and West Palm Beach. Free cost calculator and custom quotes.',
-  keywords: 'billboard cost, mobile billboard pricing, billboard advertising rates, how much does a billboard cost, billboard prices Florida, mobile billboard cost Miami, LED truck advertising prices, outdoor advertising costs',
-  openGraph: {
-    title: 'Billboard Advertising Cost Calculator | Get Instant Pricing',
-    description: 'Calculate mobile billboard advertising costs instantly. Transparent pricing for Miami, Fort Lauderdale, Palm Beach. Volume discounts available.',
-    url: 'https://maximaxmobileadvertising.com/pricing',
-    images: [
-      {
-        url: 'https://maximaxmobileadvertising.com/images/billboard-cost-calculator.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Billboard Cost Calculator - Maximax Advertising',
-      },
-    ],
-  },
-};
-
-const pricingTiers = [
-  {
-    name: 'Basic',
-    duration: '1-3 Days',
-    price: '$600-800',
-    unit: 'per day',
-    features: [
-      '8 hours daily operation',
-      'Single truck deployment',
-      'GPS tracking included',
-      'Basic route planning',
-      'Daily performance reports',
-    ],
-    best: false,
-  },
-  {
-    name: 'Professional',
-    duration: '1-2 Weeks',
-    price: '$500-700',
-    unit: 'per day',
-    features: [
-      '8-10 hours daily operation',
-      'Multi-truck options',
-      'Premium GPS tracking',
-      'Strategic route optimization',
-      'Real-time analytics dashboard',
-      '10-15% volume discount',
-    ],
-    best: true,
-  },
-  {
-    name: 'Enterprise',
-    duration: '1+ Month',
-    price: '$400-600',
-    unit: 'per day',
-    features: [
-      'Flexible hours (4-12 daily)',
-      'Fleet deployment available',
-      'Dedicated account manager',
-      'Custom route planning',
-      'Advanced analytics & ROI tracking',
-      '20-25% volume discount',
-      'Free creative design services',
-    ],
-    best: false,
-  },
-];
-
-const comparisonData = [
-  {
-    method: 'Mobile LED Billboard',
-    impressions: '30,000-50,000',
-    cpm: '$15-25',
-    flexibility: 'Excellent',
-    targeting: 'Precise GPS',
-  },
-  {
-    method: 'Static Billboard',
-    impressions: '20,000-40,000',
-    cpm: '$30-50',
-    flexibility: 'None',
-    targeting: 'Fixed Location',
-  },
-  {
-    method: 'Radio Advertising',
-    impressions: '10,000-20,000',
-    cpm: '$40-60',
-    flexibility: 'Limited',
-    targeting: 'Demographic',
-  },
-  {
-    method: 'Car Wrap',
-    impressions: '8,000-12,000',
-    cpm: '$10-15',
-    flexibility: 'Limited',
-    targeting: 'Random',
-  },
-];
-
-const locationPricing = [
-  { city: 'Miami', baseRate: '$800/day', premium: '+10-15%', popular: 'Downtown, Brickell, South Beach' },
-  { city: 'Fort Lauderdale', baseRate: '$750/day', premium: '+5-10%', popular: 'Las Olas, Beach, Downtown' },
-  { city: 'West Palm Beach', baseRate: '$700/day', premium: '+5%', popular: 'Clematis, CityPlace, PGA' },
-  { city: 'Boca Raton', baseRate: '$650/day', premium: 'Standard', popular: 'Mizner Park, Town Center' },
-  { city: 'Orlando', baseRate: '$600/day', premium: '+10%', popular: 'Theme Parks, I-Drive, Downtown' },
-];
+  title: 'Billboard Cost & Price | Digital Billboards Price | Cheap Ads',
+  description: 'Discover billboard cost, billboard price, and cost for billboard advertising. Get digital billboards price and billboard advertising costs for cheap ads and vehicle advertising in South Florida.',
+  keywords: [
+    'billboard cost',
+    'billboard price', 
+    'cost for billboard',
+    'billboard advertising costs',
+    'digital billboards price',
+    'cheap ads',
+    'billboard cost per month',
+    'average billboard cost',
+    'bus advertising cost',
+    'bench advertising',
+    'direct mail marketing cost',
+    'mobile billboard cost',
+    'vehicle advertising pricing',
+    'car billboard advertising cost',
+    'out-of-home advertising prices'
+  ]
+}
 
 export default function PricingPage() {
-  const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: 'Mobile Billboard Advertising',
-    provider: {
-      '@type': 'Organization',
-      name: 'Maximax Advertising',
-    },
-    areaServed: {
-      '@type': 'State',
-      name: 'Florida',
-    },
-    offers: {
-      '@type': 'AggregateOffer',
-      priceCurrency: 'USD',
-      lowPrice: '400',
-      highPrice: '900',
-      priceValidUntil: '2025-12-31',
-    },
-  };
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
-      
-      <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+      <Header />
+      <main>
         {/* Hero Section */}
-        <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-red-600 to-red-800">
-          <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Billboard Advertising Cost & Pricing
-            </h1>
-            <p className="text-xl md:text-2xl text-red-100 mb-8 max-w-3xl mx-auto">
-              Transparent pricing for mobile billboard advertising in Florida. 
-              Calculate costs instantly or get a custom quote.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="#calculator"
-                className="bg-white text-red-600 font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                Calculate Your Cost
-              </a>
-              <a
-                href="tel:5617200521"
-                className="bg-red-900 text-white font-bold py-4 px-8 rounded-lg hover:bg-red-950 transition-colors"
-              >
-                Call (561) 720-0521
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* Quick Stats */}
-        <section className="py-12 px-4 sm:px-6 lg:px-8 -mt-10">
-          <div className="max-w-7xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-xl p-8 grid md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <p className="text-3xl font-bold text-red-600">$15-25</p>
-                <p className="text-gray-600 mt-2">Cost per 1000 impressions</p>
-              </div>
-              <div className="text-center">
-                <p className="text-3xl font-bold text-red-600">50K+</p>
-                <p className="text-gray-600 mt-2">Daily impressions</p>
-              </div>
-              <div className="text-center">
-                <p className="text-3xl font-bold text-red-600">25%</p>
-                <p className="text-gray-600 mt-2">Volume discounts</p>
-              </div>
-              <div className="text-center">
-                <p className="text-3xl font-bold text-red-600">$400</p>
-                <p className="text-gray-600 mt-2">Starting daily rate</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Pricing Calculator */}
-        <section id="calculator" className="py-16 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Instant Cost Calculator
-              </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Calculate your mobile billboard advertising costs based on location, duration, and campaign requirements.
+        <section className="section section-padding bg-gradient-to-br from-maximax-pink to-maximax-cyan text-white">
+          <div className="container">
+            <div className="max-w-4xl mx-auto text-center">
+              <span className="badge-white mb-4">Transparent Pricing</span>
+              <h1 className="text-white mb-6">
+                Billboard Cost, Price & Advertising Costs
+              </h1>
+              <p className="text-xl text-white/90">
+                Understanding billboard cost, billboard price, and cost for billboard campaigns. 
+                Get competitive digital billboards price and discover why we offer the best cheap ads 
+                for vehicle advertising and mobile outdoor advertising in South Florida.
               </p>
             </div>
-            <BillboardCostCalculator />
           </div>
         </section>
 
-        {/* Pricing Tiers */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Transparent Pricing Tiers
+        {/* Pricing Comparison */}
+        <section className="section section-padding bg-white">
+          <div className="container">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <span className="badge-primary mb-4">Cost Comparison</span>
+              <h2 className="mb-6">
+                Billboard Advertising Costs vs <span className="gradient-text">Cheap Ads</span> with Mobile
               </h2>
-              <p className="text-xl text-gray-600">
-                Choose the package that fits your advertising goals and budget
+              <p className="text-lg text-gray-600">
+                Compare billboard cost per month across different advertising mediums. Our vehicle advertising 
+                provides the best value with cheap ads that deliver results.
               </p>
             </div>
-            
-            <div className="grid md:grid-cols-3 gap-8">
-              {pricingTiers.map((tier) => (
-                <div
-                  key={tier.name}
-                  className={`bg-white rounded-2xl shadow-lg p-8 ${
-                    tier.best ? 'ring-2 ring-red-600 relative' : ''
-                  }`}
-                >
-                  {tier.best && (
-                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                      <span className="bg-red-600 text-white px-4 py-1 rounded-full text-sm font-bold">
-                        MOST POPULAR
-                      </span>
-                    </div>
-                  )}
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{tier.name}</h3>
-                  <p className="text-gray-600 mb-4">{tier.duration}</p>
-                  <div className="mb-6">
-                    <span className="text-4xl font-bold text-red-600">{tier.price}</span>
-                    <span className="text-gray-600 ml-2">{tier.unit}</span>
-                  </div>
-                  <ul className="space-y-3 mb-8">
-                    {tier.features.map((feature, index) => (
-                      <li key={index} className="flex items-start">
-                        <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Link
-                    href="/contact"
-                    className={`block text-center font-bold py-3 px-6 rounded-lg transition-colors ${
-                      tier.best
-                        ? 'bg-red-600 text-white hover:bg-red-700'
-                        : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
-                    }`}
-                  >
-                    Get Started
-                  </Link>
+
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="bg-gray-50">
+                    <th className="p-4 text-left font-bold">Advertising Type</th>
+                    <th className="p-4 text-center font-bold">Average Billboard Cost</th>
+                    <th className="p-4 text-center font-bold">Daily Impressions</th>
+                    <th className="p-4 text-center font-bold">Cost Per 1000 Views</th>
+                    <th className="p-4 text-center font-bold">Flexibility</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b">
+                    <td className="p-4 font-semibold">Static Billboard</td>
+                    <td className="p-4 text-center">$3,000-$25,000/month</td>
+                    <td className="p-4 text-center">30,000-50,000</td>
+                    <td className="p-4 text-center">$2.00-$16.67</td>
+                    <td className="p-4 text-center text-red-500">Fixed Location</td>
+                  </tr>
+                  <tr className="border-b">
+                    <td className="p-4 font-semibold">Digital Billboard</td>
+                    <td className="p-4 text-center">$1,200-$15,000/month</td>
+                    <td className="p-4 text-center">40,000-60,000</td>
+                    <td className="p-4 text-center">$1.00-$8.33</td>
+                    <td className="p-4 text-center text-yellow-500">Shared Time</td>
+                  </tr>
+                  <tr className="border-b bg-green-50">
+                    <td className="p-4 font-semibold text-green-700">Mobile Billboard (Our Service)</td>
+                    <td className="p-4 text-center text-green-700 font-bold">$500-$2,000/day</td>
+                    <td className="p-4 text-center text-green-700 font-bold">50,000-75,000</td>
+                    <td className="p-4 text-center text-green-700 font-bold">$0.33-$1.33</td>
+                    <td className="p-4 text-center text-green-700 font-bold">100% Flexible</td>
+                  </tr>
+                  <tr className="border-b">
+                    <td className="p-4 font-semibold">Bus Advertising</td>
+                    <td className="p-4 text-center">$250-$3,000/month</td>
+                    <td className="p-4 text-center">15,000-25,000</td>
+                    <td className="p-4 text-center">$0.56-$4.00</td>
+                    <td className="p-4 text-center text-yellow-500">Route Dependent</td>
+                  </tr>
+                  <tr className="border-b">
+                    <td className="p-4 font-semibold">Bench Advertising</td>
+                    <td className="p-4 text-center">$300-$800/month</td>
+                    <td className="p-4 text-center">5,000-10,000</td>
+                    <td className="p-4 text-center">$2.00-$2.67</td>
+                    <td className="p-4 text-center text-red-500">Fixed Location</td>
+                  </tr>
+                  <tr className="border-b">
+                    <td className="p-4 font-semibold">Direct Mail Marketing</td>
+                    <td className="p-4 text-center">$0.30-$1.00/piece</td>
+                    <td className="p-4 text-center">1 per household</td>
+                    <td className="p-4 text-center">$300-$1,000</td>
+                    <td className="p-4 text-center text-red-500">One-time View</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="mt-8 p-6 bg-green-50 rounded-xl">
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <h3 className="font-bold mb-2">Why Mobile Billboards Offer the Best Value</h3>
+                  <p className="text-gray-700">
+                    With the lowest cost per impression and maximum flexibility, our vehicle advertising provides 
+                    cheap ads that outperform traditional billboard advertising costs. No long-term contracts, 
+                    no sharing display time, and complete control over your campaign routes.
+                  </p>
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Location-Based Pricing */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Location-Based Pricing
+        {/* Digital Billboards Price Section */}
+        <section className="section section-padding bg-gray-50">
+          <div className="container">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <span className="badge-accent mb-4">Digital Pricing</span>
+              <h2 className="mb-6">
+                Digital Billboards Price & <span className="gradient-text-cyan">LED Display Costs</span>
               </h2>
-              <p className="text-xl text-gray-600">
-                Rates vary by city and specific areas within each market
+              <p className="text-lg text-gray-600">
+                Our digital billboards price includes everything - no hidden billboard expenses or surprise costs.
               </p>
             </div>
-            
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-              <div className="overflow-x-auto">
-                <table className="w-full">
-                  <thead className="bg-gray-50 border-b border-gray-200">
-                    <tr>
-                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-900">City</th>
-                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-900">Base Rate</th>
-                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-900">Premium Areas</th>
-                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-900">Popular Routes</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-200">
-                    {locationPricing.map((location) => (
-                      <tr key={location.city} className="hover:bg-gray-50">
-                        <td className="px-6 py-4 font-semibold text-gray-900">{location.city}</td>
-                        <td className="px-6 py-4 text-gray-700">{location.baseRate}</td>
-                        <td className="px-6 py-4 text-gray-700">{location.premium}</td>
-                        <td className="px-6 py-4 text-gray-700">{location.popular}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-white p-8 rounded-xl shadow-sm">
+                <div className="text-center mb-6">
+                  <div className="text-4xl font-bold text-maximax-pink mb-2">$800</div>
+                  <div className="text-gray-600">Per Day</div>
+                  <h3 className="text-xl font-bold mt-4">Standard Digital</h3>
+                </div>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">8 hours of display time</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Single-sided LED display</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">GPS tracking included</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">50,000+ impressions</span>
+                  </li>
+                </ul>
+                <a href="/contact" className="btn-primary w-full text-center">
+                  Get Started
+                </a>
               </div>
-              <div className="p-6 bg-gray-50 border-t border-gray-200">
+
+              <div className="bg-gradient-to-br from-maximax-pink to-maximax-cyan p-8 rounded-xl shadow-xl text-white relative">
+                <div className="absolute top-0 right-0 bg-yellow-400 text-black px-3 py-1 rounded-bl-lg rounded-tr-xl text-sm font-bold">
+                  BEST VALUE
+                </div>
+                <div className="text-center mb-6">
+                  <div className="text-4xl font-bold mb-2">$1,500</div>
+                  <div className="text-white/90">Per Day</div>
+                  <h3 className="text-xl font-bold mt-4">Premium Digital</h3>
+                </div>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">10 hours of display time</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Double-sided 4K displays</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Real-time GPS dashboard</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">75,000+ impressions</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Free creative updates</span>
+                  </li>
+                </ul>
+                <a href="/contact" className="bg-white text-maximax-pink py-3 px-6 rounded-lg font-bold hover:bg-gray-100 transition-colors w-full text-center block">
+                  Most Popular
+                </a>
+              </div>
+
+              <div className="bg-white p-8 rounded-xl shadow-sm">
+                <div className="text-center mb-6">
+                  <div className="text-4xl font-bold text-maximax-cyan mb-2">Custom</div>
+                  <div className="text-gray-600">Quote</div>
+                  <h3 className="text-xl font-bold mt-4">Fleet Package</h3>
+                </div>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Multiple trucks</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">City-wide coverage</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Dedicated account manager</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">100,000+ impressions</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Volume discounts</span>
+                  </li>
+                </ul>
+                <a href="/contact" className="btn-secondary w-full text-center">
+                  Get Custom Quote
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Cost Factors */}
+        <section className="section section-padding bg-white">
+          <div className="container">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <span className="badge-primary mb-4">Cost Factors</span>
+              <h2 className="mb-6">
+                What Affects <span className="gradient-text">Billboard Price</span>?
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-maximax-pink/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <DollarSign className="w-8 h-8 text-maximax-pink" />
+                </div>
+                <h3 className="font-bold mb-2">Campaign Duration</h3>
                 <p className="text-sm text-gray-600">
-                  * Premium pricing applies during peak hours, special events, and high-traffic areas
+                  Longer campaigns reduce daily billboard cost. Save up to 30% with monthly packages.
                 </p>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Cost Comparison */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                How Our Costs Compare
-              </h2>
-              <p className="text-xl text-gray-600">
-                Mobile billboards offer the best value for outdoor advertising
-              </p>
-            </div>
-            
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-              <div className="overflow-x-auto">
-                <table className="w-full">
-                  <thead className="bg-red-600 text-white">
-                    <tr>
-                      <th className="px-6 py-4 text-left text-sm font-bold">Advertising Method</th>
-                      <th className="px-6 py-4 text-left text-sm font-bold">Daily Impressions</th>
-                      <th className="px-6 py-4 text-left text-sm font-bold">CPM (Cost/1000)</th>
-                      <th className="px-6 py-4 text-left text-sm font-bold">Flexibility</th>
-                      <th className="px-6 py-4 text-left text-sm font-bold">Targeting</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-200">
-                    {comparisonData.map((item, index) => (
-                      <tr key={index} className={index === 0 ? 'bg-red-50' : 'hover:bg-gray-50'}>
-                        <td className="px-6 py-4 font-semibold text-gray-900">
-                          {item.method}
-                          {index === 0 && (
-                            <span className="ml-2 text-xs bg-red-600 text-white px-2 py-1 rounded">BEST VALUE</span>
-                          )}
-                        </td>
-                        <td className="px-6 py-4 text-gray-700">{item.impressions}</td>
-                        <td className="px-6 py-4 text-gray-700">{item.cpm}</td>
-                        <td className="px-6 py-4 text-gray-700">{item.flexibility}</td>
-                        <td className="px-6 py-4 text-gray-700">{item.targeting}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-maximax-cyan/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <BarChart3 className="w-8 h-8 text-maximax-cyan" />
+                </div>
+                <h3 className="font-bold mb-2">Coverage Area</h3>
+                <p className="text-sm text-gray-600">
+                  Target specific neighborhoods or entire counties. Billboard advertising costs vary by area.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-maximax-pink/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <TrendingUp className="w-8 h-8 text-maximax-pink" />
+                </div>
+                <h3 className="font-bold mb-2">Display Type</h3>
+                <p className="text-sm text-gray-600">
+                  Digital billboards price varies from static to 4K video. Choose based on your budget.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-maximax-cyan/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-8 h-8 text-maximax-cyan" />
+                </div>
+                <h3 className="font-bold mb-2">Added Services</h3>
+                <p className="text-sm text-gray-600">
+                  Creative design, campaign management, and analytics may affect total cost for billboard.
+                </p>
               </div>
             </div>
           </div>
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
-              Frequently Asked Questions About Billboard Costs
-            </h2>
-            
-            <div className="space-y-6">
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  How much does a mobile billboard cost per day?
-                </h3>
-                <p className="text-gray-700">
-                  Mobile billboard costs in Florida typically range from $400-900 per day depending on location, 
-                  duration, and hours of operation. Miami and high-traffic areas command premium rates, while 
-                  longer campaigns receive volume discounts up to 25%.
+        <section className="section section-padding bg-gray-50">
+          <div className="container">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <span className="badge-accent mb-4">Frequently Asked</span>
+              <h2 className="mb-6">
+                Billboard Cost & Price <span className="gradient-text-cyan">Questions</span>
+              </h2>
+            </div>
+
+            <div className="max-w-3xl mx-auto space-y-6">
+              <div className="bg-white p-6 rounded-xl">
+                <h3 className="font-bold mb-3">What is the average billboard cost per month?</h3>
+                <p className="text-gray-600">
+                  The average billboard cost ranges from $750-$14,000 per month for traditional billboards. 
+                  However, our mobile billboard advertising costs just $500-$2,000 per day with no monthly 
+                  contracts required, making us the provider of cheap ads with better ROI.
                 </p>
               </div>
               
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Is mobile billboard advertising cheaper than traditional billboards?
-                </h3>
-                <p className="text-gray-700">
-                  Yes, mobile billboards typically offer better value with CPM rates of $15-25 compared to 
-                  $30-50 for static billboards. Plus, you get the flexibility to target multiple locations 
-                  and adjust routes based on your audience.
+              <div className="bg-white p-6 rounded-xl">
+                <h3 className="font-bold mb-3">How do digital billboards price compare to static?</h3>
+                <p className="text-gray-600">
+                  Digital billboards price is typically 20-30% higher than static, but offers better engagement. 
+                  Our mobile LED displays combine the benefits of digital with the flexibility of mobile, 
+                  providing the best value in billboard advertising costs.
                 </p>
               </div>
               
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  What factors affect mobile billboard pricing?
-                </h3>
-                <p className="text-gray-700">
-                  Key pricing factors include: location (city and specific routes), campaign duration, 
-                  hours of daily operation, number of trucks, special events or peak seasons, and 
-                  custom requirements like specific targeting or multiple creative changes.
+              <div className="bg-white p-6 rounded-xl">
+                <h3 className="font-bold mb-3">Are there hidden billboard expenses?</h3>
+                <p className="text-gray-600">
+                  No hidden costs with our service. Unlike traditional billboard price structures that add 
+                  production, installation, and maintenance fees, our cost for billboard advertising includes 
+                  everything: design, display, GPS tracking, and reporting.
                 </p>
               </div>
               
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Do you offer discounts for longer campaigns?
-                </h3>
-                <p className="text-gray-700">
-                  Yes! We offer volume discounts starting at 10% for weekly campaigns, 15-18% for 2-3 weeks, 
-                  and up to 25% for monthly campaigns. Enterprise clients with multi-month contracts can 
-                  receive additional custom pricing.
+              <div className="bg-white p-6 rounded-xl">
+                <h3 className="font-bold mb-3">How does bus advertising cost compare?</h3>
+                <p className="text-gray-600">
+                  Bus advertising cost ranges from $250-$3,000 monthly but you share space with other advertisers. 
+                  Our dedicated mobile billboards give you 100% of the display time and better targeting for 
+                  similar billboard advertising costs.
+                </p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-xl">
+                <h3 className="font-bold mb-3">What about bench advertising prices?</h3>
+                <p className="text-gray-600">
+                  Bench advertising costs $300-$800 monthly for a fixed location with limited visibility. 
+                  Our mobile billboards reach 10x more people daily for a similar billboard price, making 
+                  them the superior choice for cheap ads with maximum impact.
+                </p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-xl">
+                <h3 className="font-bold mb-3">How does direct mail marketing cost compare?</h3>
+                <p className="text-gray-600">
+                  Direct mail marketing cost is $0.30-$1.00 per piece for one-time exposure. Our mobile 
+                  billboards provide repeated exposure to the same audience for a lower cost per impression, 
+                  making them ideal for businesses seeking cheap ads with lasting impact.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-red-600">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to Get Started?
-            </h2>
-            <p className="text-xl text-red-100 mb-8">
-              Get a custom quote for your mobile billboard campaign today
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:5617200521"
-                className="bg-white text-red-600 font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                Call (561) 720-0521
-              </a>
-              <Link
-                href="/contact"
-                className="bg-red-800 text-white font-bold py-4 px-8 rounded-lg hover:bg-red-900 transition-colors"
-              >
-                Request Custom Quote
-              </Link>
-            </div>
-          </div>
-        </section>
-      </div>
+        <CTASection />
+      </main>
+      <Footer />
+      <FloatingContact />
     </>
-  );
+  )
 }

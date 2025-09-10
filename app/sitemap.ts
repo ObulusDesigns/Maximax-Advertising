@@ -75,6 +75,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/pricing/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
     
     // Dynamic Location Pages (generated from data store)
     ...locationPages,
@@ -127,6 +133,38 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: dateString,
       changeFrequency: 'yearly',
       priority: 0.3,
+    },
+    
+    // Blog Posts
+    {
+      url: `${baseUrl}/blog/what-is-ooh-in-marketing/`,
+      lastModified: dateString,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/cheap-ads-that-work/`,
+      lastModified: dateString,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/labor-day-advertising-sales/`,
+      lastModified: dateString,
+      changeFrequency: 'yearly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/blog/labor-day-advertising-maximize-holiday-weekend/`,
+      lastModified: dateString,
+      changeFrequency: 'yearly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/blog/labor-day-mobile-billboard-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'yearly',
+      priority: 0.6,
     },
   ]
 }

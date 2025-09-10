@@ -17,13 +17,13 @@ export function CTASection() {
 
           {/* Headline */}
           <h2 className="text-white mb-6">
-            Ready to Take Your Advertising to the Streets?
+            Ready for Cheap Ads with Vehicle Advertising?
           </h2>
           
           {/* Description */}
           <p className="text-xl mb-8 text-white/90">
-            Get started with mobile billboard advertising today and reach thousands of potential 
-            customers across Palm Beach County. Free consultation and campaign strategy included.
+            Get started with car billboard advertising and mobile outdoor advertising today. Advertise on car 
+            platforms and reach thousands with out-of-home advertising across South Florida. Free consultation included.
           </p>
 
           {/* Benefits */}
