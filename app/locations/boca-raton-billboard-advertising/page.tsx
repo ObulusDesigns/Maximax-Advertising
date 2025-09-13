@@ -11,6 +11,7 @@ const locationData = {
   city: 'Boca Raton',
   county: 'Palm Beach County',
   state: 'Florida',
+  canonicalPath: '/locations/boca-raton-billboard-advertising/',
   population: '97K',
   description: 'Boca Raton billboard advertising targets one of Florida\'s most affluent markets. Our mobile LED displays reach luxury shoppers at Mizner Park and Town Center Mall, business executives in office parks, and beach-goers along A1A. GPS-tracked billboard trucks deliver sophisticated messaging throughout this upscale community with brilliant 4K technology.',
   landmarks: [

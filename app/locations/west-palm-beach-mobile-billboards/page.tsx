@@ -11,6 +11,7 @@ const locationData = {
   city: 'West Palm Beach',
   county: 'Palm Beach County',
   state: 'Florida',
+  canonicalPath: '/locations/west-palm-beach-mobile-billboards/',
   population: '117K',
   description: 'West Palm Beach mobile billboards deliver premium advertising throughout Palm Beach County\'s cultural and business hub. Our LED billboard trucks reach affluent audiences from CityPlace to Clematis Street, targeting professionals, tourists, and residents. GPS-tracked displays ensure maximum visibility across this sophisticated market with stunning 4K technology.',
   landmarks: [

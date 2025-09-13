@@ -11,6 +11,7 @@ const locationData = {
   city: 'Hollywood',
   county: 'Broward County',
   state: 'Florida',
+  canonicalPath: '/locations/hollywood-fl-billboard-trucks/',
   population: '154K',
   description: 'Hollywood FL billboard trucks deliver dynamic advertising from the beach to downtown. Our mobile LED displays reach visitors at Hollywood Beach Broadwalk, Seminole Hard Rock Hotel & Casino, and throughout this vibrant coastal city. GPS-tracked billboard trucks ensure optimal coverage with eye-catching 4K displays that capture attention across diverse demographics.',
   landmarks: [

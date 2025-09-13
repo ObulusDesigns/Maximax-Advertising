@@ -11,6 +11,7 @@ const locationData = {
   city: 'Fort Lauderdale',
   county: 'Broward County',
   state: 'Florida',
+  canonicalPath: '/locations/fort-lauderdale-mobile-billboards/',
   population: '183K',
   description: 'Fort Lauderdale mobile billboards deliver premium visibility throughout the "Venice of America". Our LED billboard trucks navigate from Las Olas Boulevard to Fort Lauderdale Beach, targeting tourists, cruise passengers, and locals. Reach beachfront crowds, downtown professionals, and yacht show attendees with stunning 4K displays that command attention day and night.',
   landmarks: [

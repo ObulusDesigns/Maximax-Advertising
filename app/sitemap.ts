@@ -85,12 +85,251 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Dynamic Location Pages (generated from data store)
     ...locationPages,
     
+    // Static Location Pages (standalone pages not generated from florida-locations data)
+    // Major cities with priority 0.9
+    {
+      url: `${baseUrl}/locations/miami-beach-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/fort-lauderdale-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/west-palm-beach-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/boca-raton-billboard-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/hollywood-fl-billboard-trucks/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/pembroke-pines-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/coral-gables-mobile-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    // High-population cities with priority 0.85
+    {
+      url: `${baseUrl}/locations/miami-gardens-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/locations/north-miami-billboard-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/locations/miramar-billboard-trucks/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/locations/aventura-billboard-trucks/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/locations/delray-beach-mobile-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/locations/kendall-outdoor-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    // Mid-size cities with priority 0.8
+    {
+      url: `${baseUrl}/locations/cutler-bay-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/deerfield-beach-mobile-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/weston-billboard-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/tamarac-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/greenacres-billboard-trucks/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/royal-palm-beach-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/homestead-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    
     // Dynamic Market Pages (generated from data store)
     ...marketPages,
     
     // Dynamic Service Pages (generated from data store)
     ...servicePages,
-    
+
+    // Service-Location Combination Pages (Miami)
+    {
+      url: `${baseUrl}/services/miami/mobile-billboard-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/services/miami/led-truck-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/services/miami/digital-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/services/miami/event-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/services/miami/political-campaign-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/services/miami/real-estate-marketing/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+
+    // Service-Location Combination Pages (Fort Lauderdale)
+    {
+      url: `${baseUrl}/services/fort-lauderdale/mobile-billboard-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/services/fort-lauderdale/led-truck-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/services/fort-lauderdale/digital-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/services/fort-lauderdale/event-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/services/fort-lauderdale/political-campaign-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/services/fort-lauderdale/real-estate-marketing/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+
+    // Service-Location Combination Pages (West Palm Beach)
+    {
+      url: `${baseUrl}/services/west-palm-beach/mobile-billboard-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/services/west-palm-beach/led-truck-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/services/west-palm-beach/digital-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/services/west-palm-beach/event-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/services/west-palm-beach/political-campaign-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/services/west-palm-beach/real-estate-marketing/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+
     // Comparison Pages with high priority for SEO
     {
       url: `${baseUrl}/compare/mobile-billboard-vs-car-wrap/`,

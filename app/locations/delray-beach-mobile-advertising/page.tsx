@@ -11,6 +11,7 @@ const locationData = {
   city: 'Delray Beach',
   county: 'Palm Beach County',
   state: 'Florida',
+  canonicalPath: '/locations/delray-beach-mobile-advertising/',
   population: '69K',
   description: 'Delray Beach mobile advertising reaches "Florida\'s Most Fun Small Town". Our LED billboard trucks navigate Atlantic Avenue\'s vibrant arts district, pristine beaches, and downtown entertainment areas. Target tourists, art enthusiasts, and affluent residents with GPS-tracked displays featuring crystal-clear 4K technology throughout this charming coastal community.',
   landmarks: [

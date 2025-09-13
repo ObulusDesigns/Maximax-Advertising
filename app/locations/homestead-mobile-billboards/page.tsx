@@ -11,6 +11,7 @@ const locationData = {
   city: 'Homestead',
   county: 'Miami-Dade County',
   state: 'Florida',
+  canonicalPath: '/locations/homestead-mobile-billboards/',
   population: '80K',
   description: 'Homestead mobile billboards connect with South Dade\'s growing agricultural and residential communities. Our LED billboard trucks reach NASCAR fans at Homestead-Miami Speedway, agricultural workers, and families throughout this historic gateway to the Florida Keys. GPS-tracked displays ensure optimal coverage from downtown to Florida City with brilliant 4K technology.',
   landmarks: [

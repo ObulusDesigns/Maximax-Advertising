@@ -11,6 +11,7 @@ const locationData = {
   city: 'Aventura',
   county: 'Miami-Dade County',
   state: 'Florida',
+  canonicalPath: '/locations/aventura-billboard-trucks/',
   population: '40K',
   description: 'Aventura billboard trucks deliver premium advertising to one of South Florida\'s most affluent communities. Our mobile LED displays target luxury shoppers at Aventura Mall, reach waterfront residents, and connect with business professionals. GPS-tracked billboard trucks ensure maximum visibility throughout this upscale destination with vibrant 4K displays.',
   landmarks: [

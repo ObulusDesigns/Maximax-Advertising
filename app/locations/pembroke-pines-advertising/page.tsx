@@ -11,6 +11,7 @@ const locationData = {
   city: 'Pembroke Pines',
   county: 'Broward County',
   state: 'Florida',
+  canonicalPath: '/locations/pembroke-pines-advertising/',
   population: '173K',
   description: 'Pembroke Pines advertising reaches one of Florida\'s most family-friendly cities. Our mobile billboard trucks navigate through residential neighborhoods, shopping districts, and business corridors. LED displays connect with diverse communities from Pembroke Lakes Mall to CB Smith Park, delivering your message with brilliant 4K technology throughout this thriving suburban hub.',
   landmarks: [

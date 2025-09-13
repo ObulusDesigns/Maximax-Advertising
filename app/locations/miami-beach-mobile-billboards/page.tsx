@@ -11,6 +11,7 @@ const locationData = {
   city: 'Miami Beach',
   county: 'Miami-Dade County',
   state: 'Florida',
+  canonicalPath: '/locations/miami-beach-mobile-billboards/',
   population: '92K',
   description: 'Miami Beach mobile billboards deliver unmatched visibility for your brand. Our LED billboard trucks navigate from Ocean Drive to Lincoln Road, targeting tourists and locals with precision GPS tracking. Reach South Beach crowds, Art Deco visitors, and beachfront traffic with stunning 4K displays that capture attention day and night.',
   landmarks: [

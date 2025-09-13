@@ -186,11 +186,16 @@ export function generateLocationMetadata(location: {
   county: string
   state: string
   slug?: string
+  canonicalPath?: string  // Allow explicit canonical path for standalone pages
 }): Metadata {
   const title = `Mobile Billboard Advertising ${location.city}, ${location.state}`
   const description = `Premier mobile billboard trucks and LED advertising in ${location.city}, ${location.county}. GPS-tracked campaigns with 4K displays. Call (561) 720-0521 for quotes.`
   const slug = location.slug || location.city.toLowerCase().replace(/\s+/g, '-')
-  const canonicalUrl = `${siteConfig.url}/locations/florida/${slug}/`
+  
+  // Use explicit canonical path if provided, otherwise default to florida dynamic route
+  const canonicalUrl = location.canonicalPath 
+    ? `${siteConfig.url}${location.canonicalPath}`
+    : `${siteConfig.url}/locations/florida/${slug}/`
   
   return {
     title,

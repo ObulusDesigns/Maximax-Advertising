@@ -11,6 +11,7 @@ const locationData = {
   city: 'Kendall',
   county: 'Miami-Dade County',
   state: 'Florida',
+  canonicalPath: '/locations/kendall-outdoor-advertising/',
   population: '75K',
   description: 'Kendall outdoor advertising reaches diverse suburban communities throughout Southwest Miami-Dade. Our mobile billboard trucks navigate busy commercial corridors from Dadeland to The Falls, targeting families, young professionals, and Hispanic markets. LED displays deliver vibrant messaging across this thriving residential and retail hub with crystal-clear 4K technology.',
   landmarks: [

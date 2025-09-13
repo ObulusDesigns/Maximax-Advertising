@@ -11,6 +11,7 @@ const locationData = {
   city: 'Coral Gables',
   county: 'Miami-Dade County',
   state: 'Florida',
+  canonicalPath: '/locations/coral-gables-mobile-advertising/',
   population: '51K',
   description: 'Coral Gables mobile advertising reaches affluent audiences in "The City Beautiful". Our LED billboard trucks target Miracle Mile shoppers, University of Miami students, and business professionals throughout this prestigious community. Premium mobile billboards deliver your message through tree-lined streets and historic neighborhoods with sophisticated 4K displays.',
   landmarks: [

@@ -22,6 +22,19 @@ import {
   Map,
   Palette,
   Rocket,
+  Camera,
+  Trophy,
+  Globe,
+  Vote,
+  FileText,
+  RefreshCw,
+  Send,
+  Monitor,
+  Smartphone,
+  Building,
+  Home,
+  Key,
+  Megaphone,
   LucideIcon
 } from 'lucide-react'
 
@@ -49,6 +62,19 @@ const iconMap: Record<string, LucideIcon> = {
   Map,
   Palette,
   Rocket,
+  Camera,
+  Trophy,
+  Globe,
+  Vote,
+  FileText,
+  RefreshCw,
+  Send,
+  Monitor,
+  Smartphone,
+  Building,
+  Home,
+  Key,
+  Megaphone,
 }
 
 // Get icon component by name
