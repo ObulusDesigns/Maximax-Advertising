@@ -129,6 +129,71 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.85,
     },
+
+    // Ultra-Affluent Communities with priority 0.9
+    {
+      url: `${baseUrl}/locations/bal-harbour-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/palm-beach-billboard-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/golden-beach-mobile-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/key-biscayne-billboard-trucks/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/fisher-island-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+
+    // High-Income Suburbs with priority 0.85
+    {
+      url: `${baseUrl}/locations/parkland-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/locations/jupiter-billboard-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/locations/pinecrest-mobile-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/locations/southwest-ranches-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/locations/highland-beach-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+
     // High-population cities with priority 0.85
     {
       url: `${baseUrl}/locations/miami-gardens-mobile-billboards/`,
@@ -209,7 +274,97 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.8,
     },
-    
+
+    // Phase 4 Secondary Cities - Miami-Dade with priority 0.8
+    {
+      url: `${baseUrl}/locations/palmetto-bay-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/miami-springs-billboard-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/north-miami-beach-mobile-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/miami-shores-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+
+    // Phase 4 Secondary Cities - Broward with priority 0.8
+    {
+      url: `${baseUrl}/locations/lauderhill-billboard-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/plantation-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/margate-billboard-trucks/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/coconut-creek-mobile-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/cooper-city-billboard-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+
+    // Phase 4 Secondary Cities - Palm Beach with priority 0.8
+    {
+      url: `${baseUrl}/locations/lake-worth-beach-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/belle-glade-billboard-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/north-palm-beach-billboard-trucks/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/palm-beach-gardens-mobile-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/lantana-billboard-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+
     // Dynamic Market Pages (generated from data store)
     ...marketPages,
     
