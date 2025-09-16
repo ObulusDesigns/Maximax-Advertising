@@ -8,6 +8,18 @@ import { Calendar, Clock, ArrowRight, Tag, TrendingUp, Lightbulb, Target } from 
 const blogPosts = [
   {
     id: 1,
+    title: 'Hispanic Heritage Month & Q4 Planning: Mobile Billboard Strategy for South Florida Success',
+    excerpt: 'Learn how mobile LED billboard trucks amplify Hispanic Heritage Month campaigns while kickstarting Q4 holiday advertising in Miami, Fort Lauderdale, and West Palm Beach.',
+    image: '/images/c92cdb19-f55b-4212-b177-31c8340cfe8c-2.jpeg',
+    category: 'Multicultural Marketing',
+    date: 'September 16, 2025',
+    readTime: '8 min read',
+    tags: ['Hispanic Heritage', 'Q4 Strategy', 'Mobile Advertising'],
+    featured: true,
+    slug: 'hispanic-heritage-month-q4-mobile-advertising-strategy',
+  },
+  {
+    id: 2,
     title: 'Labor Day 2025: Your Last Chance to Capture South Florida\'s $2.1 Billion Shopping Weekend',
     excerpt: 'Discover how mobile billboard trucks can help your business capture a share of the $2.1 billion Labor Day shopping weekend in Miami-Dade, Broward, and Palm Beach counties.',
     image: '/images/1-1.png',
@@ -15,11 +27,11 @@ const blogPosts = [
     date: 'September 1, 2025',
     readTime: '5 min read',
     tags: ['Labor Day', 'Holiday Marketing', 'Mobile Advertising'],
-    featured: true,
+    featured: false,
     slug: 'labor-day-2025-mobile-billboard-opportunity',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Top 15 Labor Day Events in Miami-Dade & Broward',
     excerpt: 'Strategic guide to Labor Day 2025 events where mobile billboards deliver maximum impact. From Fort Lauderdale Festival to Lady Gaga at Kaseya Center.',
     image: '/images/c92cdb19-f55b-4212-b177-31c8340cfe8c-2.jpeg',
@@ -31,7 +43,7 @@ const blogPosts = [
     slug: 'top-15-labor-day-events-miami-broward-2025',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Mobile LED Trucks vs Static Billboards: Labor Day Marketing Emergency',
     excerpt: 'Why mobile LED billboard trucks deliver 3x better ROI than static billboards for Labor Day 2025 campaigns. Real-time flexibility and guaranteed impressions.',
     image: '/images/c92cdb19-f55b-4212-b177-31c8340cfe8c-2.jpeg',
@@ -43,7 +55,7 @@ const blogPosts = [
     slug: 'labor-day-mobile-led-trucks-vs-static-billboards',
   },
   {
-    id: 4,
+    id: 5,
     title: 'The Power of Mobile Billboard Advertising in 2024',
     excerpt: 'Discover why mobile billboard advertising is becoming the preferred choice for businesses looking to maximize their advertising ROI in Palm Beach County.',
     image: '/images/1-1.png',
@@ -55,7 +67,7 @@ const blogPosts = [
     slug: 'power-of-mobile-billboard-advertising',
   },
   {
-    id: 5,
+    id: 6,
     title: '5 Ways GPS Tracking Revolutionizes Outdoor Advertising',
     excerpt: 'Learn how real-time GPS tracking technology is transforming the way businesses measure and optimize their outdoor advertising campaigns.',
     image: '/images/c92cdb19-f55b-4212-b177-31c8340cfe8c-2.jpeg',
@@ -67,7 +79,7 @@ const blogPosts = [
     slug: 'gps-tracking-revolutionizes-outdoor-advertising',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Case Study: Restaurant Grand Opening Success Story',
     excerpt: 'How Bella Vista Restaurant achieved an 85% increase in foot traffic during their grand opening week using mobile billboard advertising.',
     image: '/images/c92cdb19-f55b-4212-b177-31c8340cfe8c-2.jpeg',
@@ -79,7 +91,7 @@ const blogPosts = [
     slug: 'restaurant-grand-opening-success-story',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Maximizing Your Advertising Budget in Palm Beach County',
     excerpt: 'Smart strategies for local businesses to get the most out of their advertising dollars with targeted mobile billboard campaigns.',
     image: '/images/1-1.png',
@@ -91,7 +103,7 @@ const blogPosts = [
     slug: 'maximizing-advertising-budget-palm-beach',
   },
   {
-    id: 8,
+    id: 9,
     title: 'LED vs Traditional Billboards: What Works Better?',
     excerpt: 'A comprehensive comparison of LED mobile billboards versus traditional static billboards for modern advertising needs.',
     image: '/images/c92cdb19-f55b-4212-b177-31c8340cfe8c-2.jpeg',
@@ -103,7 +115,7 @@ const blogPosts = [
     slug: 'led-vs-traditional-billboards',
   },
   {
-    id: 9,
+    id: 10,
     title: 'Seasonal Advertising: Best Times to Launch Your Campaign',
     excerpt: 'Discover the optimal times throughout the year to launch your mobile billboard campaign for maximum impact and engagement.',
     image: '/images/1-1.png',
@@ -118,6 +130,7 @@ const blogPosts = [
 
 const categories = [
   { name: 'All Posts', count: blogPosts.length, icon: TrendingUp },
+  { name: 'Multicultural Marketing', count: 1, icon: Lightbulb },
   { name: 'Holiday Marketing', count: 1, icon: Lightbulb },
   { name: 'Event Marketing', count: 1, icon: Target },
   { name: 'Industry Comparison', count: 1, icon: TrendingUp },
