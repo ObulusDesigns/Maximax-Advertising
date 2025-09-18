@@ -1079,6 +1079,417 @@ export const servicesData: ServiceData[] = [
       availability: 'All Markets'
     },
     keywords: ['coverage areas', 'local advertisements', 'out-of-home advertising', 'vehicle advertising coverage', 'mobile outdoor advertising areas', 'cheap ads locations']
+  },
+  {
+    serviceName: 'Vehicle Wrap Advertising',
+    slug: 'vehicle-wrap-advertising',
+    tagline: 'Car Wrap Advertising & Get Paid to Advertise Programs',
+    description: 'Transform vehicles into mobile billboards with our professional car wrap advertising services. From full vehicle wraps to car advertising for money programs, we offer wrap advertising solutions that turn every mile into marketing opportunity. Get paid to advertise on your car or wrap your fleet for maximum brand visibility.',
+    features: [
+      {
+        icon: 'Car',
+        title: 'Full Vehicle Wraps',
+        description: 'Complete vehicle coverage with high-quality vinyl wraps that protect and promote'
+      },
+      {
+        icon: 'DollarSign',
+        title: 'Paid Advertising Programs',
+        description: 'Get paid to advertise on your car with our driver partnership programs'
+      },
+      {
+        icon: 'Shield',
+        title: 'Paint Protection',
+        description: 'Wraps protect original paint while advertising your brand'
+      },
+      {
+        icon: 'Palette',
+        title: 'Custom Design',
+        description: 'Professional design services for eye-catching vehicle graphics'
+      }
+    ],
+    benefits: [
+      {
+        title: 'Cost-Effective Marketing',
+        description: 'One-time investment provides years of advertising exposure',
+        metric: '$0.04 per impression'
+      },
+      {
+        title: 'Mobile Reach',
+        description: 'Your message travels everywhere your vehicles go',
+        metric: '30,000+ views daily'
+      },
+      {
+        title: 'Brand Protection',
+        description: 'High-quality wraps last 5-7 years and protect vehicle value',
+        metric: '5+ year lifespan'
+      }
+    ],
+    process: [
+      {
+        step: 1,
+        title: 'Design Consultation',
+        description: 'Create custom wrap design aligned with your brand',
+        icon: 'Palette'
+      },
+      {
+        step: 2,
+        title: 'Vehicle Assessment',
+        description: 'Evaluate vehicles and recommend wrap options',
+        icon: 'Car'
+      },
+      {
+        step: 3,
+        title: 'Professional Installation',
+        description: 'Expert installation by certified wrap technicians',
+        icon: 'Wrench'
+      },
+      {
+        step: 4,
+        title: 'Quality Assurance',
+        description: 'Final inspection and warranty activation',
+        icon: 'CheckCircle'
+      }
+    ],
+    pricing: [
+      {
+        name: 'Partial Wrap',
+        price: '$1,500-$2,500',
+        description: 'Doors, rear, and sides',
+        features: [
+          'High-impact areas',
+          'Cost-effective option',
+          '3-year warranty',
+          'Design included'
+        ]
+      },
+      {
+        name: 'Full Wrap',
+        price: '$3,000-$5,000',
+        description: 'Complete vehicle coverage',
+        features: [
+          'Maximum visibility',
+          'Full paint protection',
+          '5-year warranty',
+          'Professional design',
+          'Color change options'
+        ],
+        popular: true
+      },
+      {
+        name: 'Fleet Wrapping',
+        price: 'Volume Discounts',
+        description: 'Multiple vehicle packages',
+        features: [
+          'Fleet pricing',
+          'Consistent branding',
+          'Phased installation',
+          'Fleet management',
+          'Priority service'
+        ],
+        customQuote: true
+      },
+      {
+        name: 'Driver Program',
+        price: 'Earn $400/month',
+        description: 'Get paid to advertise',
+        features: [
+          'Monthly payments',
+          'Free installation',
+          'No cost to driver',
+          'Flexible commitment',
+          'Choose campaigns'
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: 'How long do vehicle wraps last?',
+        answer: 'High-quality vehicle wraps typically last 5-7 years with proper care. We use premium 3M and Avery materials with UV protection and weather resistance for maximum durability.'
+      },
+      {
+        question: 'Can I really get paid to advertise on my car?',
+        answer: 'Yes! Our driver program pays $200-$400 monthly for qualifying vehicles. You drive your normal routes while earning passive income from advertising.'
+      },
+      {
+        question: 'Will wrapping damage my vehicle paint?',
+        answer: 'No, professional wraps actually protect your paint from UV rays, minor scratches, and road debris. When removed properly, your paint will look like new.'
+      },
+      {
+        question: 'How much does it cost to wrap a car in Florida?',
+        answer: 'In Florida, partial wraps start at $1,500 and full wraps range from $3,000-$5,000 depending on vehicle size and design complexity. Fleet discounts available.'
+      }
+    ],
+    relatedServices: [
+      {
+        title: 'Mobile Billboard Trucks',
+        description: 'Combine wraps with billboard trucks',
+        href: '/services/mobile-billboard-trucks',
+        icon: 'Truck'
+      },
+      {
+        title: 'Campaign Management',
+        description: 'Full marketing integration',
+        href: '/services/campaign-management',
+        icon: 'Settings'
+      },
+      {
+        title: 'GPS Tracking',
+        description: 'Track wrapped vehicle campaigns',
+        href: '/services/gps-tracking',
+        icon: 'MapPin'
+      }
+    ],
+    testimonials: [
+      {
+        name: 'Carlos Mendez',
+        company: 'Miami Plumbing Services',
+        role: 'Owner',
+        content: 'Wrapping our fleet of 12 vans was the best marketing investment we ever made. Calls increased 40% and the wraps still look great after 3 years.',
+        rating: 5
+      },
+      {
+        name: 'Jessica Turner',
+        company: 'Rideshare Driver',
+        role: 'Independent Contractor',
+        content: 'I earn $400 extra per month just driving my normal Uber routes. The wrap looks professional and passengers love it!',
+        rating: 5
+      }
+    ],
+    schema: {
+      name: 'Vehicle Wrap Advertising Services',
+      description: 'Professional car wrap advertising and paid driver programs in South Florida',
+      provider: {
+        name: 'Maximax Advertising',
+        url: 'https://maximaxmobileadvertising.com'
+      },
+      areaServed: ['Miami', 'Fort Lauderdale', 'Tampa', 'Orlando', 'Jacksonville'],
+      serviceType: 'Vehicle Wrap Advertising',
+      priceRange: '$1,500-$5,000'
+    },
+    cta: {
+      primary: {
+        text: 'Get Wrap Quote',
+        href: 'https://ocyrus.app.n8n.cloud/form/9a151470-e398-4144-9b7d-20941bc9b436',
+        isExternal: true
+      },
+      secondary: {
+        text: 'Join Driver Program',
+        href: '/contact'
+      }
+    },
+    stats: {
+      coverage: 'All Vehicle Types',
+      impressions: '30,000+ Daily',
+      availability: '5-7 Year Lifespan'
+    },
+    keywords: ['car wrap advertising', 'vehicle wrap advertising', 'wrap advertising', 'get paid to advertise on your car', 'car advertising for money', 'wrap your car for money', 'paid car advertising', 'free car advertising', 'vehicle wraps tampa fl', 'florida car wrap', 'car wrap philadelphia', 'vehicle wraps las vegas', 'car advertising wrap', 'wrap my car for money', 'car advertising jobs', 'car advertising stickers', 'auto wrap advertising', 'wrapped car advertising', 'vehicle advertising wraps']
+  },
+  {
+    serviceName: 'Local Advertising Solutions',
+    slug: 'local-advertising-solutions',
+    tagline: 'Best Places to Advertise Your Business Locally',
+    description: 'Comprehensive local advertising strategies combining mobile billboards, direct mail, radio, TV, and digital marketing. We help you find the best places to advertise your business with proven local advertising solutions that deliver measurable results for small businesses.',
+    features: [
+      {
+        icon: 'Radio',
+        title: 'Local Radio Advertising',
+        description: 'Targeted radio campaigns on popular local stations'
+      },
+      {
+        icon: 'Tv',
+        title: 'Local TV Advertising',
+        description: 'Affordable TV spots during prime local programming'
+      },
+      {
+        icon: 'Mail',
+        title: 'Direct Mail Campaigns',
+        description: 'Targeted mailings to specific neighborhoods and demographics'
+      },
+      {
+        icon: 'Megaphone',
+        title: 'Integrated Marketing',
+        description: 'Multi-channel campaigns for maximum local impact'
+      }
+    ],
+    benefits: [
+      {
+        title: 'Local Market Expertise',
+        description: 'Deep knowledge of South Florida markets and media',
+        metric: '10+ years experience'
+      },
+      {
+        title: 'Affordable Options',
+        description: 'Solutions for every budget from $500 to $50,000',
+        metric: 'Flexible pricing'
+      },
+      {
+        title: 'Proven Results',
+        description: 'Average ROI across all local advertising channels',
+        metric: '3.2x return'
+      }
+    ],
+    process: [
+      {
+        step: 1,
+        title: 'Market Analysis',
+        description: 'Identify your local target audience and competition',
+        icon: 'Search'
+      },
+      {
+        step: 2,
+        title: 'Media Planning',
+        description: 'Select optimal mix of local advertising channels',
+        icon: 'Layout'
+      },
+      {
+        step: 3,
+        title: 'Creative Development',
+        description: 'Create compelling messages for each medium',
+        icon: 'Palette'
+      },
+      {
+        step: 4,
+        title: 'Campaign Execution',
+        description: 'Launch and manage your local advertising campaign',
+        icon: 'Rocket'
+      }
+    ],
+    pricing: [
+      {
+        name: 'Starter Package',
+        price: '$2,500/month',
+        description: 'Essential local advertising',
+        features: [
+          'Mobile billboard (2 days)',
+          'Direct mail (1,000 homes)',
+          'Social media ads',
+          'Google Ads management',
+          'Monthly reporting'
+        ]
+      },
+      {
+        name: 'Growth Package',
+        price: '$5,000/month',
+        description: 'Expanded local presence',
+        features: [
+          'Mobile billboard (weekly)',
+          'Radio advertising',
+          'Direct mail (5,000 homes)',
+          'Digital marketing suite',
+          'Dedicated account manager',
+          'Bi-weekly optimization'
+        ],
+        popular: true
+      },
+      {
+        name: 'Dominate Local',
+        price: '$10,000/month',
+        description: 'Maximum local impact',
+        features: [
+          'Daily mobile billboards',
+          'TV advertising',
+          'Radio sponsorships',
+          'Direct mail (10,000+)',
+          'Complete digital presence',
+          'Weekly strategy sessions'
+        ]
+      },
+      {
+        name: 'Custom Solutions',
+        price: 'Contact Us',
+        description: 'Tailored local campaigns',
+        features: [
+          'Custom media mix',
+          'Flexible budgets',
+          'Special events',
+          'Seasonal campaigns',
+          'Multi-location businesses'
+        ],
+        customQuote: true
+      }
+    ],
+    faqs: [
+      {
+        question: 'What are the best places to advertise locally?',
+        answer: 'The most effective local advertising combines mobile billboards for visibility, direct mail for targeting, radio for frequency, and digital for precision. We recommend a multi-channel approach based on your specific audience.'
+      },
+      {
+        question: 'How much does local TV advertising cost?',
+        answer: 'Local TV advertising in South Florida ranges from $200-$1,500 per 30-second spot depending on the time slot and channel. We negotiate bulk rates and can include TV in packages starting at $5,000/month.'
+      },
+      {
+        question: 'What are direct mail costs for local campaigns?',
+        answer: 'Direct mail costs average $0.50-$1.00 per household including design, printing, and postage. We offer targeted mailings starting at 1,000 homes for maximum efficiency.'
+      },
+      {
+        question: 'Is local radio advertising effective?',
+        answer: 'Yes! Local radio delivers an average 6x ROI with proper targeting. Morning drive time and popular local shows provide excellent reach for businesses targeting commuters and local residents.'
+      }
+    ],
+    relatedServices: [
+      {
+        title: 'Mobile Billboard Trucks',
+        description: 'High-impact local visibility',
+        href: '/services/mobile-billboard-trucks',
+        icon: 'Truck'
+      },
+      {
+        title: 'Campaign Management',
+        description: 'Professional campaign optimization',
+        href: '/services/campaign-management',
+        icon: 'Settings'
+      },
+      {
+        title: 'Coverage Areas',
+        description: 'Local market coverage',
+        href: '/services/coverage-areas',
+        icon: 'Map'
+      }
+    ],
+    testimonials: [
+      {
+        name: 'Patricia Wilson',
+        company: 'Wilson\'s Bakery',
+        role: 'Owner',
+        content: 'The local advertising package transformed our business. Between the mobile billboards and direct mail, our customer base doubled in 6 months!',
+        rating: 5
+      },
+      {
+        name: 'James Thompson',
+        company: 'Thompson Auto Group',
+        role: 'Marketing Director',
+        content: 'The integrated approach of billboards, radio, and digital delivered incredible results. Best ROI we\'ve seen from any advertising.',
+        rating: 5
+      }
+    ],
+    schema: {
+      name: 'Local Advertising Solutions',
+      description: 'Comprehensive local advertising services including mobile billboards, direct mail, radio, and TV',
+      provider: {
+        name: 'Maximax Advertising',
+        url: 'https://maximaxmobileadvertising.com'
+      },
+      areaServed: ['South Florida', 'Miami-Dade', 'Broward', 'Palm Beach'],
+      serviceType: 'Local Advertising Services',
+      priceRange: '$2,500-$10,000 per month'
+    },
+    cta: {
+      primary: {
+        text: 'Start Local Campaign',
+        href: 'https://ocyrus.app.n8n.cloud/form/9a151470-e398-4144-9b7d-20941bc9b436',
+        isExternal: true
+      },
+      secondary: {
+        text: 'View Options',
+        href: '/services'
+      }
+    },
+    stats: {
+      coverage: 'All Local Media',
+      impressions: '100,000+ Monthly',
+      availability: 'Full Service'
+    },
+    keywords: ['local advertising', 'local advertising near me', 'local advertising for small business', 'places to advertise your business', 'best places to advertise locally', 'local radio advertising', 'local tv advertising costs', 'direct mail costs', 'direct mail rates', 'cost of direct mail', 'direct mail advertising costs', 'local advertising agency', 'advertise local business', 'advertising local business', 'local store marketing', 'local internet advertising', 'affordable online advertising', 'where to advertise your business']
   }
 ]
 

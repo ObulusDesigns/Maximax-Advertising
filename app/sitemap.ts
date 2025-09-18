@@ -13,13 +13,84 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const marketSlugs = getAllMarketSlugs()
   const serviceSlugs = getAllServiceSlugs()
 
-  // Generate location pages entries with SEO optimization
-  const locationPages = locationSlugs.map(slug => ({
+  // Generate Florida location pages entries with SEO optimization
+  const floridaLocationPages = locationSlugs.map(slug => ({
     url: `${baseUrl}/locations/florida/${slug}/`,
     lastModified: dateString,
     changeFrequency: 'weekly' as const,
     priority: 0.8,
   }))
+
+
+  // Static Florida location pages
+  const staticFloridaLocationPages = [
+    {
+      url: `${baseUrl}/locations/aventura-billboard-trucks/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/boca-raton-billboard-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/coral-gables-mobile-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/delray-beach-mobile-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/fort-lauderdale-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/hollywood-fl-billboard-trucks/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/homestead-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/kendall-outdoor-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/miami-beach-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/pembroke-pines-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/west-palm-beach-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    }
+  ]
 
   // Generate market pages entries with enhanced metadata
   const marketPages = marketSlugs.map(slug => ({
@@ -75,15 +146,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
-    {
-      url: `${baseUrl}/pricing/`,
-      lastModified: dateString,
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
     
     // Dynamic Location Pages (generated from data store)
-    ...locationPages,
+    ...floridaLocationPages,
+    ...staticFloridaLocationPages,
     
     // Static Location Pages (standalone pages not generated from florida-locations data)
     // Major cities with priority 0.9
@@ -514,6 +580,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 1.0,
     },
+
     
     // Legal Pages
     {
@@ -543,19 +610,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/blog/labor-day-advertising-sales/`,
+      url: `${baseUrl}/blog/labor-day-2025-mobile-billboard-opportunity/`,
       lastModified: dateString,
       changeFrequency: 'yearly',
       priority: 0.6,
     },
     {
-      url: `${baseUrl}/blog/labor-day-advertising-maximize-holiday-weekend/`,
+      url: `${baseUrl}/blog/labor-day-mobile-led-trucks-vs-static-billboards/`,
       lastModified: dateString,
       changeFrequency: 'yearly',
       priority: 0.6,
     },
     {
-      url: `${baseUrl}/blog/labor-day-mobile-billboard-advertising/`,
+      url: `${baseUrl}/blog/top-15-labor-day-events-miami-broward-2025/`,
       lastModified: dateString,
       changeFrequency: 'yearly',
       priority: 0.6,

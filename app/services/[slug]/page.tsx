@@ -31,6 +31,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     name: service.serviceName,
     description: `${service.tagline}. ${service.description}`,
     keywords: service.keywords || [],
+    slug: service.slug,
   })
 }
 

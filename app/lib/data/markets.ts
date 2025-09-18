@@ -59,7 +59,7 @@ export const marketsData: MarketData[] = [
       }
     ],
     relatedMarkets: ['chiropractors', 'med-spas', 'dermatologists'],
-    keywords: ['plastic surgery advertising', 'cosmetic surgery marketing', 'healthcare advertising agency', 'healthcare marketing firms', 'healthcare ad agency', 'medical billboard advertising']
+    keywords: ['plastic surgery advertising', 'plastic surgery ads', 'cosmetic surgery marketing', 'healthcare advertising', 'medical advertising', 'hospital advertisement', 'healthcare advertising agency', 'healthcare marketing firms', 'healthcare creative agency', 'medical advertising agency', 'healthcare marketing agencies', 'top healthcare marketing agencies', 'best healthcare marketing agencies', 'healthcare digital advertising', 'health adverts', 'health care advertising', 'healthcare ad', 'healthcare ad agencies', 'healthcare advertising companies', 'medical billboard advertising']
   },
   {
     industry: 'Chiropractors',
@@ -118,7 +118,7 @@ export const marketsData: MarketData[] = [
       }
     ],
     relatedMarkets: ['plastic-surgeons', 'physical-therapists', 'pain-management'],
-    keywords: ['chiropractor advertising', 'chiropractic marketing', 'healthcare marketing campaigns', 'health care advertisement', 'healthcare billboard advertising']
+    keywords: ['chiropractor advertising', 'chiropractic marketing', 'healthcare marketing campaigns', 'health care advertisement', 'healthcare billboard advertising', 'healthcare advertising', 'medical advertising', 'nursing home marketing', 'hospice marketing', 'hospice marketing ideas', 'healthcare marketing examples', 'best healthcare marketing campaigns']
   },
 
   // Legal Markets - personal injury lawyer advertising, law firm ads
@@ -179,7 +179,7 @@ export const marketsData: MarketData[] = [
       }
     ],
     relatedMarkets: ['immigration-lawyers', 'criminal-defense', 'family-law'],
-    keywords: ['personal injury lawyer advertising', 'personal injury attorney ads', 'law firm ads', 'marketing for personal injury lawyers', 'personal injury attorney advertising', 'lawyer billboard advertising', 'legal marketing']
+    keywords: ['personal injury lawyer advertising', 'personal injury lawyer ads', 'personal injury attorney ads', 'law firm ads', 'lawyer advertising', 'criminal defense marketing', 'divorce lawyer marketing', 'advertising to lawyers', 'ads for lawyers', 'marketing for personal injury lawyers', 'personal injury marketing', 'personal injury advertising', 'digital marketing for personal injury lawyers', 'marketing for personal injury law firms', 'personal injury marketing agency', 'divorce attorney marketing', 'marketing for divorce lawyers', 'lawyer billboard advertising', 'legal marketing', 'best lawyer advertising', 'attorney advertising']
   },
   {
     industry: 'Immigration Lawyers',
@@ -238,7 +238,7 @@ export const marketsData: MarketData[] = [
       }
     ],
     relatedMarkets: ['personal-injury-lawyers', 'tax-attorneys', 'family-law'],
-    keywords: ['immigration lawyer advertising', 'bilingual legal marketing', 'Hispanic attorney advertising', 'law firm ads', 'legal services advertising', 'attorney marketing']
+    keywords: ['immigration lawyer advertising', 'bilingual legal marketing', 'Hispanic attorney advertising', 'law firm ads', 'legal services advertising', 'attorney marketing', 'lawyer advertising', 'advertising for attorney', 'ads for lawyers', 'advertising to lawyers', 'criminal defense attorney marketing']
   },
 
   // Construction & Home Services Markets - local advertisements, cheap ads
@@ -299,7 +299,7 @@ export const marketsData: MarketData[] = [
       }
     ],
     relatedMarkets: ['real-estate-agents', 'mortgage-brokers', 'interior-designers'],
-    keywords: ['home builder advertising', 'new construction marketing', 'real estate billboard advertising']
+    keywords: ['home builder advertising', 'new construction marketing', 'real estate billboard advertising', 'local advertising', 'local advertisements', 'cheap ads', 'advertise local business', 'advertising local business', 'affordable advertising']
   },
   {
     industry: 'Impact Windows & Doors',
@@ -358,7 +358,7 @@ export const marketsData: MarketData[] = [
       }
     ],
     relatedMarkets: ['roofing', 'home-builders', 'general-contractors'],
-    keywords: ['impact window advertising', 'hurricane window marketing', 'storm door advertising']
+    keywords: ['impact window advertising', 'hurricane window marketing', 'storm door advertising', 'home improvement advertising', 'contractor advertising', 'local advertising for contractors']
   },
   {
     industry: 'Roofing',
@@ -417,7 +417,7 @@ export const marketsData: MarketData[] = [
       }
     ],
     relatedMarkets: ['impact-windows-doors', 'general-contractors', 'restoration-companies'],
-    keywords: ['roofing advertising', 'storm damage marketing', 'roofer billboard advertising']
+    keywords: ['roofing advertising', 'storm damage marketing', 'roofer billboard advertising', 'contractor marketing', 'home services advertising', 'local contractor advertising']
   },
   {
     industry: 'HVAC',
@@ -476,7 +476,7 @@ export const marketsData: MarketData[] = [
       }
     ],
     relatedMarkets: ['plumbing', 'electrical', 'appliance-repair'],
-    keywords: ['HVAC advertising', 'air conditioning marketing', 'heating and cooling billboard']
+    keywords: ['HVAC advertising', 'air conditioning marketing', 'heating and cooling billboard', 'home services marketing', 'service company advertising', 'local service advertising']
   },
   
   // Fitness & Gym Markets - gym ads, gym advertisement
@@ -537,7 +537,7 @@ export const marketsData: MarketData[] = [
       }
     ],
     relatedMarkets: ['healthcare', 'personal-trainers', 'nutrition-stores'],
-    keywords: ['gym ads', 'gym advertisement', 'fitness center marketing', 'health club advertising', 'gym membership marketing']
+    keywords: ['gym ads', 'gym advertisement', 'gym marketing ideas', 'fitness center marketing', 'health club advertising', 'gym membership marketing', 'fitness advertising', 'workout advertising', 'exercise facility marketing']
   },
   
   // Financial Services Markets - marketing for banking
@@ -598,7 +598,190 @@ export const marketsData: MarketData[] = [
       }
     ],
     relatedMarkets: ['mortgage-brokers', 'financial-advisors', 'insurance-companies'],
-    keywords: ['marketing for banking', 'marketing of banking services', 'bank advertising', 'credit union marketing', 'financial services advertising']
+    keywords: ['bank marketing strategies', 'digital marketing for banks', 'financial advertising', 'financial services advertising', 'financial ads', 'bank advertising', 'banks advertise', 'banks marketing', 'credit union marketing', 'marketing for banking', 'marketing of banking services', 'bank marketing strategy']
+  },
+
+  // Tourism & Travel Markets
+  {
+    industry: 'Hotels & Resorts',
+    slug: 'hotels-resorts',
+    tagline: 'Drive Occupancy with Strategic Tourism & Travel Advertising',
+    description: 'Boost hotel bookings and resort visits with targeted travel advertising and tourism advertising campaigns. Our mobile billboards reach tourists and locals, promoting your hospitality services throughout South Florida\'s premier destinations.',
+    painPoints: [
+      'Seasonal occupancy fluctuations',
+      'Competition from online travel agencies',
+      'Reaching tourists at key decision points',
+      'Building local staycation business'
+    ],
+    solutions: [
+      {
+        title: 'Airport & Tourist Area Coverage',
+        description: 'Target arrivals at airports and popular tourist destinations'
+      },
+      {
+        title: 'Event-Based Marketing',
+        description: 'Capitalize on conventions, festivals, and seasonal events'
+      },
+      {
+        title: 'Staycation Campaigns',
+        description: 'Reach local residents for weekend getaways'
+      }
+    ],
+    benefits: [
+      'Increase direct bookings',
+      'Build brand awareness among tourists',
+      'Promote special packages and events',
+      'Reduce OTA dependency',
+      'Drive restaurant and spa revenue'
+    ],
+    stats: {
+      roi: '520% ROI',
+      reach: '65,000+ Daily',
+      engagement: '4.1% CTR'
+    },
+    caseStudy: {
+      title: 'South Beach Boutique Hotel',
+      result: '35% increase in direct bookings',
+      metric: '$450,000 additional revenue'
+    },
+    faqs: [
+      {
+        question: 'How does mobile advertising help hotels?',
+        answer: 'Travel advertising through mobile billboards reaches tourists at airports, beaches, and attractions when they\'re making lodging decisions. Tourism advertising builds awareness and drives direct bookings.'
+      },
+      {
+        question: 'What tourism advertising messages work best?',
+        answer: 'Special offers, unique amenities, and location benefits resonate most. Travel advertising should emphasize convenience, luxury, or value depending on your target market.'
+      },
+      {
+        question: 'Can you target business travelers?',
+        answer: 'Yes, our tourism advertising routes include business districts, convention centers, and airport routes during weekday travel times to reach corporate guests.'
+      }
+    ],
+    relatedMarkets: ['restaurants', 'attractions', 'travel-agencies'],
+    keywords: ['travel advertising', 'tourism advertising', 'advertising tourism', 'travel agency ads', 'hotel marketing', 'resort advertising', 'hospitality marketing', 'tourism and marketing', 'marketing for travel and tourism', 'marketing in travel and tourism', 'tourism marketing plan', 'marketing for travel agents']
+  },
+
+  // Fashion & Retail Markets
+  {
+    industry: 'Fashion & Apparel',
+    slug: 'fashion-apparel',
+    tagline: 'Make Your Brand the Talk of the Town with Fashion Advertising',
+    description: 'Stand out in the competitive fashion market with eye-catching fashion advertising and fashion advertisements. Our mobile billboards showcase your latest collections and drive traffic to your stores throughout South Florida\'s shopping districts.',
+    painPoints: [
+      'Competing with online retailers',
+      'Building brand awareness locally',
+      'Driving foot traffic to stores',
+      'Promoting seasonal collections'
+    ],
+    solutions: [
+      {
+        title: 'Shopping District Targeting',
+        description: 'Focus on malls, boutique areas, and fashion districts'
+      },
+      {
+        title: 'Seasonal Campaign Strategy',
+        description: 'Align with fashion weeks and seasonal launches'
+      },
+      {
+        title: 'Event Marketing',
+        description: 'Presence at fashion shows and style events'
+      }
+    ],
+    benefits: [
+      'Drive store traffic',
+      'Build brand recognition',
+      'Promote sales and events',
+      'Reach fashion-conscious consumers',
+      'Support new store openings'
+    ],
+    stats: {
+      roi: '410% ROI',
+      reach: '55,000+ Daily',
+      engagement: '3.7% CTR'
+    },
+    caseStudy: {
+      title: 'Brickell Fashion Boutique',
+      result: '60% increase in foot traffic',
+      metric: '$125,000 in event sales'
+    },
+    faqs: [
+      {
+        question: 'How effective is fashion advertising on mobile billboards?',
+        answer: 'Fashion advertisements on mobile billboards create buzz and urgency, especially for sales and new collections. Visual impact drives immediate store visits and brand awareness.'
+      },
+      {
+        question: 'What fashion advertising works best?',
+        answer: 'Bold visuals showcasing key pieces, sale announcements, and exclusive offers. Fashion advertisements should be visually striking and include clear calls-to-action.'
+      },
+      {
+        question: 'Can you coordinate with fashion events?',
+        answer: 'Absolutely! We time fashion advertising campaigns around Miami Fashion Week, Art Basel, and other style events to maximize impact.'
+      }
+    ],
+    relatedMarkets: ['jewelry-stores', 'beauty-salons', 'shopping-centers'],
+    keywords: ['fashion advertising', 'fashion advertisements', 'fashion and advertising', 'fashion campaign', 'fashion marketing campaigns', 'celebrity fashion campaigns', 'best fashion advertising campaigns']
+  },
+
+  // Education Markets
+  {
+    industry: 'Private Schools & Colleges',
+    slug: 'private-schools-colleges',
+    tagline: 'Reach Parents and Students with Strategic Education Advertising',
+    description: 'Drive enrollment with targeted education ads and advertising in higher education. Our mobile billboards reach parents, students, and decision-makers throughout your enrollment area, building awareness for your educational institution.',
+    painPoints: [
+      'Increasing enrollment competition',
+      'Reaching parent decision-makers',
+      'Building institutional reputation',
+      'Promoting specialized programs'
+    ],
+    solutions: [
+      {
+        title: 'Parent-Focused Routes',
+        description: 'Target family neighborhoods and school zones'
+      },
+      {
+        title: 'Open House Promotion',
+        description: 'Drive attendance to campus events and tours'
+      },
+      {
+        title: 'Program Highlighting',
+        description: 'Showcase unique academic and athletic offerings'
+      }
+    ],
+    benefits: [
+      'Increase enrollment inquiries',
+      'Build institutional awareness',
+      'Promote special programs',
+      'Reach diverse communities',
+      'Support recruitment events'
+    ],
+    stats: {
+      roi: '340% ROI',
+      reach: '45,000+ Daily',
+      engagement: '2.8% CTR'
+    },
+    caseStudy: {
+      title: 'Miami Private Academy',
+      result: '40% increase in applications',
+      metric: '85 new enrollments'
+    },
+    faqs: [
+      {
+        question: 'How do education ads help schools?',
+        answer: 'Education advertising builds awareness among parents actively choosing schools. Mobile billboards create visibility during key decision periods like enrollment season.'
+      },
+      {
+        question: 'When should schools run advertising campaigns?',
+        answer: 'Peak times for education ads are January-March for fall enrollment and August-September for mid-year transfers. Advertising in higher education should align with application deadlines.'
+      },
+      {
+        question: 'Can you target specific school districts?',
+        answer: 'Yes, we create routes focusing on neighborhoods within your enrollment area or competitive districts where you want to attract students.'
+      }
+    ],
+    relatedMarkets: ['tutoring-centers', 'after-school-programs', 'youth-sports'],
+    keywords: ['education ads', 'education advertising', 'advertising in higher education', 'ads for colleges', 'educational campaign', 'best education advertising campaigns', 'private school marketing', 'college advertising', 'university marketing', 'how to market a private school', 'private advertisement', 'private adverts']
   }
 ]
 

@@ -3,10 +3,10 @@ import { Metadata } from 'next'
 export const siteConfig = {
   name: 'Maximax Advertising',
   url: 'https://maximaxmobileadvertising.com',
-  description: 'Premier vehicle advertising and mobile outdoor advertising in South Florida. Cheap ads with LED billboard trucks, car billboard advertising, and GPS tracking. Out-of-home advertising solutions.',
+  description: 'Premier vehicle advertising and mobile outdoor advertising in South Florida. LED billboard trucks, car billboard advertising, and GPS tracking. Out-of-home advertising solutions.',
   keywords: [
+    // Primary Keywords (High Search Volume)
     'vehicle advertising',
-    'cheap ads',
     'mobile outdoor advertising',
     'car billboard advertising',
     'advertise on car',
@@ -15,70 +15,124 @@ export const siteConfig = {
     'out-of-home advertising',
     'what is ooh in marketing',
     'local advertisements',
-    'billboard cost',
-    'billboard price',
-    'cost for billboard',
-    'billboard advertising costs',
-    'digital billboards price',
-    'mobile billboard advertising Florida',
-    'LED truck advertising',
-    'mobile advertising trucks',
-    'billboard truck rental Florida',
-    'mobile billboard cost',
-    'billboard trucks Miami',
-    'mobile billboards Palm Beach',
-    'GPS tracked billboards',
-    'digital billboard trucks',
-    '4K LED mobile advertising',
-    'billboard advertising prices',
-    'advertising trucks',
-    'led truck',
-    'mobile billboards',
-    'billboard truck',
-    'digital billboard truck',
-    'mobile billboard advertising',
-    'led billboard truck',
-    'billboard expenses',
-    'mobile billboard trucks',
-    'advertising truck',
-    'led advertising truck',
-    'billboard for sale',
-    'digital billboard ad cost',
-    'mobile advertising truck',
-    'mobile billboard truck',
+
+    // Major City Billboard Keywords
     'miami billboards',
+    'tampa billboards',
     'fort lauderdale billboards',
     'boca raton billboards',
     'west palm beach billboards',
-    'hialeah billboards',
-    'coral gables billboards',
-    'pembroke pines billboards',
-    'coral springs billboards',
-    'billboard company',
-    'ooh advertising',
-    'outdoor advertising miami',
-    'outdoor advertising fort lauderdale',
-    'mobile led truck',
+
+    // Vehicle Wrap & Car Advertising Keywords
+    'car wrap advertising',
+    'vehicle wrap advertising',
+    'wrap advertising',
+    'car advertising wrap',
+    'vehicle graphics',
+    'auto wraps',
+    'car decals',
+    'truck wraps',
+    'van wraps',
+    'fleet wraps',
+
+    // Local Advertising Keywords
+    'how to advertise locally',
+    'local advertising solutions',
+    'best local advertising',
+    'local advertising agencies',
+    'community advertising',
+    'neighborhood marketing',
+    'local promotional strategies',
+
+    // Mobile Billboard Specific
+    'mobile billboard advertising',
+    'mobile billboards',
+    'billboard trucks',
     'led billboard trucks',
-    'digital mobile billboard',
-    'portable billboard',
-    'moving billboards',
-    'billboard advertising cost',
-    'mobile billboard near me',
-    'billboard advertising services',
-    'car wrap ad',
-    'car wrapping advertising',
-    'bus advertisement',
-    'bus advertising cost',
+    'digital billboard trucks',
+    'mobile advertising trucks',
+    'rolling billboards',
+    'truck advertising',
+    'mobile digital billboards',
+
+    // Industry/Market Keywords
+    'travel advertising',
+    'tourism advertising',
+    'nightlife advertising',
+    'real estate advertising',
+    'restaurant advertising',
+    'retail advertising',
+    'healthcare advertising',
+    'education advertising',
+    'fashion advertising',
+    'entertainment advertising',
+
+    // Other Advertising Types
     'bench advertising',
-    'storefront advertising'
-  ]
+    'bus advertising',
+    'outdoor advertising',
+    'transit advertising',
+    'street advertising',
+    'guerrilla marketing',
+    'ambient advertising',
+    'direct mail marketing',
+
+    // Florida-Specific Keywords
+    'florida advertising',
+    'miami advertising',
+    'fort lauderdale advertising',
+    'west palm beach advertising',
+    'south florida marketing',
+    'miami mobile billboards',
+    'florida billboard trucks',
+    'south beach advertising',
+    'brickell advertising',
+    'wynwood advertising',
+
+    // Question-Based Keywords
+    'what is ooh advertising',
+    'what is out of home advertising',
+    'how does billboard advertising work',
+    'why use mobile billboards',
+    'when to use outdoor advertising',
+    'where to advertise locally',
+
+    // Service-Specific Keywords
+    'gps tracked advertising',
+    'led mobile displays',
+    '4k billboard screens',
+    'digital outdoor advertising',
+    'programmatic outdoor advertising',
+    'mobile marketing services',
+    'advertising truck rental',
+    'billboard truck services',
+
+    // Campaign Keywords
+    'advertising campaign',
+    'marketing campaign',
+    'promotional campaign',
+    'brand awareness campaign',
+    'product launch advertising',
+    'event promotion',
+    'grand opening advertising',
+    'seasonal marketing',
+
+    // Business Type Keywords
+    'small business advertising',
+    'startup marketing',
+    'franchise advertising',
+    'corporate advertising',
+    'b2b advertising',
+    'b2c marketing',
+    'retail marketing',
+    'service business advertising'
+  ],
 }
 
 export const defaultMetadata: Metadata = {
   title: {
-    default: 'Vehicle Advertising & Cheap Ads | Mobile Billboard Trucks Florida | Maximax',
-    template: '%s | Maximax Advertising'
+    template: '%s | Maximax Advertising',
+    default: 'Maximax Advertising | Mobile Billboard Trucks | LED Displays | South Florida',
   },
   description: siteConfig.description,
   keywords: siteConfig.keywords,
@@ -91,31 +145,27 @@ export const defaultMetadata: Metadata = {
     telephone: false,
   },
   metadataBase: new URL(siteConfig.url),
-  alternates: {
-    canonical: siteConfig.url,
-  },
   openGraph: {
-    title: 'Vehicle Advertising & Mobile Outdoor Advertising | Maximax Florida',
-    description: siteConfig.description,
+    type: 'website',
+    locale: 'en_US',
     url: siteConfig.url,
     siteName: siteConfig.name,
+    title: 'Maximax Advertising | Mobile Billboard Advertising | South Florida',
+    description: 'Premier mobile billboard advertising company in South Florida. LED billboard trucks with GPS tracking serving Miami-Dade, Broward, and Palm Beach counties.',
     images: [
       {
-        url: '/images/maximax-logo.png',
+        url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Maximax Advertising - Mobile Billboard Trucks',
+        alt: 'Maximax Advertising Mobile Billboard Trucks',
       },
     ],
-    locale: 'en_US',
-    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mobile Billboard Advertising Florida | Maximax',
-    description: siteConfig.description,
-    images: ['/images/maximax-logo.png'],
-    creator: '@maximaxads',
+    title: 'Maximax Advertising | Mobile Billboards South Florida',
+    description: 'Professional mobile billboard advertising with LED trucks. GPS-tracked campaigns throughout Miami-Dade, Broward, and Palm Beach.',
+    images: ['/images/twitter-card.jpg'],
   },
   robots: {
     index: true,
@@ -128,317 +178,153 @@ export const defaultMetadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'your-google-verification-code',
+  alternates: {
+    canonical: siteConfig.url,
   },
 }
 
-// Page-specific metadata generators
-export function generatePageMetadata(page: {
-  title: string
-  description: string
-  keywords?: string[]
-  path: string
-  noindex?: boolean
-}): Metadata {
-  const canonicalUrl = `${siteConfig.url}${page.path}`
-  
-  return {
-    title: page.title,
-    description: page.description,
-    keywords: page.keywords || siteConfig.keywords,
-    alternates: {
-      canonical: canonicalUrl,
-    },
-    openGraph: {
-      title: `${page.title} | Maximax Advertising`,
-      description: page.description,
-      url: canonicalUrl,
-      siteName: siteConfig.name,
-      locale: 'en_US',
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: `${page.title} | Maximax`,
-      description: page.description,
-    },
-    robots: page.noindex ? {
-      index: false,
-      follow: true,
-    } : {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-      },
-    },
-  }
-}
+export function generatePageMetadata(
+  title: string,
+  description: string,
+  keywords?: string[],
+  path?: string
+): Metadata {
+  const url = path ? `${siteConfig.url}${path}` : siteConfig.url
 
-// Location page metadata generator
-export function generateLocationMetadata(location: {
-  city: string
-  county: string
-  state: string
-  slug?: string
-  canonicalPath?: string  // Allow explicit canonical path for standalone pages
-}): Metadata {
-  const title = `Mobile Billboard Advertising ${location.city}, ${location.state}`
-  const description = `Premier mobile billboard trucks and LED advertising in ${location.city}, ${location.county}. GPS-tracked campaigns with 4K displays. Call (561) 720-0521 for quotes.`
-  const slug = location.slug || location.city.toLowerCase().replace(/\s+/g, '-')
-  
-  // Use explicit canonical path if provided, otherwise default to florida dynamic route
-  const canonicalUrl = location.canonicalPath 
-    ? `${siteConfig.url}${location.canonicalPath}`
-    : `${siteConfig.url}/locations/florida/${slug}/`
-  
   return {
     title,
     description,
-    keywords: [
-      `mobile billboard ${location.city}`,
-      `billboard trucks ${location.city}`,
-      `LED advertising ${location.city}`,
-      `mobile advertising ${location.county}`,
-      `billboard rental ${location.city} FL`,
-      `digital billboards ${location.city}`,
-      `outdoor advertising ${location.city}`,
-      `mobile marketing ${location.city}`
-    ],
-    alternates: {
-      canonical: canonicalUrl,
-    },
+    keywords: keywords || siteConfig.keywords,
     openGraph: {
-      title: `${title} | Maximax Advertising`,
+      title,
       description,
-      url: canonicalUrl,
-      siteName: siteConfig.name,
-      locale: 'en_US',
+      url,
       type: 'website',
-      images: [
-        {
-          url: `${siteConfig.url}/images/1-1.png`,
-          width: 1200,
-          height: 630,
-          alt: `Mobile Billboard Truck in ${location.city}`,
-        },
-      ],
     },
     twitter: {
-      card: 'summary_large_image',
-      title: `${title} | Maximax`,
+      title,
       description,
-      images: [`${siteConfig.url}/images/1-1.png`],
+    },
+    alternates: {
+      canonical: url,
     },
   }
 }
 
-// Service page metadata generator
+// Location-specific metadata generator
+export function generateLocationMetadata(location: {
+  city: string
+  state: string
+  description?: string
+  keywords?: string[]
+}): Metadata {
+  const title = `${location.city} Mobile Billboards | Billboard Trucks ${location.city} ${location.state}`
+  const description = location.description ||
+    `Professional mobile billboard advertising in ${location.city}, ${location.state}. LED billboard trucks with GPS tracking for maximum visibility and impact.`
+
+  return generatePageMetadata(
+    title,
+    description,
+    location.keywords,
+    `/locations/${location.city.toLowerCase().replace(/\s+/g, '-')}/`
+  )
+}
+
+// Service-specific metadata generator
 export function generateServiceMetadata(service: {
   name: string
   description: string
-  keywords: string[]
-  slug?: string
+  keywords?: string[]
+  slug: string
 }): Metadata {
   const title = `${service.name} | Mobile Billboard Services`
-  const slug = service.slug || service.name.toLowerCase().replace(/\s+/g, '-')
-  const canonicalUrl = `${siteConfig.url}/services/${slug}/`
-  
-  return {
+
+  return generatePageMetadata(
     title,
-    description: service.description,
-    keywords: service.keywords,
-    alternates: {
-      canonical: canonicalUrl,
-    },
-    openGraph: {
-      title: `${title} | Maximax Advertising`,
-      description: service.description,
-      url: canonicalUrl,
-      siteName: siteConfig.name,
-      locale: 'en_US',
-      type: 'website',
-      images: [
-        {
-          url: `${siteConfig.url}/images/services-${slug}.jpg`,
-          width: 1200,
-          height: 630,
-          alt: service.name,
-        },
-      ],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: `${title} | Maximax`,
-      description: service.description,
-    },
-  }
+    service.description,
+    service.keywords,
+    `/services/${service.slug}/`
+  )
 }
 
-// Blog post metadata generator
-export function generateBlogMetadata(post: {
-  title: string
-  excerpt: string
-  author: string
-  publishedAt: string
-  tags: string[]
-  image?: string
-}): Metadata {
-  return {
-    title: post.title,
-    description: post.excerpt,
-    keywords: post.tags,
-    authors: [{ name: post.author }],
-    openGraph: {
-      title: post.title,
-      description: post.excerpt,
-      type: 'article',
-      publishedTime: post.publishedAt,
-      authors: [post.author],
-      images: post.image ? [post.image] : undefined,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: post.title,
-      description: post.excerpt,
-    },
-  }
-}
-
-// Market/Industry page metadata generator
+// Market-specific metadata generator
 export function generateMarketMetadata(market: {
   industry: string
   description: string
-  keywords: string[]
-  slug?: string
+  keywords?: string[]
+  slug: string
 }): Metadata {
-  const title = `Mobile Billboard Advertising for ${market.industry}`
-  const slug = market.slug || market.industry.toLowerCase().replace(/\s+/g, '-')
-  const canonicalUrl = `${siteConfig.url}/markets/${slug}/`
-  
-  return {
+  const title = `${market.industry} Advertising | Mobile Billboards for ${market.industry}`
+
+  return generatePageMetadata(
     title,
-    description: market.description,
-    keywords: market.keywords,
-    alternates: {
-      canonical: canonicalUrl,
+    market.description,
+    market.keywords,
+    `/markets/${market.slug}/`
+  )
+}
+
+// Schema.org structured data for local business
+export function locationStructuredData(location: any) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: `Maximax Advertising - ${location.city}`,
+    description: location.description,
+    url: `${siteConfig.url}/locations/${location.city.toLowerCase().replace(/\s+/g, '-')}/`,
+    telephone: '+1-561-720-0521',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: location.city,
+      addressRegion: location.state,
+      addressCountry: 'US',
     },
-    openGraph: {
-      title: `${title} | Maximax Advertising`,
-      description: market.description,
-      url: canonicalUrl,
-      siteName: siteConfig.name,
-      locale: 'en_US',
-      type: 'website',
-      images: [
-        {
-          url: `${siteConfig.url}/images/1-1.png`,
-          width: 1200,
-          height: 630,
-          alt: `Mobile Billboard Advertising for ${market.industry}`,
-        },
-      ],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: `${title} | Maximax`,
-      description: market.description,
-      images: [`${siteConfig.url}/images/1-1.png`],
+    geo: location.coordinates ? {
+      '@type': 'GeoCoordinates',
+      latitude: location.coordinates.lat,
+      longitude: location.coordinates.lng,
+    } : undefined,
+    areaServed: {
+      '@type': 'City',
+      name: location.city,
     },
   }
 }
 
-// Structured data for location pages
-export const locationStructuredData = (location: {
-  city: string
-  county: string
-  state: string
-  coordinates: { lat: number; lng: number }
-}) => ({
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": `Maximax Advertising - ${location.city}`,
-  "description": `Mobile billboard advertising services in ${location.city}, ${location.state}`,
-  "areaServed": {
-    "@type": "City",
-    "name": location.city,
-    "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": location.county
-    }
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": location.coordinates.lat,
-    "longitude": location.coordinates.lng
+// Schema.org structured data for service
+export function serviceStructuredData(service: any) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: service.serviceName,
+    description: service.description,
+    provider: {
+      '@type': 'Organization',
+      name: 'Maximax Advertising',
+      telephone: '+1-561-720-0521',
+    },
+    areaServed: {
+      '@type': 'State',
+      name: 'Florida',
+    },
   }
-})
+}
 
-// Structured data for service pages
-export const serviceStructuredData = (service: {
-  name: string
-  description: string
-  features?: string[]
-  serviceType?: string
-}) => ({
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": service.name,
-  "description": service.description,
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "Maximax Advertising",
-    "telephone": "(561) 720-0521",
-    "address": {
-      "@type": "PostalAddress",
-      "addressRegion": "FL",
-      "addressCountry": "US"
-    }
-  },
-  "areaServed": [
-    {
-      "@type": "AdministrativeArea",
-      "name": "Miami-Dade County"
+// Schema.org structured data for market
+export function marketStructuredData(market: any) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: `Mobile Billboard Advertising for ${market.industry}`,
+    description: market.description,
+    provider: {
+      '@type': 'Organization',
+      name: 'Maximax Advertising',
+      telephone: '+1-561-720-0521',
     },
-    {
-      "@type": "AdministrativeArea",
-      "name": "Broward County"
+    areaServed: {
+      '@type': 'State',
+      name: 'Florida',
     },
-    {
-      "@type": "AdministrativeArea",
-      "name": "Palm Beach County"
-    }
-  ],
-  "serviceType": service.serviceType || "Mobile Billboard Advertising"
-})
-
-// Structured data for market/industry pages
-export const marketStructuredData = (market: {
-  industry: string
-  description: string
-}) => ({
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": `Mobile Billboard Advertising for ${market.industry}`,
-  "provider": {
-    "@type": "Organization",
-    "name": "Maximax Advertising",
-    "url": "https://maximaxadvertising.com"
-  },
-  "areaServed": [
-    {
-      "@type": "AdministrativeArea",
-      "name": "Miami-Dade County"
-    },
-    {
-      "@type": "AdministrativeArea", 
-      "name": "Palm Beach County"
-    }
-  ],
-  "description": market.description
-})
+  }
+}

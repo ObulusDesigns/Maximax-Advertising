@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     industry: market.industry,
     description: `${market.tagline}. ${market.description}`,
     keywords: market.keywords || [],
+    slug: market.slug,
   })
 }
 
