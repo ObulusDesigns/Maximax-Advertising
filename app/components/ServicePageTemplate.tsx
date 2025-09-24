@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { 
-  Phone, 
-  CheckCircle, 
-  ArrowRight, 
-  Users, 
-  Clock, 
-  DollarSign, 
-  Target, 
+import {
+  Phone,
+  CheckCircle,
+  ArrowRight,
+  Users,
+  Clock,
+  DollarSign,
+  Target,
   TrendingUp,
   Star,
   Shield,
@@ -18,8 +18,11 @@ import {
   Play,
   ChevronDown,
   Award,
-  MessageCircle
+  MessageCircle,
+  Navigation
 } from 'lucide-react'
+import { locations, LocationInfo, County } from '@/app/lib/data/locations-data'
+import { ServiceAreaMap } from './ServiceAreaMap'
 
 // Service Feature Interface
 interface ServiceFeature {
@@ -137,6 +140,7 @@ interface ServicePageTemplateProps {
   serviceType?: 'advertising' | 'marketing' | 'digital' | 'mobile' | 'event'
   industries?: string[]
   locations?: string[]
+  availableLocations?: LocationInfo[]
 }
 
 export function ServicePageTemplate({
@@ -161,7 +165,8 @@ export function ServicePageTemplate({
   phone = "5617200521",
   serviceType = 'advertising',
   industries,
-  locations
+  locations: providedLocations,
+  availableLocations = locations
 }: ServicePageTemplateProps) {
   // Schema markup for SEO
   const schemaMarkup = schema ? {
@@ -615,8 +620,83 @@ export function ServicePageTemplate({
         </section>
       )}
 
-      {/* FAQ Section */}
+      {/* Service Area Locations */}
       <section className="section section-padding bg-white">
+        <div className="container">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="mb-6">
+                Available in These <span className="gradient-text">Locations</span>
+              </h2>
+              <p className="text-lg text-gray-600">
+                Our {serviceName.toLowerCase()} is available throughout South Florida
+              </p>
+            </div>
+
+            {/* County-based location grid */}
+            <div className="space-y-8">
+              {[County.MIAMI_DADE, County.BROWARD, County.PALM_BEACH].map((county) => {
+                const countyLocations = availableLocations.filter(loc => loc.county === county).slice(0, 8)
+
+                return (
+                  <div key={county} className="bg-gray-50 rounded-2xl p-6">
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="font-bold text-lg text-gray-900">{county}</h3>
+                      <Link
+                        href={`/locations/${county.toLowerCase().replace(' county', '').replace(' ', '-')}-county/`}
+                        className="text-sm text-maximax-cyan hover:text-maximax-pink font-semibold transition-colors"
+                      >
+                        View All →
+                      </Link>
+                    </div>
+
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                      {countyLocations.map((location) => (
+                        <Link
+                          key={location.slug}
+                          href={`/locations/${location.slug}/`}
+                          className="group block"
+                        >
+                          <div className="bg-white rounded-lg px-4 py-3 border border-gray-200 hover:border-maximax-cyan/30 hover:shadow-sm transition-all duration-300">
+                            <div className="flex items-center gap-2">
+                              <MapPin className="w-4 h-4 text-maximax-pink flex-shrink-0" />
+                              <span className="text-sm font-medium text-gray-900 group-hover:text-maximax-cyan transition-colors">
+                                {location.city}
+                              </span>
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+
+            {/* Call to Action for Coverage */}
+            <div className="mt-10 text-center p-6 bg-gradient-to-r from-maximax-pink/10 to-maximax-cyan/10 rounded-xl">
+              <p className="text-lg font-semibold text-gray-900 mb-4">
+                Don't see your city listed? We cover all of South Florida!
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href={`tel:${phone}`} className="btn-accent btn-lg">
+                  <Phone className="w-5 h-5" />
+                  Call for Custom Coverage
+                </a>
+                <Link href="/locations/" className="btn-secondary btn-lg">
+                  View All Locations
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Interactive Service Area Map */}
+      <ServiceAreaMap showAllLocations={false} />
+
+      {/* FAQ Section */}
+      <section className="section section-padding bg-gray-50">
         <div className="container">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">

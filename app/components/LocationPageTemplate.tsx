@@ -1,7 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { MapPin, Phone, TrendingUp, Users, Clock, CheckCircle, ArrowRight } from 'lucide-react'
+import { MapPin, Phone, TrendingUp, Users, Clock, CheckCircle, ArrowRight, Truck, Monitor, Calendar, Megaphone, Home, Star } from 'lucide-react'
 import { LocationData } from '@/app/types'
+import { services, ServiceInfo } from '@/app/lib/data/services-data'
+import { getLocationBySlug } from '@/app/lib/data/locations-data'
+import { RelatedLocations } from './RelatedLocations'
 
 // Support both old and new prop structures for backward compatibility
 interface LocationPageProps extends Partial<LocationData> {
@@ -258,8 +261,78 @@ export function LocationPageTemplate(props: LocationPageProps) {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* Services Available in This Location */}
       <section className="section section-padding bg-white">
+        <div className="container">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="mb-6">
+                Services Available in <span className="gradient-text-cyan">{city}</span>
+              </h2>
+              <p className="text-lg text-gray-600">
+                Choose from our complete range of mobile advertising solutions available in {city}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {services.map((service) => {
+                // Map service icons
+                let IconComponent = Truck
+                if (service.icon === 'Monitor') IconComponent = Monitor
+                if (service.icon === 'Calendar') IconComponent = Calendar
+                if (service.icon === 'Megaphone') IconComponent = Megaphone
+                if (service.icon === 'Home') IconComponent = Home
+                if (service.icon === 'Star') IconComponent = Star
+                if (service.icon === 'MapPin') IconComponent = MapPin
+
+                return (
+                  <Link
+                    key={service.slug}
+                    href={`/services/${service.slug}/`}
+                    className="group block"
+                  >
+                    <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-maximax-cyan/30 transition-all duration-300 hover:-translate-y-1">
+                      <div className="w-12 h-12 bg-gradient-to-br from-maximax-pink/10 to-maximax-cyan/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <IconComponent className="w-6 h-6 text-maximax-pink" />
+                      </div>
+                      <h3 className="font-bold mb-2 text-gray-900 group-hover:text-maximax-cyan transition-colors">
+                        {service.name} in {city}
+                      </h3>
+                      <p className="text-sm text-gray-600 mb-4">
+                        {service.description}
+                      </p>
+                      <div className="flex items-center gap-2 text-maximax-cyan text-sm font-semibold group-hover:gap-3 transition-all">
+                        Learn More
+                        <ArrowRight className="w-4 h-4" />
+                      </div>
+                    </div>
+                  </Link>
+                )
+              })}
+            </div>
+
+            <div className="text-center mt-10">
+              <Link
+                href="/services/"
+                className="inline-flex items-center gap-2 text-maximax-cyan hover:text-maximax-pink font-semibold transition-colors"
+              >
+                View All Services
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Locations */}
+      <RelatedLocations
+        currentSlug={locationData.slug || ''}
+        currentLocation={getLocationBySlug(locationData.slug || '')}
+        limit={6}
+      />
+
+      {/* FAQ Section */}
+      <section className="section section-padding bg-gray-50">
         <div className="container">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-center mb-12">

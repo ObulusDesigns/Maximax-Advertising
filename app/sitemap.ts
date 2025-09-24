@@ -399,6 +399,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
 
+    // County Hub Pages with high priority 0.9
+    {
+      url: `${baseUrl}/locations/miami-dade-county/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/broward-county/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/palm-beach-county/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+
     // Phase 4 Secondary Cities - Palm Beach with priority 0.8
     {
       url: `${baseUrl}/locations/lake-worth-beach-mobile-billboards/`,

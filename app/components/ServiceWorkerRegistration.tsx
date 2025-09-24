@@ -11,13 +11,13 @@ export function ServiceWorkerRegistration() {
           navigator.serviceWorker
             .register('/sw.js')
             .then((registration) => {
-              console.log('Service Worker registered:', registration.scope)
-              
+              // Service Worker registered successfully
+
               // Check for updates periodically
               setInterval(() => {
                 registration.update()
               }, 60 * 60 * 1000) // Check every hour
-              
+
               // Handle updates
               registration.addEventListener('updatefound', () => {
                 const newWorker = registration.installing
@@ -25,7 +25,6 @@ export function ServiceWorkerRegistration() {
                   newWorker.addEventListener('statechange', () => {
                     if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
                       // New service worker available
-                      console.log('New service worker available')
                       // You could show a notification to the user here
                     }
                   })
@@ -33,7 +32,7 @@ export function ServiceWorkerRegistration() {
               })
             })
             .catch((error) => {
-              console.error('Service Worker registration failed:', error)
+              // Service Worker registration failed
             })
         })
       }
