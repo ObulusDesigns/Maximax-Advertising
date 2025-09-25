@@ -1,8 +1,5 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { Header } from '@/app/components/Header'
-import { Footer } from '@/app/components/Footer'
-import { FloatingContact } from '@/app/components/FloatingContact'
 import { MarketPageTemplate } from '@/app/components/MarketPageTemplate'
 import { generateMarketMetadata, marketStructuredData } from '@/app/lib/seo/metadata'
 import { marketsData, getMarketBySlug } from '@/app/lib/data/markets'
@@ -53,10 +50,7 @@ export default function MarketPage({ params }: { params: { slug: string } }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <Header />
-      <MarketPageTemplate {...market} />
-      <Footer />
-      <FloatingContact />
-    </>
+            <MarketPageTemplate {...market} />
+                </>
   )
 }

@@ -1,8 +1,5 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { Header } from '@/app/components/Header'
-import { Footer } from '@/app/components/Footer'
-import { FloatingContact } from '@/app/components/FloatingContact'
 import { ServicePageTemplate } from '@/app/components/ServicePageTemplate'
 import { generateServiceMetadata, serviceStructuredData } from '@/app/lib/seo/metadata'
 import { servicesData, getServiceBySlug } from '@/app/lib/data/services'
@@ -58,10 +55,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <Header />
-      <ServicePageTemplate {...transformedService} />
-      <Footer />
-      <FloatingContact />
-    </>
+            <ServicePageTemplate {...transformedService} />
+                </>
   )
 }

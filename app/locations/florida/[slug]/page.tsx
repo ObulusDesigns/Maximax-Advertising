@@ -1,8 +1,5 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { Header } from '@/app/components/Header'
-import { Footer } from '@/app/components/Footer'
-import { FloatingContact } from '@/app/components/FloatingContact'
 import { LocationPageTemplate } from '@/app/components/LocationPageTemplate'
 import { generateLocationMetadata } from '@/app/lib/seo/metadata'
 import { locationStructuredData } from '@/app/lib/seo/metadata'
@@ -46,12 +43,9 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <Header />
-      <main>
+            <main>
         <LocationPageTemplate {...locationData} />
       </main>
-      <Footer />
-      <FloatingContact />
-    </>
+                </>
   )
 }

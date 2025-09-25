@@ -1,8 +1,5 @@
 import { Metadata } from 'next'
-import { Header } from '../../components/Header'
-import { Footer } from '../../components/Footer'
 import { CTASection } from '../../components/CTASection'
-import { FloatingContact } from '../../components/FloatingContact'
 import Link from 'next/link'
 import { ArrowLeft, CheckCircle, TrendingUp, Target, Users } from 'lucide-react'
 
@@ -26,8 +23,7 @@ export const metadata: Metadata = {
 export default function WhatIsOOHPage() {
   return (
     <>
-      <Header />
-      <main>
+            <main>
         {/* Hero Section */}
         <section className="section section-padding bg-gradient-to-br from-maximax-pink to-maximax-cyan text-white">
           <div className="container">
@@ -356,8 +352,6 @@ export default function WhatIsOOHPage() {
 
         <CTASection />
       </main>
-      <Footer />
-      <FloatingContact />
-    </>
+                </>
   )
 }

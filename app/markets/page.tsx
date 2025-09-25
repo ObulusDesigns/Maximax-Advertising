@@ -1,8 +1,5 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { Header } from '@/app/components/Header'
-import { Footer } from '@/app/components/Footer'
-import { FloatingContact } from '@/app/components/FloatingContact'
 import { 
   Heart, 
   Stethoscope, 
@@ -101,8 +98,7 @@ export const metadata: Metadata = {
 export default function MarketsPage() {
   return (
     <>
-      <Header />
-      <main>
+            <main>
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-maximax-black via-gray-900 to-maximax-black py-20">
           <div className="absolute inset-0">
@@ -296,8 +292,6 @@ export default function MarketsPage() {
           </div>
         </section>
       </main>
-      <Footer />
-      <FloatingContact />
-    </>
+                </>
   )
 }

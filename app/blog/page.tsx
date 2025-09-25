@@ -1,6 +1,3 @@
-import { Header } from '../components/Header'
-import { Footer } from '../components/Footer'
-import { FloatingContact } from '../components/FloatingContact'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Calendar, Clock, ArrowRight, Tag, TrendingUp, Lightbulb, Target } from 'lucide-react'
@@ -143,8 +140,7 @@ const categories = [
 export default function BlogPage() {
   return (
     <>
-      <Header />
-      <main>
+            <main>
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-maximax-black via-gray-900 to-maximax-black py-20">
           <div className="absolute inset-0 bg-[url('/images/1-1.png')] bg-cover bg-center opacity-10"></div>
@@ -338,8 +334,6 @@ export default function BlogPage() {
           </div>
         </section>
       </main>
-      <Footer />
-      <FloatingContact />
-    </>
+                </>
   )
 }

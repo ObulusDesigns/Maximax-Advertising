@@ -1,6 +1,3 @@
-import { Header } from '../components/Header'
-import { Footer } from '../components/Footer'
-import { FloatingContact } from '../components/FloatingContact'
 import Image from 'next/image'
 import { CheckCircle, Users, Target, Award, TrendingUp, Shield, Heart } from 'lucide-react'
 import Link from 'next/link'
@@ -8,8 +5,7 @@ import Link from 'next/link'
 export default function AboutPage() {
   return (
     <>
-      <Header />
-      <main>
+            <main>
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-maximax-black via-gray-900 to-maximax-black py-20">
           <div className="absolute inset-0 bg-[url('/images/1-1.png')] bg-cover bg-center opacity-10"></div>
@@ -218,8 +214,6 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
-      <Footer />
-      <FloatingContact />
-    </>
+                </>
   )
 }

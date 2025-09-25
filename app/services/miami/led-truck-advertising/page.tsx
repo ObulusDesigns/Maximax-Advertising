@@ -1,7 +1,4 @@
 import { Metadata } from 'next'
-import { Header } from '@/app/components/Header'
-import { Footer } from '@/app/components/Footer'
-import { FloatingContact } from '@/app/components/FloatingContact'
 import { ServicePageTemplate } from '@/app/components/ServicePageTemplate'
 import Script from 'next/script'
 import { 
@@ -304,10 +301,7 @@ export default function LEDTruckAdvertisingMiamiPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <Header />
-      <ServicePageTemplate {...serviceData} />
-      <Footer />
-      <FloatingContact />
-    </>
+            <ServicePageTemplate {...serviceData} />
+                </>
   )
 }

@@ -6,6 +6,9 @@ import { organizationSchema, serviceSchema, faqSchema } from './lib/seo/schema'
 import Script from 'next/script'
 import { ClientLayout } from './components/ClientLayout'
 import { SkipLinks } from './components/SkipLinks'
+import { Header } from './components/Header'
+import { Footer } from './components/Footer'
+import { FloatingContact } from './components/FloatingContact'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -52,7 +55,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <SkipLinks />
         <ClientLayout>
+          <Header />
           {children}
+          <Footer />
+          <FloatingContact />
         </ClientLayout>
       </body>
     </html>

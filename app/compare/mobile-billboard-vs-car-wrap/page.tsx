@@ -2,9 +2,6 @@
 
 import { useState } from 'react'
 import { Metadata } from 'next'
-import { Header } from '@/app/components/Header'
-import { Footer } from '@/app/components/Footer'
-import { FloatingContact } from '@/app/components/FloatingContact'
 import { CTASection } from '@/app/components/CTASection'
 import { motion } from 'framer-motion'
 import { 
@@ -183,8 +180,7 @@ export default function MobileBillboardVsCarWrapComparison() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <Header />
-      
+            
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-blue-900 via-blue-800 to-purple-800">
         <div className="absolute inset-0 bg-black/20"></div>
@@ -825,8 +821,6 @@ export default function MobileBillboardVsCarWrapComparison() {
         </div>
       </section>
 
-      <Footer />
-      <FloatingContact />
-    </>
+                </>
   )
 }

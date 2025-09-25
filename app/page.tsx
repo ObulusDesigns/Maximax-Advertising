@@ -1,10 +1,7 @@
-import { Header } from './components/Header'
 import { HeroSection } from './components/HeroSection'
 import { ServiceCards } from './components/ServiceCards'
 import { TestimonialsSection } from './components/TestimonialsSection'
 import { CTASection } from './components/CTASection'
-import { Footer } from './components/Footer'
-import { FloatingContact } from './components/FloatingContact'
 import Image from 'next/image'
 import Link from 'next/link'
 import { CheckCircle, Users, Target, Award, ChevronRight } from 'lucide-react'
@@ -34,8 +31,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      <Header />
-      <main id="main-content" role="main">
+            <main id="main-content" role="main">
         <HeroSection />
         <ServiceCards />
 
@@ -242,8 +238,6 @@ export default function HomePage() {
         <TestimonialsSection />
         <CTASection />
       </main>
-      <Footer />
-      <FloatingContact />
-    </>
+                </>
   )
 }
