@@ -47,10 +47,13 @@ git push origin main  # Triggers GitHub Actions deployment pipeline
 
 ```
 app/                          # Next.js 14 App Router
-├── components/              # Shared components (3 key templates)
-│   ├── LocationPageTemplate # For city/location pages (SEO-optimized)
-│   ├── ServicePageTemplate  # For service offerings
-│   └── MarketPageTemplate   # For industry-specific pages
+├── components/              # Shared components (6 key components)
+│   ├── LocationPageTemplate        # For city/location pages (SEO-optimized)
+│   ├── ServicePageTemplate         # For service offerings
+│   ├── MarketPageTemplate          # For industry-specific pages
+│   ├── RelatedLocationsWidget      # Phase 5: Sidebar with nearby locations
+│   ├── ServicesAvailableSection    # Phase 5: Shows 6 services in location pages
+│   └── LocationsWeServeSection     # Phase 5: Shows 25+ locations in service pages
 ├── locations/              # 50+ location pages
 │   ├── florida/[slug]/    # Dynamic route for cities
 │   └── [city-name]/       # Static location pages
@@ -98,6 +101,9 @@ git push origin main  # Deploy to production
 - **LocationPageTemplate**: Local SEO, service areas, testimonials
 - **ServicePageTemplate**: Service details, pricing, FAQs
 - **MarketPageTemplate**: Industry benefits, ROI, case studies
+- **RelatedLocationsWidget**: Sidebar component showing 4 nearby locations with distance
+- **ServicesAvailableSection**: Grid showing all 6 services available in a city
+- **LocationsWeServeSection**: Shows 25+ locations organized by county for service pages
 
 ### SEO Implementation
 - Every page needs: title, description, OG tags, schema markup
@@ -147,25 +153,29 @@ export const metadata: Metadata = {
 
 ## CURRENT PROJECT STATUS
 
-### Live Features (39+ pages)
+### Live Features (163 pages)
 - Core pages (Home, About, Services, Contact)
-- 11+ location pages (Miami-Dade, Broward, Palm Beach)
-- 12+ market/industry pages
-- 6+ service variation pages
-- Blog with SEO articles
-- Schema markup implementation
+- 50+ location pages (Miami-Dade, Broward, Palm Beach counties)
+- 13+ market/industry pages
+- 24+ service variation pages (city-specific services)
+- Blog with 6+ SEO articles
+- Schema markup implementation (Organization, LocalBusiness, Service, FAQ, Article)
 - Mobile-responsive design
+- Phase 5 cross-linking components (internal SEO)
+
+### Content Policy
+- **NEVER add fake testimonials, reviews, or client logos**
+- All social proof must be real and verifiable
+- No placeholder content like "Client 1, Client 2..." or fake Google reviews
+- When adding testimonials/reviews, they must be from actual clients with permission
 
 ### Known Issues
 - Redirects in next.config.js don't work on static export
-- Bundle size could be optimized (check with analyze:bundle)
 - Some images need WebP conversion for performance
 
-### Active Development
-- Expanding location pages (50+ cities planned)
-- Miami-specific market segments
-- Blog content calendar implementation
-- Performance optimizations
+### Completed Phases
+- **Phase 1-4**: Core pages, location pages, market pages, schema markup
+- **Phase 5**: Cross-linking & Internal SEO (RelatedLocationsWidget, ServicesAvailableSection, LocationsWeServeSection)
 
 ## PERFORMANCE TARGETS
 
@@ -211,7 +221,29 @@ export const metadata: Metadata = {
 5. **ALWAYS** use trailing slashes in internal links
 6. **REMEMBER** this is a production site with real traffic
 
+## INTERNAL LINKING STRATEGY (PHASE 5)
+
+### Cross-Linking Components
+Phase 5 introduced three components to increase internal link equity from ~500 to 2,500+ links:
+
+1. **RelatedLocationsWidget** (sidebar, location pages)
+   - Shows 4 nearby locations with distance
+   - Links to county hub page
+   - Improves local SEO clustering
+
+2. **ServicesAvailableSection** (location pages)
+   - Shows all 6 services available in that city
+   - Creates 6 service page links per location
+   - Placed before pricing CTA
+
+3. **LocationsWeServeSection** (service pages)
+   - Shows 25+ locations organized by county
+   - Creates 25+ location page links per service
+   - Improves service page authority
+
+**Example Implementation**: See `/app/locations/wynwood-mobile-billboards/page.tsx`
+
 ---
 
-*Last updated: Based on codebase analysis*  
+*Last updated: October 12, 2025*
 *For detailed SEO tracking, see: `/docs/SEO-IMPLEMENTATION.md`*
