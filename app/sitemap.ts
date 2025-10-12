@@ -146,7 +146,51 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
-    
+    {
+      url: `${baseUrl}/reviews/`,
+      lastModified: dateString,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/pricing/`,
+      lastModified: dateString,
+      changeFrequency: 'monthly',
+      priority: 0.95,
+    },
+
+    // Phase 2: Miami Neighborhood-Specific Pages (high priority for local SEO)
+    {
+      url: `${baseUrl}/locations/wynwood-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/south-beach-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/brickell-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/design-district-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/coconut-grove-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+
     // Dynamic Location Pages (generated from data store)
     ...floridaLocationPages,
     ...staticFloridaLocationPages,
