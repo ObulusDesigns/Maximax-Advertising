@@ -2,7 +2,6 @@ import { HeroSection } from './components/HeroSection'
 import { ServiceCards } from './components/ServiceCards'
 import { TestimonialsSection } from './components/TestimonialsSection'
 import { CTASection } from './components/CTASection'
-import { ClientLogoWall } from './components/ClientLogoWall'
 import { GoogleReviewWidget } from './components/GoogleReviewWidget'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -35,9 +34,6 @@ export default function HomePage() {
     <>
             <main id="main-content" role="main">
         <HeroSection />
-
-        {/* Client Logo Wall - Social Proof Above the Fold */}
-        <ClientLogoWall />
 
         <ServiceCards />
 
