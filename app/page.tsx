@@ -1,8 +1,6 @@
 import { HeroSection } from './components/HeroSection'
 import { ServiceCards } from './components/ServiceCards'
-import { TestimonialsSection } from './components/TestimonialsSection'
 import { CTASection } from './components/CTASection'
-import { GoogleReviewWidget } from './components/GoogleReviewWidget'
 import Image from 'next/image'
 import Link from 'next/link'
 import { CheckCircle, Users, Target, Award, ChevronRight } from 'lucide-react'
@@ -121,43 +119,33 @@ export default function HomePage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Features */}
-              <div className="lg:col-span-2">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-maximax-pink/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Target className="w-8 h-8 text-maximax-pink" />
-                    </div>
-                    <h4 className="font-semibold mb-2">Targeted Reach</h4>
-                    <p className="text-sm text-gray-600">Strategic routes through high-traffic areas in South Florida</p>
-                  </div>
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-maximax-cyan/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Users className="w-8 h-8 text-maximax-cyan" />
-                    </div>
-                    <h4 className="font-semibold mb-2">50,000+ Impressions</h4>
-                    <p className="text-sm text-gray-600">Daily visibility to thousands of potential customers</p>
-                  </div>
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-maximax-pink/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Award className="w-8 h-8 text-maximax-pink" />
-                    </div>
-                    <h4 className="font-semibold mb-2">Proven Results</h4>
-                    <p className="text-sm text-gray-600">Track record of successful campaigns across industries</p>
-                  </div>
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-maximax-cyan/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <CheckCircle className="w-8 h-8 text-maximax-cyan" />
-                    </div>
-                    <h4 className="font-semibold mb-2">Full Service</h4>
-                    <p className="text-sm text-gray-600">Complete campaign management from design to reporting</p>
-                  </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-maximax-pink/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Target className="w-8 h-8 text-maximax-pink" />
                 </div>
+                <h4 className="font-semibold mb-2">Targeted Reach</h4>
+                <p className="text-sm text-gray-600">Strategic routes through high-traffic areas in South Florida</p>
               </div>
-
-              {/* Google Review Widget Sidebar */}
-              <div>
-                <GoogleReviewWidget />
+              <div className="text-center">
+                <div className="w-16 h-16 bg-maximax-cyan/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-maximax-cyan" />
+                </div>
+                <h4 className="font-semibold mb-2">50,000+ Impressions</h4>
+                <p className="text-sm text-gray-600">Daily visibility to thousands of potential customers</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-maximax-pink/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="w-8 h-8 text-maximax-pink" />
+                </div>
+                <h4 className="font-semibold mb-2">Proven Results</h4>
+                <p className="text-sm text-gray-600">Track record of successful campaigns across industries</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-maximax-cyan/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-8 h-8 text-maximax-cyan" />
+                </div>
+                <h4 className="font-semibold mb-2">Full Service</h4>
+                <p className="text-sm text-gray-600">Complete campaign management from design to reporting</p>
               </div>
             </div>
           </div>
@@ -247,7 +235,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        <TestimonialsSection />
         <CTASection />
       </main>
                 </>
