@@ -2,6 +2,8 @@ import { MetadataRoute } from 'next'
 import { getAllLocationSlugs } from '@/app/lib/data/florida-locations'
 import { getAllMarketSlugs } from '@/app/lib/data/markets'
 import { getAllServiceSlugs } from '@/app/lib/data/services'
+import { getAllIndustryLocationSlugs } from '@/app/lib/data/industry-locations'
+import { getAllEventSlugs } from '@/app/lib/data/events'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://maximaxmobileadvertising.com'
@@ -12,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const locationSlugs = getAllLocationSlugs()
   const marketSlugs = getAllMarketSlugs()
   const serviceSlugs = getAllServiceSlugs()
+  const industryLocationSlugs = getAllIndustryLocationSlugs()
+  const eventSlugs = getAllEventSlugs()
 
   // Generate Florida location pages entries with SEO optimization
   const floridaLocationPages = locationSlugs.map(slug => ({
@@ -106,6 +110,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: dateString,
     changeFrequency: 'weekly' as const,
     priority: 0.9,
+  }))
+
+  // Phase 6: Generate industry-location pages (15 pages)
+  const industryLocationPages = industryLocationSlugs.map(({ industry, city }) => ({
+    url: `${baseUrl}/industries/${industry}/${city}/`,
+    lastModified: dateString,
+    changeFrequency: 'weekly' as const,
+    priority: 0.85,
+  }))
+
+  // Phase 6: Generate event pages (10 pages)
+  const eventPages = eventSlugs.map(slug => ({
+    url: `${baseUrl}/events/${slug}/`,
+    lastModified: dateString,
+    changeFrequency: 'weekly' as const,
+    priority: 0.85,
   }))
 
   return [
@@ -497,9 +517,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Dynamic Market Pages (generated from data store)
     ...marketPages,
-    
+
     // Dynamic Service Pages (generated from data store)
     ...servicePages,
+
+    // Phase 6: Industry-Location Combination Pages (15 pages)
+    ...industryLocationPages,
+
+    // Phase 6: Event-Based Pages (10 pages)
+    ...eventPages,
 
     // Service-Location Combination Pages (Miami)
     {
