@@ -1,10 +1,11 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { MapPin, Phone, ArrowRight, TrendingUp, Users, Building, Navigation } from 'lucide-react'
+import { MapPin, Phone, ArrowRight, TrendingUp, Users, Building, Navigation, HelpCircle } from 'lucide-react'
 import { County } from '@/app/types'
 import { getLocationsByCounty } from '@/app/lib/data/locations-data'
 import { services } from '@/app/lib/data/services-data'
 import { ServiceAreaMap } from '@/app/components/ServiceAreaMap'
+import { ServicesAvailableSection } from '@/app/components/ServicesAvailableSection'
 
 export const metadata: Metadata = {
   title: 'Mobile Billboard Advertising in Miami-Dade County | All Cities & Services',
@@ -200,44 +201,8 @@ export default function MiamiDadeCountyPage() {
         </div>
       </section>
 
-      {/* Available Services */}
-      <section className="section section-padding bg-white">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-10">
-              <h2 className="mb-4">
-                Complete <span className="gradient-text">Service Portfolio</span> for Miami-Dade
-              </h2>
-              <p className="text-lg text-gray-600">
-                Full range of mobile advertising solutions available across all Miami-Dade locations
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.slice(0, 6).map((service) => (
-                <Link
-                  key={service.slug}
-                  href={`/services/${service.slug}/`}
-                  className="group block"
-                >
-                  <div className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 border border-gray-200 hover:shadow-lg hover:border-maximax-pink/30 transition-all duration-300">
-                    <h3 className="font-bold mb-2 text-gray-900 group-hover:text-maximax-pink transition-colors">
-                      {service.name}
-                    </h3>
-                    <p className="text-sm text-gray-600 mb-4">
-                      {service.description}
-                    </p>
-                    <div className="flex items-center gap-2 text-maximax-pink text-sm font-semibold">
-                      Available County-Wide
-                      <ArrowRight className="w-4 h-4" />
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Services Available Section */}
+      <ServicesAvailableSection cityName="Miami-Dade County" />
 
       {/* Interactive Map */}
       <ServiceAreaMap highlightedCounty={County.MIAMI_DADE} />
@@ -289,6 +254,84 @@ export default function MiamiDadeCountyPage() {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="section section-padding bg-gray-50">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="mb-4">
+                <span className="gradient-text">Frequently Asked Questions</span> - Miami-Dade County
+              </h2>
+              <p className="text-lg text-gray-600">
+                Everything you need to know about mobile billboard advertising across Miami-Dade County
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              <details className="bg-white rounded-xl p-6 shadow-sm group">
+                <summary className="font-bold text-lg cursor-pointer flex items-start gap-3 list-none">
+                  <HelpCircle className="w-6 h-6 text-maximax-pink flex-shrink-0 mt-1" />
+                  <span className="flex-1">Do you cover all 34 cities in Miami-Dade County?</span>
+                </summary>
+                <div className="mt-4 pl-9 text-gray-600">
+                  Yes! We provide complete coverage across all 34 cities in Miami-Dade County, from Miami Beach and Miami to Coral Gables, Aventura, Homestead, and everywhere in between. Our GPS-tracked trucks can target specific neighborhoods or cover broader routes across multiple cities.
+                </div>
+              </details>
+
+              <details className="bg-white rounded-xl p-6 shadow-sm group">
+                <summary className="font-bold text-lg cursor-pointer flex items-start gap-3 list-none">
+                  <HelpCircle className="w-6 h-6 text-maximax-cyan flex-shrink-0 mt-1" />
+                  <span className="flex-1">What are the most popular routes in Miami-Dade County?</span>
+                </summary>
+                <div className="mt-4 pl-9 text-gray-600">
+                  Popular routes include South Beach and Ocean Drive, Brickell financial district, Wynwood Arts District, Coral Gables shopping areas, Aventura Mall vicinity, Downtown Miami, and major highways like I-95, US-1, and the Palmetto Expressway. We customize routes based on your target audience and campaign goals.
+                </div>
+              </details>
+
+              <details className="bg-white rounded-xl p-6 shadow-sm group">
+                <summary className="font-bold text-lg cursor-pointer flex items-start gap-3 list-none">
+                  <HelpCircle className="w-6 h-6 text-maximax-pink flex-shrink-0 mt-1" />
+                  <span className="flex-1">Do I need special permits for mobile billboards in Miami-Dade?</span>
+                </summary>
+                <div className="mt-4 pl-9 text-gray-600">
+                  We handle all permitting and compliance requirements for you. Miami-Dade County and individual municipalities have specific regulations for mobile advertising, and our team ensures full compliance across all 34 cities. You can focus on your campaign while we handle the logistics.
+                </div>
+              </details>
+
+              <details className="bg-white rounded-xl p-6 shadow-sm group">
+                <summary className="font-bold text-lg cursor-pointer flex items-start gap-3 list-none">
+                  <HelpCircle className="w-6 h-6 text-maximax-cyan flex-shrink-0 mt-1" />
+                  <span className="flex-1">Can I run campaigns across multiple cities at once?</span>
+                </summary>
+                <div className="mt-4 pl-9 text-gray-600">
+                  Absolutely! County-wide campaigns are popular for businesses targeting the entire Miami-Dade market. We can deploy multiple trucks simultaneously or rotate a single truck through different cities based on your budget and goals. Multi-city packages often provide better ROI.
+                </div>
+              </details>
+
+              <details className="bg-white rounded-xl p-6 shadow-sm group">
+                <summary className="font-bold text-lg cursor-pointer flex items-start gap-3 list-none">
+                  <HelpCircle className="w-6 h-6 text-maximax-pink flex-shrink-0 mt-1" />
+                  <span className="flex-1">How much does a county-wide campaign cost?</span>
+                </summary>
+                <div className="mt-4 pl-9 text-gray-600">
+                  County-wide campaigns in Miami-Dade start at $2,995/day for multi-city coverage with a single truck. Pricing varies based on the number of trucks, hours of operation, specific cities targeted, and campaign duration. Contact us for a custom quote tailored to your needs and budget.
+                </div>
+              </details>
+
+              <details className="bg-white rounded-xl p-6 shadow-sm group">
+                <summary className="font-bold text-lg cursor-pointer flex items-start gap-3 list-none">
+                  <HelpCircle className="w-6 h-6 text-maximax-cyan flex-shrink-0 mt-1" />
+                  <span className="flex-1">What kind of results can I expect in Miami-Dade County?</span>
+                </summary>
+                <div className="mt-4 pl-9 text-gray-600">
+                  Our clients typically see 30,000-50,000+ daily impressions per truck in high-traffic areas like Miami Beach, Brickell, and Wynwood. County-wide campaigns can generate 200,000-500,000+ impressions per day. We provide GPS tracking data and impression reports for every campaign.
+                </div>
+              </details>
             </div>
           </div>
         </div>

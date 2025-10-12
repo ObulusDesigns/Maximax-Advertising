@@ -1,10 +1,11 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { MapPin, Phone, ArrowRight, TrendingUp, Users, Building, Navigation } from 'lucide-react'
+import { MapPin, Phone, ArrowRight, TrendingUp, Users, Building, Navigation, HelpCircle } from 'lucide-react'
 import { County } from '@/app/types'
 import { getLocationsByCounty } from '@/app/lib/data/locations-data'
 import { services } from '@/app/lib/data/services-data'
 import { ServiceAreaMap } from '@/app/components/ServiceAreaMap'
+import { ServicesAvailableSection } from '@/app/components/ServicesAvailableSection'
 
 export const metadata: Metadata = {
   title: 'Mobile Billboard Advertising in Palm Beach County | West Palm Beach & All Cities',
@@ -200,44 +201,8 @@ export default function PalmBeachCountyPage() {
         </div>
       </section>
 
-      {/* Available Services */}
-      <section className="section section-padding bg-white">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-10">
-              <h2 className="mb-4">
-                Premium <span className="gradient-text">Service Portfolio</span> for Palm Beach
-              </h2>
-              <p className="text-lg text-gray-600">
-                Full range of mobile advertising solutions tailored for Palm Beach County's unique market
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.slice(0, 6).map((service) => (
-                <Link
-                  key={service.slug}
-                  href={`/services/${service.slug}/`}
-                  className="group block"
-                >
-                  <div className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 border border-gray-200 hover:shadow-lg hover:border-purple-500/30 transition-all duration-300">
-                    <h3 className="font-bold mb-2 text-gray-900 group-hover:text-purple-600 transition-colors">
-                      {service.name}
-                    </h3>
-                    <p className="text-sm text-gray-600 mb-4">
-                      {service.description}
-                    </p>
-                    <div className="flex items-center gap-2 text-purple-600 text-sm font-semibold">
-                      Available County-Wide
-                      <ArrowRight className="w-4 h-4" />
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Services Available Section */}
+      <ServicesAvailableSection cityName="Palm Beach County" />
 
       {/* Interactive Map */}
       <ServiceAreaMap highlightedCounty={County.PALM_BEACH} />
@@ -289,6 +254,84 @@ export default function PalmBeachCountyPage() {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="section section-padding bg-gray-50">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="mb-4">
+                <span className="gradient-text">Frequently Asked Questions</span> - Palm Beach County
+              </h2>
+              <p className="text-lg text-gray-600">
+                Everything you need to know about mobile billboard advertising in Palm Beach County
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              <details className="bg-white rounded-xl p-6 shadow-sm group">
+                <summary className="font-bold text-lg cursor-pointer flex items-start gap-3 list-none">
+                  <HelpCircle className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
+                  <span className="flex-1">Do you serve all 39 cities in Palm Beach County?</span>
+                </summary>
+                <div className="mt-4 pl-9 text-gray-600">
+                  Yes! We provide comprehensive coverage across all 39 municipalities in Palm Beach County, from the Island of Palm Beach and West Palm Beach to Boca Raton, Delray Beach, Jupiter, Wellington, and everywhere in between. Our fleet can target any neighborhood or commercial district in the county.
+                </div>
+              </details>
+
+              <details className="bg-white rounded-xl p-6 shadow-sm group">
+                <summary className="font-bold text-lg cursor-pointer flex items-start gap-3 list-none">
+                  <HelpCircle className="w-6 h-6 text-maximax-cyan flex-shrink-0 mt-1" />
+                  <span className="flex-1">What are the premium advertising routes in Palm Beach County?</span>
+                </summary>
+                <div className="mt-4 pl-9 text-gray-600">
+                  Top routes include Worth Avenue and the Island of Palm Beach, Clematis Street and CityPlace in West Palm Beach, Town Center at Boca Raton, Atlantic Avenue in Delray Beach, A1A coastal highway, Gardens Mall vicinity, Wellington equestrian areas, and major highways like I-95 and Florida Turnpike. Each route targets specific affluent demographics.
+                </div>
+              </details>
+
+              <details className="bg-white rounded-xl p-6 shadow-sm group">
+                <summary className="font-bold text-lg cursor-pointer flex items-start gap-3 list-none">
+                  <HelpCircle className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
+                  <span className="flex-1">Are permits required for mobile billboards in Palm Beach County?</span>
+                </summary>
+                <div className="mt-4 pl-9 text-gray-600">
+                  Palm Beach County has specific regulations, and some municipalities like the Town of Palm Beach have additional restrictions. We handle all compliance and permitting requirements across all 39 cities. Our team ensures your campaign meets local ordinances while maximizing visibility in your target areas.
+                </div>
+              </details>
+
+              <details className="bg-white rounded-xl p-6 shadow-sm group">
+                <summary className="font-bold text-lg cursor-pointer flex items-start gap-3 list-none">
+                  <HelpCircle className="w-6 h-6 text-maximax-pink flex-shrink-0 mt-1" />
+                  <span className="flex-1">Can I target luxury markets and affluent neighborhoods?</span>
+                </summary>
+                <div className="mt-4 pl-9 text-gray-600">
+                  Absolutely! Palm Beach County is our specialty for luxury brand advertising. We can target ultra-high net worth areas like the Island of Palm Beach, Palm Beach Gardens' exclusive communities, Boca Raton's gated neighborhoods, Delray Beach's Atlantic Avenue district, and Jupiter's luxury waterfront areas. Perfect for luxury real estate, high-end retail, and premium services.
+                </div>
+              </details>
+
+              <details className="bg-white rounded-xl p-6 shadow-sm group">
+                <summary className="font-bold text-lg cursor-pointer flex items-start gap-3 list-none">
+                  <HelpCircle className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
+                  <span className="flex-1">What does a county-wide campaign cost in Palm Beach County?</span>
+                </summary>
+                <div className="mt-4 pl-9 text-gray-600">
+                  County-wide campaigns in Palm Beach start at $2,795/day for multi-city coverage. Luxury market targeting (Island of Palm Beach, exclusive areas) starts at $1,495/day for focused routes. Pricing varies based on specific cities, hours of operation, and campaign duration. We create custom packages to match your budget and target audience.
+                </div>
+              </details>
+
+              <details className="bg-white rounded-xl p-6 shadow-sm group">
+                <summary className="font-bold text-lg cursor-pointer flex items-start gap-3 list-none">
+                  <HelpCircle className="w-6 h-6 text-maximax-cyan flex-shrink-0 mt-1" />
+                  <span className="flex-1">How effective are mobile billboards in Palm Beach County?</span>
+                </summary>
+                <div className="mt-4 pl-9 text-gray-600">
+                  Extremely effective! In high-traffic areas like Worth Avenue, Clematis Street, and Town Center Boca, our trucks generate 25,000-40,000+ impressions per day. County-wide campaigns can reach 150,000-300,000+ daily impressions. We provide GPS tracking and comprehensive reporting for every campaign, showing exact routes and impression data.
+                </div>
+              </details>
             </div>
           </div>
         </div>

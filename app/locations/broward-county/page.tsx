@@ -1,10 +1,11 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { MapPin, Phone, ArrowRight, TrendingUp, Users, Building, Navigation } from 'lucide-react'
+import { MapPin, Phone, ArrowRight, TrendingUp, Users, Building, Navigation, HelpCircle } from 'lucide-react'
 import { County } from '@/app/types'
 import { getLocationsByCounty } from '@/app/lib/data/locations-data'
 import { services } from '@/app/lib/data/services-data'
 import { ServiceAreaMap } from '@/app/components/ServiceAreaMap'
+import { ServicesAvailableSection } from '@/app/components/ServicesAvailableSection'
 
 export const metadata: Metadata = {
   title: 'Mobile Billboard Advertising in Broward County | Fort Lauderdale & All Cities',
@@ -200,44 +201,8 @@ export default function BrowardCountyPage() {
         </div>
       </section>
 
-      {/* Available Services */}
-      <section className="section section-padding bg-white">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-10">
-              <h2 className="mb-4">
-                Complete <span className="gradient-text-cyan">Service Portfolio</span> for Broward
-              </h2>
-              <p className="text-lg text-gray-600">
-                Full range of mobile advertising solutions available across all Broward locations
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.slice(0, 6).map((service) => (
-                <Link
-                  key={service.slug}
-                  href={`/services/${service.slug}/`}
-                  className="group block"
-                >
-                  <div className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 border border-gray-200 hover:shadow-lg hover:border-maximax-cyan/30 transition-all duration-300">
-                    <h3 className="font-bold mb-2 text-gray-900 group-hover:text-maximax-cyan transition-colors">
-                      {service.name}
-                    </h3>
-                    <p className="text-sm text-gray-600 mb-4">
-                      {service.description}
-                    </p>
-                    <div className="flex items-center gap-2 text-maximax-cyan text-sm font-semibold">
-                      Available County-Wide
-                      <ArrowRight className="w-4 h-4" />
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Services Available Section */}
+      <ServicesAvailableSection cityName="Broward County" />
 
       {/* Interactive Map */}
       <ServiceAreaMap highlightedCounty={County.BROWARD} />
@@ -289,6 +254,84 @@ export default function BrowardCountyPage() {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="section section-padding bg-gray-50">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="mb-4">
+                <span className="gradient-text-cyan">Frequently Asked Questions</span> - Broward County
+              </h2>
+              <p className="text-lg text-gray-600">
+                Common questions about mobile billboard advertising across Broward County
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              <details className="bg-white rounded-xl p-6 shadow-sm group">
+                <summary className="font-bold text-lg cursor-pointer flex items-start gap-3 list-none">
+                  <HelpCircle className="w-6 h-6 text-maximax-cyan flex-shrink-0 mt-1" />
+                  <span className="flex-1">Which cities in Broward County do you serve?</span>
+                </summary>
+                <div className="mt-4 pl-9 text-gray-600">
+                  We serve all 31 municipalities in Broward County, including Fort Lauderdale, Hollywood, Pompano Beach, Pembroke Pines, Coral Springs, Miramar, Davie, Plantation, Sunrise, Weston, Parkland, and all other cities. Our trucks can navigate any route across the entire county.
+                </div>
+              </details>
+
+              <details className="bg-white rounded-xl p-6 shadow-sm group">
+                <summary className="font-bold text-lg cursor-pointer flex items-start gap-3 list-none">
+                  <HelpCircle className="w-6 h-6 text-maximax-pink flex-shrink-0 mt-1" />
+                  <span className="flex-1">What are the best areas for mobile billboards in Broward?</span>
+                </summary>
+                <div className="mt-4 pl-9 text-gray-600">
+                  High-impact areas include Fort Lauderdale Beach and Las Olas Boulevard, Hollywood Boardwalk, Sawgrass Mills Mall vicinity, Aventura Mall border areas, major highways (I-95, I-595, Florida Turnpike), and busy commercial corridors in Pembroke Pines and Coral Springs. We help you target the right areas for your audience.
+                </div>
+              </details>
+
+              <details className="bg-white rounded-xl p-6 shadow-sm group">
+                <summary className="font-bold text-lg cursor-pointer flex items-start gap-3 list-none">
+                  <HelpCircle className="w-6 h-6 text-maximax-cyan flex-shrink-0 mt-1" />
+                  <span className="flex-1">Are there advertising restrictions in Broward County?</span>
+                </summary>
+                <div className="mt-4 pl-9 text-gray-600">
+                  Broward County and its cities have specific regulations regarding mobile advertising. We maintain full compliance with all local ordinances and handle permitting where required. Our team stays current with regulations across all 31 municipalities to ensure your campaign runs smoothly.
+                </div>
+              </details>
+
+              <details className="bg-white rounded-xl p-6 shadow-sm group">
+                <summary className="font-bold text-lg cursor-pointer flex items-start gap-3 list-none">
+                  <HelpCircle className="w-6 h-6 text-maximax-pink flex-shrink-0 mt-1" />
+                  <span className="flex-1">Can you target specific neighborhoods or business districts?</span>
+                </summary>
+                <div className="mt-4 pl-9 text-gray-600">
+                  Yes! We specialize in hyper-targeted campaigns. Whether you want to reach the financial district in downtown Fort Lauderdale, shoppers at Sawgrass Mills, beach visitors in Hollywood, or residents in Weston's gated communities, we create custom routes using GPS tracking to maximize your ROI.
+                </div>
+              </details>
+
+              <details className="bg-white rounded-xl p-6 shadow-sm group">
+                <summary className="font-bold text-lg cursor-pointer flex items-start gap-3 list-none">
+                  <HelpCircle className="w-6 h-6 text-maximax-cyan flex-shrink-0 mt-1" />
+                  <span className="flex-1">What's the typical campaign cost in Broward County?</span>
+                </summary>
+                <div className="mt-4 pl-9 text-gray-600">
+                  Campaigns in Broward County start at $895/day for single-city coverage and $2,495/day for county-wide multi-city campaigns. Pricing depends on the number of trucks, hours, specific cities, and campaign duration. We offer flexible packages to fit various budgets and objectives.
+                </div>
+              </details>
+
+              <details className="bg-white rounded-xl p-6 shadow-sm group">
+                <summary className="font-bold text-lg cursor-pointer flex items-start gap-3 list-none">
+                  <HelpCircle className="w-6 h-6 text-maximax-pink flex-shrink-0 mt-1" />
+                  <span className="flex-1">How do you measure campaign success in Broward?</span>
+                </summary>
+                <div className="mt-4 pl-9 text-gray-600">
+                  Every campaign includes GPS tracking with detailed route maps, timestamps, and estimated impressions based on traffic data. For high-traffic areas like Las Olas, Fort Lauderdale Beach, and major highways, we provide comprehensive analytics showing exactly where your message was displayed and how many people saw it.
+                </div>
+              </details>
             </div>
           </div>
         </div>
