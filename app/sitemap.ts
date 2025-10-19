@@ -324,6 +324,56 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
 
+    // Phase 7: New High-Impact Cities (8 new pages) with priority 0.9-0.85
+    {
+      url: `${baseUrl}/locations/hialeah-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/pompano-beach-billboard-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/coral-springs-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/davie-billboard-trucks/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/locations/doral-mobile-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/boynton-beach-billboard-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/locations/sunny-isles-beach-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/wellington-billboard-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+
     // High-population cities with priority 0.85
     {
       url: `${baseUrl}/locations/miami-gardens-mobile-billboards/`,
@@ -672,6 +722,78 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
 
     
+    // Phase 4: Additional Strategic Cities (3 new pages)
+    {
+      url: `${baseUrl}/locations/riviera-beach-mobile-billboards/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/hallandale-beach-billboard-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations/palm-springs-mobile-advertising/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+
+    // Phase 4: Resource/Guide Pages (4 new pages)
+    {
+      url: `${baseUrl}/resources/billboard-cost-guide/`,
+      lastModified: dateString,
+      changeFrequency: 'monthly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/resources/mobile-billboard-rental-guide/`,
+      lastModified: dateString,
+      changeFrequency: 'monthly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/resources/event-marketing-guide/`,
+      lastModified: dateString,
+      changeFrequency: 'monthly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/resources/small-business-billboard-guide/`,
+      lastModified: dateString,
+      changeFrequency: 'monthly',
+      priority: 0.95,
+    },
+
+    // Phase 5: Additional Resource Pages (4 new pages)
+    {
+      url: `${baseUrl}/resources/measure-billboard-roi/`,
+      lastModified: dateString,
+      changeFrequency: 'monthly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/resources/billboard-design-guide/`,
+      lastModified: dateString,
+      changeFrequency: 'monthly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/resources/seasonal-billboard-guide/`,
+      lastModified: dateString,
+      changeFrequency: 'monthly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/resources/grand-opening-billboard-guide/`,
+      lastModified: dateString,
+      changeFrequency: 'monthly',
+      priority: 0.95,
+    },
+
     // Legal Pages
     {
       url: `${baseUrl}/privacy-policy/`,
