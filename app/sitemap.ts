@@ -810,6 +810,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     
     // Blog Posts
     {
+      url: `${baseUrl}/blog/hyperlocal-advertising-mobile-billboards-2025/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/blog/hispanic-heritage-month-q4-mobile-advertising-strategy/`,
+      lastModified: dateString,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/blog/what-is-ooh-in-marketing/`,
       lastModified: dateString,
       changeFrequency: 'monthly',
