@@ -5,6 +5,18 @@ import { Calendar, Clock, ArrowRight, Tag, TrendingUp, Lightbulb, Target } from 
 const blogPosts = [
   {
     id: 1,
+    title: 'GPS-Tracked Mobile Billboards: Proven ROI Analytics Guide 2025',
+    excerpt: 'Discover how GPS tracking technology transforms mobile billboard advertising with real-time analytics, heat maps, and verified ROI. Complete guide to data-driven outdoor advertising for South Florida businesses.',
+    image: '/images/c92cdb19-f55b-4212-b177-31c8340cfe8c-2.jpeg',
+    category: 'Analytics & ROI',
+    date: 'October 21, 2025',
+    readTime: '8 min read',
+    tags: ['GPS Tracking', 'ROI Analytics', 'Data-Driven Marketing'],
+    featured: true,
+    slug: 'gps-tracked-mobile-billboards-roi-analytics-2025',
+  },
+  {
+    id: 2,
     title: 'Hyperlocal Advertising in 2025: Why Mobile Billboards Beat Digital Ads for South Florida Businesses',
     excerpt: 'Discover how hyperlocal mobile billboard advertising delivers 97% brand recall and 3x higher engagement than digital ads. Essential strategies for Miami, Fort Lauderdale, and Palm Beach businesses.',
     image: '/images/1-1.png',
@@ -12,11 +24,11 @@ const blogPosts = [
     date: 'October 18, 2025',
     readTime: '7 min read',
     tags: ['Hyperlocal Marketing', 'ROI', 'Digital vs Traditional'],
-    featured: true,
+    featured: false,
     slug: 'hyperlocal-advertising-mobile-billboards-2025',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Hispanic Heritage Month & Q4 Planning: Mobile Billboard Strategy for South Florida Success',
     excerpt: 'Learn how mobile LED billboard trucks amplify Hispanic Heritage Month campaigns while kickstarting Q4 holiday advertising in Miami, Fort Lauderdale, and West Palm Beach.',
     image: '/images/c92cdb19-f55b-4212-b177-31c8340cfe8c-2.jpeg',
@@ -139,6 +151,7 @@ const blogPosts = [
 
 const categories = [
   { name: 'All Posts', count: blogPosts.length, icon: TrendingUp },
+  { name: 'Analytics & ROI', count: 1, icon: TrendingUp },
   { name: 'Marketing Strategy', count: 1, icon: Target },
   { name: 'Multicultural Marketing', count: 1, icon: Lightbulb },
   { name: 'Holiday Marketing', count: 1, icon: Lightbulb },

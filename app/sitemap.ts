@@ -810,6 +810,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     
     // Blog Posts
     {
+      url: `${baseUrl}/blog/gps-tracked-mobile-billboards-roi-analytics-2025/`,
+      lastModified: dateString,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/blog/hyperlocal-advertising-mobile-billboards-2025/`,
       lastModified: dateString,
       changeFrequency: 'weekly',
