@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Calendar, Clock, ArrowRight, Tag, TrendingUp, Lightbulb, Target } from 'lucide-react'
+import { Calendar, Clock, ArrowRight } from 'lucide-react'
 
 const blogPosts = [
   {
@@ -149,20 +149,6 @@ const blogPosts = [
   },
 ]
 
-const categories = [
-  { name: 'All Posts', count: blogPosts.length, icon: TrendingUp },
-  { name: 'Analytics & ROI', count: 1, icon: TrendingUp },
-  { name: 'Marketing Strategy', count: 1, icon: Target },
-  { name: 'Multicultural Marketing', count: 1, icon: Lightbulb },
-  { name: 'Holiday Marketing', count: 1, icon: Lightbulb },
-  { name: 'Event Marketing', count: 1, icon: Target },
-  { name: 'Industry Comparison', count: 1, icon: TrendingUp },
-  { name: 'Industry Insights', count: 1, icon: Lightbulb },
-  { name: 'Technology', count: 2, icon: Target },
-  { name: 'Case Studies', count: 1, icon: TrendingUp },
-  { name: 'Tips & Strategy', count: 2, icon: Target },
-]
-
 export default function BlogPage() {
   return (
     <>
@@ -233,58 +219,13 @@ export default function BlogPage() {
           </div>
         </section>
 
-        {/* Blog Grid with Sidebar */}
+        {/* Blog Grid */}
         <section className="section section-padding bg-gray-50">
           <div className="container">
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-              {/* Sidebar */}
-              <div className="lg:col-span-1">
-                <div className="sticky top-24">
-                  {/* Categories */}
-                  <div className="bg-white rounded-xl p-6 mb-6">
-                    <h3 className="font-bold mb-4">Categories</h3>
-                    <div className="space-y-3">
-                      {categories.map((category) => {
-                        const Icon = category.icon
-                        return (
-                          <button
-                            key={category.name}
-                            className="flex items-center justify-between w-full p-2 rounded-lg hover:bg-gray-50 transition-colors"
-                          >
-                            <div className="flex items-center gap-2">
-                              <Icon className="w-4 h-4 text-maximax-pink" />
-                              <span className="text-sm font-medium">{category.name}</span>
-                            </div>
-                            <span className="text-xs bg-maximax-pink/10 text-maximax-pink px-2 py-1 rounded-full">
-                              {category.count}
-                            </span>
-                          </button>
-                        )
-                      })}
-                    </div>
-                  </div>
-
-                  {/* Newsletter Signup */}
-                  <div className="bg-gradient-to-br from-maximax-pink to-maximax-cyan rounded-xl p-6 text-white">
-                    <h3 className="font-bold mb-2 text-white">Stay Updated</h3>
-                    <p className="text-sm mb-4 text-white/90">
-                      Get the latest mobile advertising tips and insights delivered to your inbox.
-                    </p>
-                    <input
-                      type="email"
-                      placeholder="Your email"
-                      className="w-full px-3 py-2 rounded-lg text-gray-900 text-sm mb-3"
-                    />
-                    <button className="w-full bg-white text-maximax-pink px-4 py-2 rounded-lg font-semibold text-sm hover:bg-gray-100 transition-colors">
-                      Subscribe
-                    </button>
-                  </div>
-                </div>
-              </div>
-
+            <div className="max-w-6xl mx-auto">
               {/* Blog Posts Grid */}
-              <div className="lg:col-span-3">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {blogPosts.filter(post => !post.featured).map((post, index) => (
                     <Link href={`/blog/${post.slug || ''}`} key={post.id}>
                       <article
@@ -333,7 +274,6 @@ export default function BlogPage() {
                     </Link>
                   ))}
                 </div>
-
               </div>
             </div>
           </div>

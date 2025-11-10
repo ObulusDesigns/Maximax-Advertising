@@ -1,6 +1,6 @@
 'use client'
 
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 
 export default function ContactPage() {
 
@@ -26,137 +26,84 @@ export default function ContactPage() {
         {/* Contact Section */}
         <section className="section section-padding bg-white">
           <div className="container">
-            <div className="max-w-4xl mx-auto">
-              {/* Contact Information */}
-              <div>
-                <div className="mb-8">
-                  <span className="badge-accent mb-4">Contact Info</span>
-                  <h2 className="mb-4">Let's Start a <span className="gradient-text-cyan">Conversation</span></h2>
-                  <p className="text-gray-600">
-                    Have questions? Want to discuss your advertising needs? We're here to help 
-                    and ready to create a custom mobile billboard solution for your business.
-                  </p>
-                </div>
+            <div className="max-w-5xl mx-auto">
+              {/* Section Header */}
+              <div className="text-center mb-12">
+                <span className="badge-accent mb-4">Contact Info</span>
+                <h2 className="mb-4">Let's Start a <span className="gradient-text-cyan">Conversation</span></h2>
+                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                  Have questions? Want to discuss your advertising needs? We're here to help
+                  and ready to create a custom mobile billboard solution for your business.
+                </p>
+              </div>
 
-                {/* Contact Cards */}
-                <div className="space-y-6">
-                  <div className="card p-6">
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-maximax-pink/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Phone className="w-6 h-6 text-maximax-pink" />
-                      </div>
-                      <div>
-                        <h4 className="font-semibold mb-1">Phone</h4>
-                        <a href="tel:5617200521" className="text-lg font-bold text-maximax-pink hover:text-pink-700 transition-colors">
-                          (561) 720-0521
-                        </a>
-                        <p className="text-sm text-gray-600 mt-1">24/7 Emergency Service Available</p>
-                      </div>
+              {/* Contact Cards Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-maximax-pink/10 to-maximax-pink/5 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-6 h-6 text-maximax-pink" />
                     </div>
-                  </div>
-
-                  <div className="card p-6">
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-maximax-cyan/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Mail className="w-6 h-6 text-maximax-cyan" />
-                      </div>
-                      <div>
-                        <h4 className="font-semibold mb-1">Email</h4>
-                        <a href="mailto:naser@maximaxmobileadvertising.com" className="text-lg font-bold text-maximax-cyan hover:text-cyan-700 transition-colors">
-                          naser@maximaxmobileadvertising.com
-                        </a>
-                        <p className="text-sm text-gray-600 mt-1">We respond within 24 hours</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="card p-6">
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-maximax-pink/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <MapPin className="w-6 h-6 text-maximax-pink" />
-                      </div>
-                      <div>
-                        <h4 className="font-semibold mb-1">Office Location</h4>
-                        <p className="text-gray-700">
-                          601 N Congress Ave #410<br />
-                          Delray Beach, FL 33445
-                        </p>
-                        <p className="text-sm text-gray-600 mt-1">Serving all of Palm Beach County</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="card p-6">
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-maximax-cyan/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Clock className="w-6 h-6 text-maximax-cyan" />
-                      </div>
-                      <div>
-                        <h4 className="font-semibold mb-1">Business Hours</h4>
-                        <div className="space-y-1 text-gray-700">
-                          <div className="flex justify-between">
-                            <span>Monday - Friday:</span>
-                            <span className="font-semibold">8:00 AM - 8:00 PM</span>
-                          </div>
-                          <div className="flex justify-between">
-                            <span>Saturday - Sunday:</span>
-                            <span className="font-semibold">9:00 AM - 6:00 PM</span>
-                          </div>
-                        </div>
-                      </div>
+                    <div className="flex-1">
+                      <h3 className="font-bold text-lg mb-1">Phone</h3>
+                      <a href="tel:5617200521" className="text-xl font-bold text-maximax-pink hover:text-pink-700 transition-colors block mb-2">
+                        (561) 720-0521
+                      </a>
+                      <p className="text-sm text-gray-600">Mon-Fri: 8AM-8PM | Sat-Sun: 9AM-6PM</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Social Media */}
-                <div className="mt-8">
-                  <h4 className="font-semibold mb-4">Follow Us</h4>
-                  <div className="flex gap-3">
-                    <a
-                      href="https://facebook.com/maximaxadvertising"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-maximax-pink hover:text-white transition-all"
-                      aria-label="Facebook"
-                    >
-                      <Facebook className="w-5 h-5" />
-                    </a>
-                    <a
-                      href="https://instagram.com/maximaxadvertising"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-maximax-pink hover:text-white transition-all"
-                      aria-label="Instagram"
-                    >
-                      <Instagram className="w-5 h-5" />
-                    </a>
-                    <a
-                      href="https://linkedin.com/company/maximax-advertising"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-maximax-pink hover:text-white transition-all"
-                      aria-label="LinkedIn"
-                    >
-                      <Linkedin className="w-5 h-5" />
-                    </a>
-                    <a
-                      href="https://twitter.com/maximaxads"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-maximax-pink hover:text-white transition-all"
-                      aria-label="Twitter"
-                    >
-                      <Twitter className="w-5 h-5" />
-                    </a>
-                    <a
-                      href="https://youtube.com/@maximaxadvertising"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-maximax-pink hover:text-white transition-all"
-                      aria-label="YouTube"
-                    >
-                      <Youtube className="w-5 h-5" />
-                    </a>
+                <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-maximax-cyan/10 to-maximax-cyan/5 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-6 h-6 text-maximax-cyan" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-bold text-lg mb-1">Email</h3>
+                      <a href="mailto:naser@maximaxmobileadvertising.com" className="text-lg font-bold text-maximax-cyan hover:text-cyan-700 transition-colors block mb-2 break-all">
+                        naser@maximaxmobileadvertising.com
+                      </a>
+                      <p className="text-sm text-gray-600">Response within 24 hours</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-maximax-pink/10 to-maximax-pink/5 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-6 h-6 text-maximax-pink" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-bold text-lg mb-1">Office Location</h3>
+                      <p className="text-gray-700 mb-2">
+                        601 N Congress Ave #410<br />
+                        Delray Beach, FL 33445
+                      </p>
+                      <p className="text-sm text-gray-600">Serving all of Palm Beach County</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-maximax-cyan/10 to-maximax-cyan/5 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                        <path className="text-maximax-cyan" fill="currentColor" d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/>
+                      </svg>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-bold text-lg mb-1">Google Business</h3>
+                      <a
+                        href="https://g.page/r/YOUR_GOOGLE_BUSINESS_PROFILE_ID"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-lg font-bold text-maximax-cyan hover:text-cyan-700 transition-colors block mb-2"
+                      >
+                        View Our Profile
+                      </a>
+                      <p className="text-sm text-gray-600">See our reviews and ratings</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -164,8 +111,36 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* Map Section */}
+        {/* Contact Form Section */}
         <section className="section section-padding bg-gray-50">
+          <div className="container">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <span className="badge-accent mb-4">Get Started</span>
+              <h2 className="mb-4">Request a <span className="gradient-text-cyan">Free Quote</span></h2>
+              <p className="text-lg text-gray-600">
+                Fill out the form below and we'll get back to you within 24 hours with a custom
+                proposal for your mobile billboard campaign.
+              </p>
+            </div>
+
+            {/* Google Form Container - Fixed Height */}
+            <div className="max-w-3xl mx-auto">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <iframe
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSfAExdUoPlSxoJ8OtcxzvgH2ggYadYM1ViNyv31qL1zb7eIIw/viewform?embedded=true"
+                  className="w-full border-0"
+                  style={{ height: '1800px' }}
+                  title="Contact Form"
+                >
+                  Loading…
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Map Section */}
+        <section className="section section-padding bg-white">
           <div className="container">
             <div className="text-center max-w-3xl mx-auto mb-12">
               <h2 className="mb-4">Service <span className="gradient-text">Coverage Area</span></h2>

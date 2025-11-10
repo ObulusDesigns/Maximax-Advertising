@@ -74,14 +74,12 @@ export function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 animate-slide-up animation-delay-600">
-            <a 
-              href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5" 
+            <Link
+              href="/contact/"
               className="btn-primary btn-lg"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               Get Free Quote
-            </a>
+            </Link>
             <Link href="/services" className="btn-accent btn-lg">
               <Monitor className="w-5 h-5" />
               View Our Services
@@ -92,22 +90,12 @@ export function HeroSection() {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 text-sm text-gray-300 animate-fade-in animation-delay-800">
             <div className="flex items-center gap-2">
               <TrendingUp className="w-4 h-4 text-maximax-cyan" />
-              <span>Average 4.2x ROI</span>
+              <span>Proven Results & ROI</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4 text-maximax-cyan" />
               <span>Serving Palm Beach County</span>
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Floating Elements */}
-      <div className="absolute bottom-10 right-10 hidden lg:block">
-        <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20 animate-float">
-          <div className="text-center">
-            <div className="text-4xl font-bold text-maximax-pink mb-2">200+</div>
-            <div className="text-sm text-white">Successful Campaigns</div>
           </div>
         </div>
       </div>

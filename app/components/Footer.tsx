@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, Twitter, Youtube, ChevronRight } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, ChevronRight } from 'lucide-react'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -26,52 +26,18 @@ export function Footer() {
               </p>
             </div>
             
-            {/* Social Links */}
+            {/* Google Business Profile Link */}
             <div className="flex gap-3">
               <a
-                href="https://facebook.com/maximaxadvertising"
+                href="https://g.page/r/YOUR_GOOGLE_BUSINESS_PROFILE_ID"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-white/10 rounded-lg hover:bg-maximax-pink transition-colors"
-                aria-label="Facebook"
+                className="p-2 bg-white/10 rounded-lg hover:bg-maximax-pink transition-colors group"
+                aria-label="Google Business Profile"
               >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href="https://instagram.com/maximaxadvertising"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-white/10 rounded-lg hover:bg-maximax-pink transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href="https://linkedin.com/company/maximax-advertising"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-white/10 rounded-lg hover:bg-maximax-pink transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="https://twitter.com/maximaxads"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-white/10 rounded-lg hover:bg-maximax-pink transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href="https://youtube.com/@maximaxadvertising"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-white/10 rounded-lg hover:bg-maximax-pink transition-colors"
-                aria-label="YouTube"
-              >
-                <Youtube className="w-5 h-5" />
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/>
+                </svg>
               </a>
             </div>
           </div>

@@ -47,17 +47,11 @@ export function LocationPageTemplate(props: LocationPageProps) {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5" 
-                className="btn-primary btn-lg"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 Get {city} Quote
               </a>
               <a 
-                href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5" 
-                className="btn-accent btn-lg"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 Schedule Campaign
@@ -405,9 +399,6 @@ export function LocationPageTemplate(props: LocationPageProps) {
                 Call (561) 720-0521
               </a>
               <a 
-                href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5" 
-                className="btn-accent btn-lg"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 Get Free Quote

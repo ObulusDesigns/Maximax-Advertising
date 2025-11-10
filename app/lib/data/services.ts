@@ -191,7 +191,7 @@ export const servicesData: ServiceData[] = [
     cta: {
       primary: {
         text: 'Get Free Quote',
-        href: 'https://ocyrus.app.n8n.cloud/form/9a151470-e398-4144-9b7d-20941bc9b436',
+        href: '/contact/',
         isExternal: true
       },
       secondary: {
@@ -370,7 +370,7 @@ export const servicesData: ServiceData[] = [
     cta: {
       primary: {
         text: 'See Display Options',
-        href: 'https://ocyrus.app.n8n.cloud/form/9a151470-e398-4144-9b7d-20941bc9b436',
+        href: '/contact/',
         isExternal: true
       },
       secondary: {
@@ -722,7 +722,7 @@ export const servicesData: ServiceData[] = [
     cta: {
       primary: {
         text: 'Experience 4K',
-        href: 'https://ocyrus.app.n8n.cloud/form/9a151470-e398-4144-9b7d-20941bc9b436',
+        href: '/contact/',
         isExternal: true
       }
     },
@@ -1269,7 +1269,7 @@ export const servicesData: ServiceData[] = [
     cta: {
       primary: {
         text: 'Get Wrap Quote',
-        href: 'https://ocyrus.app.n8n.cloud/form/9a151470-e398-4144-9b7d-20941bc9b436',
+        href: '/contact/',
         isExternal: true
       },
       secondary: {
@@ -1476,7 +1476,7 @@ export const servicesData: ServiceData[] = [
     cta: {
       primary: {
         text: 'Start Local Campaign',
-        href: 'https://ocyrus.app.n8n.cloud/form/9a151470-e398-4144-9b7d-20941bc9b436',
+        href: '/contact/',
         isExternal: true
       },
       secondary: {

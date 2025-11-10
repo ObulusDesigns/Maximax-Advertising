@@ -922,9 +922,6 @@ export default function WhatIsOOHAdvertisingPage() {
                     
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                       <a 
-                        href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
-                        target="_blank"
-                        rel="noopener noreferrer"
                         className="btn-primary"
                       >
                         Get Exact Quote
@@ -1155,9 +1152,6 @@ export default function WhatIsOOHAdvertisingPage() {
               <p className="text-gray-600 mb-6">Have more questions about OOH advertising?</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                  href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="btn-primary btn-lg"
                 >
                   Get Free Consultation
@@ -1214,9 +1208,6 @@ export default function WhatIsOOHAdvertisingPage() {
                 Call (561) 720-0521
               </a>
               <a 
-                href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-white/20 text-white border-2 border-white/30 px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/30 transform hover:scale-105 transition-all"
               >
                 Get Free Quote

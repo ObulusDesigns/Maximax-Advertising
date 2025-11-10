@@ -8,7 +8,6 @@ import { ClientLayout } from './components/ClientLayout'
 import { SkipLinks } from './components/SkipLinks'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
-import { FloatingContact } from './components/FloatingContact'
 import { Breadcrumbs } from './components/Breadcrumbs'
 
 const inter = Inter({ 
@@ -60,7 +59,6 @@ export default function RootLayout({
           <Breadcrumbs />
           {children}
           <Footer />
-          <FloatingContact />
         </ClientLayout>
       </body>
     </html>

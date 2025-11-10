@@ -51,15 +51,13 @@ export function CTASection() {
               <Phone className="w-5 h-5" />
               Call (561) 720-0521
             </a>
-            <a
-              href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/contact/"
               className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transform hover:scale-105 transition-all"
             >
               Get Free Quote
               <ArrowRight className="w-5 h-5" />
-            </a>
+            </Link>
           </div>
 
           {/* Urgency Text */}

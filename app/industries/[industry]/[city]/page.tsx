@@ -132,9 +132,6 @@ function IndustryLocationPage({ params }: { params: { industry: string; city: st
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
-                className="btn-primary btn-lg"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 Get Custom Quote
@@ -321,9 +318,6 @@ function IndustryLocationPage({ params }: { params: { industry: string; city: st
                 Call (561) 720-0521
               </a>
               <a
-                href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-maximax-black text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-900 transform hover:scale-105 transition-all shadow-xl"
               >
                 Get Your Quote

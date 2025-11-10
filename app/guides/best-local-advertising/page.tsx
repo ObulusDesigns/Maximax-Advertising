@@ -381,9 +381,6 @@ export default function BestLocalAdvertisingGuide() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <a 
-                href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
-                className="btn-primary btn-lg"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 Get Free Consultation
@@ -741,9 +738,6 @@ export default function BestLocalAdvertisingGuide() {
                   </ul>
                   
                   <a 
-                    href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
-                    className="btn-primary btn-lg w-full mt-6"
-                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     Calculate Your ROI
@@ -878,9 +872,6 @@ export default function BestLocalAdvertisingGuide() {
 
             <div className="text-center mt-12">
               <a 
-                href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
-                className="btn-primary btn-lg"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 Start Your Campaign Today
@@ -966,9 +957,6 @@ export default function BestLocalAdvertisingGuide() {
                 Call (561) 720-0521
               </a>
               <a 
-                href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
-                className="inline-flex items-center justify-center gap-2 bg-white/20 text-white border-2 border-white/30 px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/30 transform hover:scale-105 transition-all"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 Get Free Strategy Session

@@ -3,7 +3,7 @@ import { ServiceCards } from './components/ServiceCards'
 import { CTASection } from './components/CTASection'
 import Image from 'next/image'
 import Link from 'next/link'
-import { CheckCircle, Users, Target, Award, ChevronRight } from 'lucide-react'
+import { CheckCircle, Users, Target, Award, ChevronRight, Heart, Stethoscope, Scale, Globe, Home, Shield, HardHat, Thermometer } from 'lucide-react'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -75,20 +75,10 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="flex gap-8">
-                  <div>
-                    <div className="text-3xl font-bold text-maximax-pink">5+</div>
-                    <div className="text-sm text-gray-600">Years Experience</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-maximax-pink">200+</div>
-                    <div className="text-sm text-gray-600">Happy Clients</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-maximax-pink">98%</div>
-                    <div className="text-sm text-gray-600">Satisfaction Rate</div>
-                  </div>
-                </div>
+                <Link href="/about" className="btn-primary inline-flex items-center gap-2">
+                  Learn More About Us
+                  <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
 
               {/* Image */}
@@ -130,8 +120,8 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-maximax-cyan/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-maximax-cyan" />
                 </div>
-                <h4 className="font-semibold mb-2">50,000+ Impressions</h4>
-                <p className="text-sm text-gray-600">Daily visibility to thousands of potential customers</p>
+                <h4 className="font-semibold mb-2">Wide Audience Reach</h4>
+                <p className="text-sm text-gray-600">Connect with thousands of potential customers daily</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-maximax-pink/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -147,6 +137,178 @@ export default function HomePage() {
                 <h4 className="font-semibold mb-2">Full Service</h4>
                 <p className="text-sm text-gray-600">Complete campaign management from design to reporting</p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Choose Your Industry Section */}
+        <section className="section section-padding bg-white">
+          <div className="container">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <span className="badge-accent mb-4">Industries We Serve</span>
+              <h2 className="mb-6">
+                Choose <span className="gradient-text-cyan">Your Industry</span>
+              </h2>
+              <p className="text-lg text-gray-600">
+                Specialized mobile billboard strategies tailored to your industry's unique needs and target audience.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {/* Plastic Surgeons */}
+              <Link href="/markets/plastic-surgeons/" className="group">
+                <div className="card p-6 h-full hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-gradient-to-br hover:from-pink-50 hover:to-rose-50">
+                  <div className="w-14 h-14 bg-gradient-to-br from-pink-500 to-rose-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <Heart className="w-7 h-7 text-white" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2 group-hover:text-maximax-pink transition-colors">
+                    Plastic Surgeons
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Reach high-value patients in affluent neighborhoods
+                  </p>
+                  <div className="text-xs font-semibold text-pink-600">
+                    5.2x Average ROI
+                  </div>
+                </div>
+              </Link>
+
+              {/* Chiropractors */}
+              <Link href="/markets/chiropractors/" className="group">
+                <div className="card p-6 h-full hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-gradient-to-br hover:from-cyan-50 hover:to-blue-50">
+                  <div className="w-14 h-14 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <Stethoscope className="w-7 h-7 text-white" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2 group-hover:text-maximax-cyan transition-colors">
+                    Chiropractors
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Connect with patients suffering from pain and injuries
+                  </p>
+                  <div className="text-xs font-semibold text-cyan-600">
+                    4.8x Average ROI
+                  </div>
+                </div>
+              </Link>
+
+              {/* Personal Injury Lawyers */}
+              <Link href="/markets/personal-injury-lawyers/" className="group">
+                <div className="card p-6 h-full hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-gradient-to-br hover:from-purple-50 hover:to-indigo-50">
+                  <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <Scale className="w-7 h-7 text-white" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2 group-hover:text-purple-600 transition-colors">
+                    Personal Injury Lawyers
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Dominate accident zones for maximum case intake
+                  </p>
+                  <div className="text-xs font-semibold text-purple-600">
+                    8.5x Average ROI
+                  </div>
+                </div>
+              </Link>
+
+              {/* Immigration Lawyers */}
+              <Link href="/markets/immigration-lawyers/" className="group">
+                <div className="card p-6 h-full hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-gradient-to-br hover:from-green-50 hover:to-emerald-50">
+                  <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <Globe className="w-7 h-7 text-white" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2 group-hover:text-green-600 transition-colors">
+                    Immigration Lawyers
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Reach immigrant communities with targeted ads
+                  </p>
+                  <div className="text-xs font-semibold text-green-600">
+                    6.3x Average ROI
+                  </div>
+                </div>
+              </Link>
+
+              {/* Home Builders */}
+              <Link href="/markets/home-builders/" className="group">
+                <div className="card p-6 h-full hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-gradient-to-br hover:from-orange-50 hover:to-red-50">
+                  <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <Home className="w-7 h-7 text-white" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2 group-hover:text-orange-600 transition-colors">
+                    Home Builders
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Drive traffic to model homes and grand openings
+                  </p>
+                  <div className="text-xs font-semibold text-orange-600">
+                    7.2x Average ROI
+                  </div>
+                </div>
+              </Link>
+
+              {/* Impact Windows & Doors */}
+              <Link href="/markets/impact-windows-doors/" className="group">
+                <div className="card p-6 h-full hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-gradient-to-br hover:from-teal-50 hover:to-cyan-50">
+                  <div className="w-14 h-14 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <Shield className="w-7 h-7 text-white" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 transition-colors">
+                    Impact Windows & Doors
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Target homeowners before hurricane season
+                  </p>
+                  <div className="text-xs font-semibold text-teal-600">
+                    5.8x Average ROI
+                  </div>
+                </div>
+              </Link>
+
+              {/* Roofing Companies */}
+              <Link href="/markets/roofing/" className="group">
+                <div className="card p-6 h-full hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-gradient-to-br hover:from-amber-50 hover:to-orange-50">
+                  <div className="w-14 h-14 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <HardHat className="w-7 h-7 text-white" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2 group-hover:text-amber-600 transition-colors">
+                    Roofing Companies
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Generate emergency leads after storms
+                  </p>
+                  <div className="text-xs font-semibold text-amber-600">
+                    6.5x Average ROI
+                  </div>
+                </div>
+              </Link>
+
+              {/* HVAC Companies */}
+              <Link href="/markets/hvac/" className="group">
+                <div className="card p-6 h-full hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-gradient-to-br hover:from-blue-50 hover:to-indigo-50">
+                  <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <Thermometer className="w-7 h-7 text-white" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2 group-hover:text-blue-600 transition-colors">
+                    HVAC Companies
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Capture emergency repairs and seasonal maintenance
+                  </p>
+                  <div className="text-xs font-semibold text-blue-600">
+                    7.8x Average ROI
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            {/* CTA */}
+            <div className="text-center mt-12">
+              <p className="text-gray-600 mb-6">
+                Don't see your industry? We work with businesses of all types.
+              </p>
+              <Link href="/markets/" className="btn-primary btn-lg inline-flex items-center gap-2">
+                View All Industries
+                <ChevronRight className="w-5 h-5" />
+              </Link>
             </div>
           </div>
         </section>

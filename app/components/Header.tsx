@@ -171,14 +171,12 @@ export function Header() {
 
             {/* CTA Buttons - Desktop */}
             <div className="hidden lg:flex items-center gap-4">
-              <a
-                href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
+              <Link
+                href="/contact/"
                 className="btn-primary"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 Get Quote
-              </a>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}

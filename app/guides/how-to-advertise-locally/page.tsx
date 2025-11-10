@@ -397,9 +397,6 @@ export default function HowToAdvertiseLocallyGuide() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <a 
-                href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
-                className="btn-primary btn-lg"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 Start Your Campaign
@@ -606,9 +603,6 @@ export default function HowToAdvertiseLocallyGuide() {
             <div className="text-center mt-12">
               <p className="text-gray-600 mb-6">Ready to implement this proven system?</p>
               <a 
-                href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
-                className="btn-primary btn-lg"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 Get Expert Guidance
@@ -845,9 +839,6 @@ export default function HowToAdvertiseLocallyGuide() {
                 Get real-time analytics and ROI tracking with our GPS-enabled mobile billboards
               </p>
               <a 
-                href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
-                className="btn-primary"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 Request Analytics Demo
@@ -951,9 +942,6 @@ export default function HowToAdvertiseLocallyGuide() {
                     Calculate your optimal advertising budget
                   </p>
                   <a 
-                    href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
-                    className="text-maximax-cyan font-semibold text-sm hover:underline"
-                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     Download Template →
@@ -969,9 +957,6 @@ export default function HowToAdvertiseLocallyGuide() {
                     Track and measure campaign performance
                   </p>
                   <a 
-                    href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
-                    className="text-maximax-cyan font-semibold text-sm hover:underline"
-                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     Get Spreadsheet →
@@ -987,9 +972,6 @@ export default function HowToAdvertiseLocallyGuide() {
                     30-minute walkthrough of local advertising
                   </p>
                   <a 
-                    href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
-                    className="text-maximax-cyan font-semibold text-sm hover:underline"
-                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     Watch Now →
@@ -1041,9 +1023,6 @@ export default function HowToAdvertiseLocallyGuide() {
                 Start Today: (561) 720-0521
               </a>
               <a 
-                href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
-                className="inline-flex items-center justify-center gap-2 bg-white/20 text-white border-2 border-white/30 px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/30 transform hover:scale-105 transition-all"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 Free Strategy Session

@@ -85,9 +85,6 @@ export default function MiamiDadeCountyPage() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
-                className="btn-primary btn-lg"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 Get Miami-Dade Quote
@@ -350,9 +347,6 @@ export default function MiamiDadeCountyPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://maximaxmobileadvertising.app.n8n.cloud/form/0dcd36c0-d370-4baa-9b73-3c9cf97b5be5"
-                className="inline-flex items-center justify-center gap-2 bg-white text-maximax-pink px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transform hover:scale-105 transition-all shadow-xl"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 Get Custom Quote

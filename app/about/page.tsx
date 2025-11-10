@@ -38,10 +38,10 @@ export default function AboutPage() {
                   bring your message directly to your audience.
                 </p>
                 <p className="text-gray-600 mb-6">
-                  Today, we operate a fleet of state-of-the-art LED billboard trucks equipped with 
-                  4K displays and GPS tracking technology. Our coverage spans across Boca Raton, 
-                  Delray Beach, Boynton Beach, and the entire Palm Beach County area, delivering 
-                  over 50,000 impressions daily.
+                  Today, we operate a fleet of state-of-the-art LED billboard trucks equipped with
+                  4K displays and GPS tracking technology. Our coverage spans across Boca Raton,
+                  Delray Beach, Boynton Beach, and the entire Palm Beach County area, connecting
+                  businesses with their target audiences every day.
                 </p>
                 <p className="text-gray-600">
                   What sets us apart is our commitment to measurable results. Every campaign is 
@@ -104,53 +104,6 @@ export default function AboutPage() {
                   We&apos;re proud to serve local businesses and contribute to the economic growth 
                   of Boca Raton and surrounding communities.
                 </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Team Section */}
-        <section className="section section-padding bg-white">
-          <div className="container">
-            <div className="text-center max-w-3xl mx-auto mb-12">
-              <span className="badge-primary mb-4">Our Team</span>
-              <h2 className="mb-6">
-                Meet the <span className="gradient-text">Experts</span> Behind Your Success
-              </h2>
-              <p className="text-lg text-gray-600">
-                Our dedicated team of advertising professionals, designers, and campaign managers 
-                work tirelessly to ensure your message reaches the right audience at the right time.
-              </p>
-            </div>
-
-            <div className="max-w-4xl mx-auto">
-              <div className="bg-gray-100 rounded-2xl p-8 text-center">
-                <Image
-                  src="/images/Team/FB_IMG_1727195998551.jpeg"
-                  alt="Maximax Advertising Team"
-                  width={800}
-                  height={400}
-                  className="rounded-xl shadow-lg mb-6"
-                />
-                <h3 className="text-2xl font-bold mb-2">Naser & The Maximax Team</h3>
-                <p className="text-gray-600 mb-6">
-                  With over 5 years of experience in digital marketing and outdoor advertising, 
-                  our team brings expertise, creativity, and dedication to every campaign.
-                </p>
-                <div className="grid grid-cols-3 gap-4 max-w-md mx-auto">
-                  <div>
-                    <div className="text-2xl font-bold text-maximax-pink">15+</div>
-                    <div className="text-sm text-gray-600">Team Members</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-maximax-cyan">24/7</div>
-                    <div className="text-sm text-gray-600">Support</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-maximax-pink">100%</div>
-                    <div className="text-sm text-gray-600">Dedicated</div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
